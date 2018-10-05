@@ -1,0 +1,128 @@
+module powerflow {
+	bool show_matrix_values;
+	double primary_voltage_ratio;
+	double nominal_frequency;
+	bool require_voltage_control;
+	double geographic_degree;
+	complex fault_impedance;
+	double warning_underfrequency;
+	double warning_overfrequency;
+	double warning_undervoltage;
+	double warning_overvoltage;
+	double warning_voltageangle;
+	double maximum_voltage_error;
+	enumeration {NR=2, GS=1, FBS=0} solver_method;
+	bool line_capacitance;
+	bool line_limits;
+	char256 lu_solver;
+	int64 NR_iteration_limit;
+	int32 NR_superLU_procs;
+	double default_maximum_voltage_error;
+	double default_maximum_power_error;
+	bool NR_admit_change;
+}
+class triplex_meter {
+	parent triplex_node;
+	class triplex_node {
+		parent powerflow_object;
+		class powerflow_object {
+			set {A=1, B=2, C=4, D=256, N=8, S=112, G=128} phases;
+			double nominal_voltage[V];
+		}
+
+		enumeration {SWING=2, PV=1, PQ=0} bustype;
+		set {HASSOURCE=1} busflags;
+		object reference_bus;
+		double maximum_voltage_error[V];
+		complex voltage_1[V];
+		complex voltage_2[V];
+		complex voltage_N[V];
+		complex voltage_12[V];
+		complex voltage_1N[V];
+		complex voltage_2N[V];
+		complex current_1[A];
+		complex current_2[A];
+		complex current_N[A];
+		double current_1_real[A];
+		double current_2_real[A];
+		double current_N_real[A];
+		double current_1_reac[A];
+		double current_2_reac[A];
+		double current_N_reac[A];
+		complex current_12[A];
+		double current_12_real[A];
+		double current_12_reac[A];
+		complex residential_nominal_current_1[A];
+		complex residential_nominal_current_2[A];
+		complex residential_nominal_current_12[A];
+		double residential_nominal_current_1_real[A];
+		double residential_nominal_current_1_imag[A];
+		double residential_nominal_current_2_real[A];
+		double residential_nominal_current_2_imag[A];
+		double residential_nominal_current_12_real[A];
+		double residential_nominal_current_12_imag[A];
+		complex power_1[VA];
+		complex power_2[VA];
+		complex power_12[VA];
+		double power_1_real[W];
+		double power_2_real[W];
+		double power_12_real[W];
+		double power_1_reac[VAr];
+		double power_2_reac[VAr];
+		double power_12_reac[VAr];
+		complex shunt_1[S];
+		complex shunt_2[S];
+		complex shunt_12[S];
+		complex impedance_1[Ohm];
+		complex impedance_2[Ohm];
+		complex impedance_12[Ohm];
+		double impedance_1_real[Ohm];
+		double impedance_2_real[Ohm];
+		double impedance_12_real[Ohm];
+		double impedance_1_reac[Ohm];
+		double impedance_2_reac[Ohm];
+		double impedance_12_reac[Ohm];
+		bool house_present;
+		bool NR_mode;
+		enumeration {OUT_OF_SERVICE=0, IN_SERVICE=1} service_status; // In and out of service flag
+		double service_status_double; // In and out of service flag - type double - will indiscriminately override service_status - useful for schedules
+		double previous_uptime[min]; // Previous time between disconnects of node in minutes
+		double current_uptime[min]; // Current time since last disconnect of node in minutes
+	}
+
+	double measured_real_energy[Wh]; // metered real energy consumption
+	double measured_reactive_energy[VAh]; // metered reactive energy consumption
+	complex measured_power[VA]; // metered power
+	complex indiv_measured_power_1[VA]; // metered power, phase 1
+	complex indiv_measured_power_2[VA]; // metered power, phase 2
+	complex indiv_measured_power_N[VA]; // metered power, phase N
+	double measured_demand[W]; // metered demand (peak of power)
+	double measured_real_power[W]; // metered real power
+	double measured_reactive_power[VAr]; // metered reactive power
+	complex meter_power_consumption[VA]; // power consumed by meter operation
+	complex measured_voltage_1[V]; // measured voltage, phase 1 to ground
+	complex measured_voltage_2[V]; // measured voltage, phase 2 to ground
+	complex measured_voltage_N[V]; // measured voltage, phase N to ground
+	complex measured_current_1[A]; // measured current, phase 1
+	complex measured_current_2[A]; // measured current, phase 2
+	complex measured_current_N[A]; // measured current, phase N
+	bool customer_interrupted; // Reliability flag - goes active if the customer is in an interrupted state
+	bool customer_interrupted_secondary; // Reliability flag - goes active if the customer is in a secondary interrupted state - i.e., momentary
+	double monthly_bill; // Accumulator for the current month's bill
+	double previous_monthly_bill; // Total monthly bill for the previous month
+	double previous_monthly_energy[kWh]; // 
+	double monthly_fee; // Total monthly energy for the previous month
+	double monthly_energy[kWh]; // Accumulator for the current month's energy
+	enumeration {TIERED_RTP=4, HOURLY=3, TIERED=2, UNIFORM=1, NONE=0} bill_mode; // Designates the bill mode to be used
+	object power_market; // Designates the auction object where prices are read from for bill mode
+	int32 bill_day; // Day bill is to be processed (assumed to occur at midnight of that day)
+	double price; // Standard uniform pricing
+	double price_base; // Used only in TIERED_RTP mode to describe the price before the first tier
+	double first_tier_price; // first tier price of energy between first and second tier energy
+	double first_tier_energy[kWh]; // price of energy on tier above price or price base
+	double second_tier_price; // first tier price of energy between second and third tier energy
+	double second_tier_energy[kWh]; // price of energy on tier above first tier
+	double third_tier_price; // first tier price of energy greater than third tier energy
+	double third_tier_energy[kWh]; // price of energy on tier above second tier
+}
+

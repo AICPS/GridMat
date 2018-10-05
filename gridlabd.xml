@@ -1,0 +1,3673 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="http://www.gridlabd.org/gridlabd-3_0.xsl" type="text/xsl"?>
+<gridlabd>
+	<version.major>3</version.major>
+	<version.minor>0</version.minor>
+	<version.patch>0</version.patch>
+	<version.build>232</version.build>
+	<version.branch>Hassayampa</version.branch>
+	<command_line>"C:\Users\Ahourai\Documents\EVSE\EVSE-PROJECT\GridLAB-D\3.0\VS2005\x64\release\gridlabd evseexample.glm"</command_line>
+	<environment>batch</environment>
+	<quiet>FALSE</quiet>
+	<warn>TRUE</warn>
+	<debugger>FALSE</debugger>
+	<gdb>FALSE</gdb>
+	<debug>FALSE</debug>
+	<test>FALSE</test>
+	<verbose>FALSE</verbose>
+	<iteration_limit>100</iteration_limit>
+	<workdir>C:\Users\Ahourai\Documents\Temp\GridMat</workdir>
+	<dumpfile>gridlabd.xml</dumpfile>
+	<savefile>""</savefile>
+	<dumpall>FALSE</dumpall>
+	<runchecks>FALSE</runchecks>
+	<threadcount>1</threadcount>
+	<profiler>FALSE</profiler>
+	<pauseatexit>FALSE</pauseatexit>
+	<testoutputfile>test.txt</testoutputfile>
+	<xml_encoding>8</xml_encoding>
+	<clock>2010-07-05 14:36:26 PDT</clock>
+	<starttime>2010-07-05 00:00:00 PDT</starttime>
+	<stoptime>2010-07-06 00:00:00 PDT</stoptime>
+	<double_format>%+lg</double_format>
+	<complex_format>%+lg%+lg%c</complex_format>
+	<object_format>%s:%d</object_format>
+	<object_scan>%[^:]:%d</object_scan>
+	<object_tree_balance>FALSE</object_tree_balance>
+	<kmlfile>""</kmlfile>
+	<modelname>evseexample.glm</modelname>
+	<execdir>C:\Users\Ahourai\Documents\EVSE\EVSE-PROJECT\GridLAB-D\3.0\VS2005\x64\release</execdir>
+	<strictnames>TRUE</strictnames>
+	<website>http://www.gridlabd.org/</website>
+	<urlbase>http://www.gridlabd.org/</urlbase>
+	<randomseed>-685811272</randomseed>
+	<include>""</include>
+	<trace>""</trace>
+	<gdb_window>FALSE</gdb_window>
+	<tmp>C:\Users\Ahourai\AppData\Roaming\temp\gridlabd</tmp>
+	<force_compile>0</force_compile>
+	<nolocks>FALSE</nolocks>
+	<skipsafe>FALSE</skipsafe>
+	<dateformat>ISO</dateformat>
+	<init_sequence>CREATION</init_sequence>
+	<minimum_timestep>1</minimum_timestep>
+	<platform>WINDOWS</platform>
+	<suppress_repeat_messages>TRUE</suppress_repeat_messages>
+	<maximum_synctime>60</maximum_synctime>
+	<run_realtime>FALSE</run_realtime>
+	<no_deprecate>TRUE</no_deprecate>
+	<streaming_io>FALSE</streaming_io>
+	<compileonly>FALSE</compileonly>
+	<relax_naming_rules>FALSE</relax_naming_rules>
+	<browser>iexplore</browser>
+	<server_portnum>6267</server_portnum>
+	<server_quit_on_close>FALSE</server_quit_on_close>
+	<autoclean>TRUE</autoclean>
+	<technology_readiness_level>UNKNOWN</technology_readiness_level>
+	<show_progress>TRUE</show_progress>
+	<checkpoint_type>NONE</checkpoint_type>
+	<checkpoint_file>""</checkpoint_file>
+	<checkpoint_seqnum>0</checkpoint_seqnum>
+	<checkpoint_interval>0</checkpoint_interval>
+	<checkpoint_keepall>FALSE</checkpoint_keepall>
+	<check_version>FALSE</check_version>
+	<random_number_generator>RNG3</random_number_generator>
+	<mainloop_state>INIT</mainloop_state>
+	<pauseat>NEVER</pauseat>
+	<infourl>http://sourceforge.net/apps/mediawiki/gridlab-d/index.php?title=Special:Search/</infourl>
+	<hostname>localhost</hostname>
+	<hostaddr>127.0.0.1</hostaddr>
+	<autostart_gui>TRUE</autostart_gui>
+	<master>""</master>
+	<master_port>0</master_port>
+	<multirun_mode>STANDALONE</multirun_mode>
+	<multirun_conn>NONE</multirun_conn>
+	<signal_timeout>5000</signal_timeout>
+	<slave_port>6267</slave_port>
+	<slave_id>0</slave_id>
+	<return_code>0</return_code>
+	<module_compiler_flags>NONE</module_compiler_flags>
+	<init_max_defer>64</init_max_defer>
+	<mt_analysis>FALSE</mt_analysis>
+	<inline_block_size>1048576</inline_block_size>
+	<validate>TSTD|RALL</validate>
+	<sanitize>NAMES|POSITIONS</sanitize>
+	<sanitize_prefix>GLD_</sanitize_prefix>
+	<sanitize_index>.txt</sanitize_index>
+	<sanitize_offset>""</sanitize_offset>
+	<timezone>PST8PDT</timezone>
+	<sync-order>
+		<pass>
+			<name>pretopdown</name>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>TP_T_1_BS_646</name>
+					<id>6</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>TPL_1_T_1_BS_646</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>TPL_5_T_1_BS_646</name>
+					<id>39</id>
+				</object>
+				<object>
+					<name>TPL_4_T_1_BS_646</name>
+					<id>31</id>
+				</object>
+				<object>
+					<name>TPL_3_T_1_BS_646</name>
+					<id>23</id>
+				</object>
+				<object>
+					<name>TPL_2_T_1_BS_646</name>
+					<id>15</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>TM_2_T_1_BS_646</name>
+					<id>16</id>
+				</object>
+				<object>
+					<name>TM_5_T_1_BS_646</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>TM_4_T_1_BS_646</name>
+					<id>32</id>
+				</object>
+				<object>
+					<name>TM_1_T_1_BS_646</name>
+					<id>8</id>
+				</object>
+				<object>
+					<name>TM_3_T_1_BS_646</name>
+					<id>24</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>H_5_T_1_BS_646</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>H_4_T_1_BS_646</name>
+					<id>33</id>
+				</object>
+				<object>
+					<name>H_3_T_1_BS_646</name>
+					<id>25</id>
+				</object>
+				<object>
+					<name>H_2_T_1_BS_646</name>
+					<id>17</id>
+				</object>
+				<object>
+					<name>H_1_T_1_BS_646</name>
+					<id>9</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>1</ordinal>
+				<object>
+					<name>MyClimate</name>
+					<id>0</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>(waterheater:36)</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>(waterheater:28)</name>
+					<id>28</id>
+				</object>
+				<object>
+					<name>(waterheater:44)</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>(waterheater:20)</name>
+					<id>20</id>
+				</object>
+				<object>
+					<name>(waterheater:12)</name>
+					<id>12</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>bottomup</name>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>(lights:26)</name>
+					<id>26</id>
+				</object>
+				<object>
+					<name>(lights:34)</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>(ZIPload:35)</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>(ZIPload:43)</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>(ZIPload:27)</name>
+					<id>27</id>
+				</object>
+				<object>
+					<name>(ZIPload:11)</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>(waterheater:20)</name>
+					<id>20</id>
+				</object>
+				<object>
+					<name>(waterheater:36)</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>(waterheater:28)</name>
+					<id>28</id>
+				</object>
+				<object>
+					<name>(waterheater:44)</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>(waterheater:12)</name>
+					<id>12</id>
+				</object>
+				<object>
+					<name>(lights:42)</name>
+					<id>42</id>
+				</object>
+				<object>
+					<name>(lights:10)</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>(lights:18)</name>
+					<id>18</id>
+				</object>
+				<object>
+					<name>(ZIPload:19)</name>
+					<id>19</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>H_4_T_1_BS_646</name>
+					<id>33</id>
+				</object>
+				<object>
+					<name>H_1_T_1_BS_646</name>
+					<id>9</id>
+				</object>
+				<object>
+					<name>H_5_T_1_BS_646</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>H_3_T_1_BS_646</name>
+					<id>25</id>
+				</object>
+				<object>
+					<name>H_2_T_1_BS_646</name>
+					<id>17</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>TM_4_T_1_BS_646</name>
+					<id>32</id>
+				</object>
+				<object>
+					<name>TM_2_T_1_BS_646</name>
+					<id>16</id>
+				</object>
+				<object>
+					<name>TM_3_T_1_BS_646</name>
+					<id>24</id>
+				</object>
+				<object>
+					<name>TM_5_T_1_BS_646</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>TM_1_T_1_BS_646</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>TPL_5_T_1_BS_646</name>
+					<id>39</id>
+				</object>
+				<object>
+					<name>TPL_3_T_1_BS_646</name>
+					<id>23</id>
+				</object>
+				<object>
+					<name>TPL_2_T_1_BS_646</name>
+					<id>15</id>
+				</object>
+				<object>
+					<name>TPL_1_T_1_BS_646</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>TPL_4_T_1_BS_646</name>
+					<id>31</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>TP_T_1_BS_646</name>
+					<id>6</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>posttopdown</name>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>TP_T_1_BS_646</name>
+					<id>6</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>TPL_4_T_1_BS_646</name>
+					<id>31</id>
+				</object>
+				<object>
+					<name>TPL_1_T_1_BS_646</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>TPL_5_T_1_BS_646</name>
+					<id>39</id>
+				</object>
+				<object>
+					<name>TPL_2_T_1_BS_646</name>
+					<id>15</id>
+				</object>
+				<object>
+					<name>TPL_3_T_1_BS_646</name>
+					<id>23</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>TM_3_T_1_BS_646</name>
+					<id>24</id>
+				</object>
+				<object>
+					<name>TM_1_T_1_BS_646</name>
+					<id>8</id>
+				</object>
+				<object>
+					<name>TM_2_T_1_BS_646</name>
+					<id>16</id>
+				</object>
+				<object>
+					<name>TM_5_T_1_BS_646</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>TM_4_T_1_BS_646</name>
+					<id>32</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>H_1_T_1_BS_646</name>
+					<id>9</id>
+				</object>
+				<object>
+					<name>H_3_T_1_BS_646</name>
+					<id>25</id>
+				</object>
+				<object>
+					<name>H_4_T_1_BS_646</name>
+					<id>33</id>
+				</object>
+				<object>
+					<name>H_5_T_1_BS_646</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>H_2_T_1_BS_646</name>
+					<id>17</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>1</ordinal>
+				<object>
+					<name>EV_H_2_T_1_BS_646</name>
+					<id>21</id>
+				</object>
+				<object>
+					<name>EV_H_1_T_1_BS_646</name>
+					<id>13</id>
+				</object>
+				<object>
+					<name>EV_H_5_T_1_BS_646</name>
+					<id>45</id>
+				</object>
+				<object>
+					<name>EV_H_3_T_1_BS_646</name>
+					<id>29</id>
+				</object>
+				<object>
+					<name>EV_H_4_T_1_BS_646</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>(recorder:1)</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>(recorder:30)</name>
+					<id>30</id>
+				</object>
+				<object>
+					<name>(waterheater:28)</name>
+					<id>28</id>
+				</object>
+				<object>
+					<name>(recorder:46)</name>
+					<id>46</id>
+				</object>
+				<object>
+					<name>(waterheater:36)</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>(waterheater:20)</name>
+					<id>20</id>
+				</object>
+				<object>
+					<name>(waterheater:44)</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>(recorder:22)</name>
+					<id>22</id>
+				</object>
+				<object>
+					<name>(recorder:38)</name>
+					<id>38</id>
+				</object>
+				<object>
+					<name>(multi_recorder:47)</name>
+					<id>47</id>
+				</object>
+				<object>
+					<name>(waterheater:12)</name>
+					<id>12</id>
+				</object>
+				<object>
+					<name>(recorder:14)</name>
+					<id>14</id>
+				</object>
+				<object>
+					<name>(multi_recorder:48)</name>
+					<id>48</id>
+				</object>
+			</rank>
+		</pass>
+	</sync-order>
+	<tape>
+		<version.major>3</version.major>
+		<version.minor>0</version.minor>
+		<player_list>
+		</player_list>
+		<shaper_list>
+		</shaper_list>
+		<recorder_list>
+			<recorder>
+				<id>1</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>MyClimate</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:1)</name>
+				<property>temperature,solar_diffuse</property>
+				<trigger>""</trigger>
+				<file>climate_out.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>38880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+			<recorder>
+				<id>14</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>EV_H_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:14)</name>
+				<property>power,charge_current,battery_SOC</property>
+				<trigger>""</trigger>
+				<file>ev1_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+			<recorder>
+				<id>22</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>EV_H_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:22)</name>
+				<property>power,charge_current,battery_SOC</property>
+				<trigger>""</trigger>
+				<file>ev2_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+			<recorder>
+				<id>30</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>EV_H_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:30)</name>
+				<property>power,charge_current,battery_SOC</property>
+				<trigger>""</trigger>
+				<file>ev3_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+			<recorder>
+				<id>38</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>EV_H_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:38)</name>
+				<property>power,charge_current,battery_SOC</property>
+				<trigger>""</trigger>
+				<file>ev4_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+			<recorder>
+				<id>46</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>EV_H_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(recorder:46)</name>
+				<property>power,charge_current,battery_SOC</property>
+				<trigger>""</trigger>
+				<file>ev5_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<interval>+60 s</interval>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</recorder>
+		</recorder_list>
+		<multi_recorder_list>
+			<multi_recorder>
+				<id>47</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(multi_recorder:47)</name>
+				<interval>+60 s</interval>
+				<property>TP_T_1_BS_646:measured_power,H_1_T_1_BS_646:panel.power,EV_H_1_T_1_BS_646:power,H_2_T_1_BS_646:panel.power,EV_H_2_T_1_BS_646:power,H_3_T_1_BS_646:panel.power,EV_H_3_T_1_BS_646:power,H_4_T_1_BS_646:panel.power,EV_H_4_T_1_BS_646:power,H_5_T_1_BS_646:panel.power,EV_H_5_T_1_BS_646:power</property>
+				<trigger>""</trigger>
+				<file>ev_status.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</multi_recorder>
+			<multi_recorder>
+				<id>48</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(multi_recorder:48)</name>
+				<interval>+60 s</interval>
+				<property>EV_H_1_T_1_BS_646:time_to_leave_home,EV_H_1_T_1_BS_646:battery_capacity,EV_H_2_T_1_BS_646:time_to_leave_home,EV_H_2_T_1_BS_646:battery_capacity,EV_H_3_T_1_BS_646:time_to_leave_home,EV_H_3_T_1_BS_646:battery_capacity,EV_H_4_T_1_BS_646:time_to_leave_home,EV_H_4_T_1_BS_646:battery_capacity,EV_H_5_T_1_BS_646:time_to_leave_home,EV_H_5_T_1_BS_646:battery_capacity</property>
+				<trigger>""</trigger>
+				<file>ev_demand.csv</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<multifile>""</multifile>
+				<limit>88880</limit>
+				<plotcommands>""</plotcommands>
+				<xdata>""</xdata>
+				<columns>""</columns>
+				<output>SCREEN</output>
+				<header_units>DEFAULT</header_units>
+				<line_units>DEFAULT</line_units>
+			</multi_recorder>
+		</multi_recorder_list>
+		<collector_list>
+		</collector_list>
+		<histogram_list>
+		</histogram_list>
+		<group_recorder_list>
+		</group_recorder_list>
+	</tape>
+	<climate>
+		<version.major>3</version.major>
+		<version.minor>0</version.minor>
+		<climate_list>
+			<climate>
+				<id>0</id>
+				<rank>1</rank>
+				<latitude>41.783333</latitude>
+				<longitude>87.750000</longitude>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>MyClimate</name>
+				<solar_elevation>-0.759154</solar_elevation>
+				<solar_azimuth>+2.16091</solar_azimuth>
+				<city>""</city>
+				<tmyfile>IL-Chicago.tmy2</tmyfile>
+				<temperature>+77.002 degF</temperature>
+				<humidity>+0.42 %</humidity>
+				<solar_flux>+68.582 W/sf</solar_flux>
+				<solar_direct>+74.6011 W/sf</solar_direct>
+				<solar_diffuse>+13.8426 W/sf</solar_diffuse>
+				<solar_global>+73.2076 W/sf</solar_global>
+				<extraterrestrial_direct_normal>+122.725 W/sf</extraterrestrial_direct_normal>
+				<pressure>+995 mbar</pressure>
+				<wind_speed>+4.69757 mph</wind_speed>
+				<wind_dir>+0 deg</wind_dir>
+				<wind_gust>+0 mph</wind_gust>
+				<record.low>-9.038 degF</record.low>
+				<record.low_day>0</record.low_day>
+				<record.high>+96.082 degF</record.high>
+				<record.high_day>0</record.high_day>
+				<record.solar>+89.8171 W/sf</record.solar>
+				<rainfall>+0.82677 in/h</rainfall>
+				<snowdepth>+0 in</snowdepth>
+				<interpolate>NONE</interpolate>
+				<solar_horiz>+68.582</solar_horiz>
+				<solar_north>+13.8426</solar_north>
+				<solar_northeast>+13.8426</solar_northeast>
+				<solar_east>+13.8426</solar_east>
+				<solar_southeast>+13.8426</solar_southeast>
+				<solar_south>+23.9934</solar_south>
+				<solar_southwest>+56.1336</solar_southwest>
+				<solar_west>+63.5002</solar_west>
+				<solar_northwest>+41.7781</solar_northwest>
+				<solar_raw>+74.6011 W/sf</solar_raw>
+				<ground_reflectivity>+0.3 pu</ground_reflectivity>
+				<forecast>""</forecast>
+			</climate>
+		</climate_list>
+		<weather_list>
+		</weather_list>
+		<csv_reader_list>
+		</csv_reader_list>
+	</climate>
+	<residential>
+		<version.major>3</version.major>
+		<version.minor>0</version.minor>
+		<residential_enduse_list>
+		</residential_enduse_list>
+		<appliance_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</appliance_list>
+		<house_list>
+			<inherits_from>residential_enduse</inherits_from>
+			<house>
+				<id>9</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TM_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>H_1_T_1_BS_646</name>
+				<weather>MyClimate</weather>
+				<floor_area>+980 sf</floor_area>
+				<gross_wall_area>+1022.42 sf</gross_wall_area>
+				<ceiling_height>+8 ft</ceiling_height>
+				<aspect_ratio>+1.5</aspect_ratio>
+				<envelope_UA>+274.177 Btu/degF</envelope_UA>
+				<window_wall_ratio>+0.15</window_wall_ratio>
+				<number_of_doors>+4</number_of_doors>
+				<exterior_wall_fraction>+1</exterior_wall_fraction>
+				<interior_exterior_wall_ratio>+1.5</interior_exterior_wall_ratio>
+				<exterior_ceiling_fraction>+1</exterior_ceiling_fraction>
+				<exterior_floor_fraction>+1</exterior_floor_fraction>
+				<window_shading>+0.67</window_shading>
+				<window_exterior_transmission_coefficient>+0.6</window_exterior_transmission_coefficient>
+				<solar_heatgain_factor>+61.6517</solar_heatgain_factor>
+				<airchange_per_hour>+1</airchange_per_hour>
+				<airchange_UA>+138.413 Btu/degF</airchange_UA>
+				<UA>+412.59 Btu/degF</UA>
+				<internal_gain>+1829.99 Btu/h</internal_gain>
+				<solar_gain>+6331.05 Btu/h</solar_gain>
+				<incident_solar_radiation>+102.691 Btu/h</incident_solar_radiation>
+				<heat_cool_gain>+0 Btu/h</heat_cool_gain>
+				<include_solar_quadrant>W|S|E|N</include_solar_quadrant>
+				<horizontal_diffuse_solar_radiation>+234.002 Btu/h</horizontal_diffuse_solar_radiation>
+				<north_incident_solar_radiation>+47.2308 Btu/h</north_incident_solar_radiation>
+				<northwest_incident_solar_radiation>+142.547 Btu/h</northwest_incident_solar_radiation>
+				<west_incident_solar_radiation>+216.663 Btu/h</west_incident_solar_radiation>
+				<southwest_incident_solar_radiation>+191.528 Btu/h</southwest_incident_solar_radiation>
+				<south_incident_solar_radiation>+81.8656 Btu/h</south_incident_solar_radiation>
+				<southeast_incident_solar_radiation>+47.2308 Btu/h</southeast_incident_solar_radiation>
+				<east_incident_solar_radiation>+47.2308 Btu/h</east_incident_solar_radiation>
+				<northeast_incident_solar_radiation>+47.2308 Btu/h</northeast_incident_solar_radiation>
+				<heating_cop_curve>DEFAULT</heating_cop_curve>
+				<heating_cap_curve>DEFAULT</heating_cap_curve>
+				<cooling_cop_curve>DEFAULT</cooling_cop_curve>
+				<cooling_cap_curve>DEFAULT</cooling_cap_curve>
+				<use_latent_heat>TRUE</use_latent_heat>
+				<include_fan_heatgain>TRUE</include_fan_heatgain>
+				<thermostat_deadband>+2 degF</thermostat_deadband>
+				<dlc_offset>+0 degF</dlc_offset>
+				<thermostat_cycle_time>120</thermostat_cycle_time>
+				<thermostat_off_cycle_time>-1</thermostat_off_cycle_time>
+				<thermostat_on_cycle_time>-1</thermostat_on_cycle_time>
+				<thermostat_last_cycle_time>2010-07-05 14:32:59 PDT</thermostat_last_cycle_time>
+				<heating_setpoint>+60 degF</heating_setpoint>
+				<cooling_setpoint>+80 degF</cooling_setpoint>
+				<design_heating_setpoint>+70 degF</design_heating_setpoint>
+				<design_cooling_setpoint>+75 degF</design_cooling_setpoint>
+				<over_sizing_factor>+0</over_sizing_factor>
+				<design_heating_capacity>+40000 Btu/h</design_heating_capacity>
+				<design_cooling_capacity>+36000 Btu/h</design_cooling_capacity>
+				<cooling_design_temperature>+96.082 degF</cooling_design_temperature>
+				<heating_design_temperature>-9.038 degF</heating_design_temperature>
+				<design_peak_solar>+195 Btu/h</design_peak_solar>
+				<design_internal_gains>+3508.1 W/sf</design_internal_gains>
+				<air_heat_fraction>+0 pu</air_heat_fraction>
+				<mass_solar_gain_fraction>+0.5 pu</mass_solar_gain_fraction>
+				<mass_internal_gain_fraction>+0.5 pu</mass_internal_gain_fraction>
+				<auxiliary_heat_capacity>+40000 Btu/h</auxiliary_heat_capacity>
+				<aux_heat_deadband>+2 degF</aux_heat_deadband>
+				<aux_heat_temperature_lockout>+10 degF</aux_heat_temperature_lockout>
+				<aux_heat_time_delay>+300 s</aux_heat_time_delay>
+				<cooling_supply_air_temp>+50 degF</cooling_supply_air_temp>
+				<heating_supply_air_temp>+150 degF</heating_supply_air_temp>
+				<duct_pressure_drop>+0.5 inH2O</duct_pressure_drop>
+				<fan_design_power>+211.847 W</fan_design_power>
+				<fan_low_power_fraction>+0 pu</fan_low_power_fraction>
+				<fan_power>+0 kW</fan_power>
+				<fan_design_airflow>+1045.7 cfm</fan_design_airflow>
+				<fan_impedance_fraction>+0.2534 pu</fan_impedance_fraction>
+				<fan_power_fraction>+0.0135 pu</fan_power_fraction>
+				<fan_current_fraction>+0.7332 pu</fan_current_fraction>
+				<fan_power_factor>+0.96 pu</fan_power_factor>
+				<heating_demand>+0</heating_demand>
+				<cooling_demand>+2.66142</cooling_demand>
+				<heating_COP>+2.5 pu</heating_COP>
+				<cooling_COP>+3.5 Btu/kWh</cooling_COP>
+				<air_temperature>+80.2639 degF</air_temperature>
+				<outdoor_temperature>+77.002 degF</outdoor_temperature>
+				<outdoor_rh>+42 %</outdoor_rh>
+				<mass_heat_capacity>+1683.17 Btu/degF</mass_heat_capacity>
+				<mass_heat_coeff>+4824.83 Btu/degF</mass_heat_coeff>
+				<mass_temperature>+80.9755 degF</mass_temperature>
+				<air_volume>+7840 cf</air_volume>
+				<air_mass>+576.24 lb</air_mass>
+				<air_heat_capacity>+415.239 Btu/degF</air_heat_capacity>
+				<latent_load_fraction>+0.3 pu</latent_load_fraction>
+				<total_thermal_mass_per_floor_area>+2 Btu/degF</total_thermal_mass_per_floor_area>
+				<interior_surface_heat_transfer_coeff>+1.46 Btu/h</interior_surface_heat_transfer_coeff>
+				<number_of_stories>+1</number_of_stories>
+				<is_AUX_on>+0</is_AUX_on>
+				<is_HEAT_on>+0</is_HEAT_on>
+				<is_COOL_on>+0</is_COOL_on>
+				<thermal_storage_present>+0</thermal_storage_present>
+				<thermal_storage_in_use>+0</thermal_storage_in_use>
+				<auxiliary_strategy>NONE</auxiliary_strategy>
+				<system_mode>OFF</system_mode>
+				<last_system_mode>OFF</last_system_mode>
+				<heating_system_type>GAS</heating_system_type>
+				<cooling_system_type>HEAT_PUMP</cooling_system_type>
+				<auxiliary_system_type>0</auxiliary_system_type>
+				<fan_type>ONE_SPEED</fan_type>
+				<thermal_integrity_level>NORMAL</thermal_integrity_level>
+				<glass_type>LOW_E_GLASS</glass_type>
+				<window_frame>THERMAL_BREAK</window_frame>
+				<glazing_treatment>CLEAR</glazing_treatment>
+				<glazing_layers>TWO</glazing_layers>
+				<motor_model>NONE</motor_model>
+				<motor_efficiency>AVERAGE</motor_efficiency>
+				<last_mode_timer>21600</last_mode_timer>
+				<hvac_motor_efficiency>+1 unit</hvac_motor_efficiency>
+				<hvac_motor_loss_power_factor>+0.125 unit</hvac_motor_loss_power_factor>
+				<Rroof>+30 degF</Rroof>
+				<Rwall>+11 degF</Rwall>
+				<Rfloor>+19 degF</Rfloor>
+				<Rwindows>+1.66667 degF</Rwindows>
+				<Rdoors>+3 degF</Rdoors>
+				<hvac_breaker_rating>+200 A</hvac_breaker_rating>
+				<hvac_power_factor>+0 unit</hvac_power_factor>
+				<hvac_load>+0</hvac_load>
+				<last_heating_load>+0</last_heating_load>
+				<last_cooling_load>+2.87311</last_cooling_load>
+				<hvac_power>+0+0j</hvac_power>
+				<total_load>+0.581052</total_load>
+				<panel>power_factor: 0.000000; power.r: 0.410676; power.i: 0.099531</panel>
+				<panel.energy>+10.9549+1.33405i kVAh</panel.energy>
+				<panel.power>+0.572464+0.0995311j kVA</panel.power>
+				<panel.peak_demand>+0+0i kVA</panel.peak_demand>
+				<panel.heatgain>+1829.99 Btu/h</panel.heatgain>
+				<panel.heatgain_fraction>+0 pu</panel.heatgain_fraction>
+				<panel.current_fraction>+0 pu</panel.current_fraction>
+				<panel.impedance_fraction>+0 pu</panel.impedance_fraction>
+				<panel.power_fraction>+0 pu</panel.power_fraction>
+				<panel.power_factor>+0</panel.power_factor>
+				<panel.constant_power>+0.410676+0.0995311j kVA</panel.constant_power>
+				<panel.constant_current>+0.080894+0j kVA</panel.constant_current>
+				<panel.constant_admittance>+0.080894+0j kVA</panel.constant_admittance>
+				<panel.voltage_factor>+0 pu</panel.voltage_factor>
+				<panel.breaker_amps>+0 A</panel.breaker_amps>
+				<design_internal_gain_density>+0.6 W/sf</design_internal_gain_density>
+				<compressor_on>FALSE</compressor_on>
+				<compressor_count>19</compressor_count>
+				<hvac_last_on>2010-07-05 14:30:42 PDT</hvac_last_on>
+				<hvac_last_off>2010-07-05 14:32:59 PDT</hvac_last_off>
+				<hvac_period_length>+10.1167</hvac_period_length>
+				<hvac_duty_cycle>+0.2257</hvac_duty_cycle>
+				<a>+144.859</a>
+				<b>+2242.35</b>
+				<c>+412.59</c>
+				<d>+39931.3</d>
+				<c1>-12.613</c1>
+				<c2>+11.6194</c2>
+				<A3>+1.06949</A3>
+				<A4>-0.230671</A4>
+				<k1>-15.7385</k1>
+				<k2>-0.779596</k2>
+				<r1>-0.18624</r1>
+				<r2>-15.2933</r2>
+				<Teq>+96.782</Teq>
+				<Tevent>+81</Tevent>
+				<Qi>+1829.99</Qi>
+				<Qa>+4080.52</Qa>
+				<Qm>+4080.52</Qm>
+				<Qh>+0</Qh>
+				<Qlatent>+0</Qlatent>
+				<dTair>+14.8537</dTair>
+				<adj_cooling_cap>+39336.8</adj_cooling_cap>
+				<adj_heating_cap>+66782.4</adj_heating_cap>
+				<adj_cooling_cop>+4.33188</adj_cooling_cop>
+				<adj_heating_cop>+3.09097</adj_heating_cop>
+				<thermostat_control>FULL</thermostat_control>
+				<shape>Èëƒ</shape>
+				<load>impedance_fraction: 0.200000; power_fraction: 0.800000; power_factor: 0.970000; power.r: 0.000000</load>
+				<energy>+2.00709+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0.2 pu</impedance_fraction>
+				<power_fraction>+0.8 pu</power_fraction>
+				<power_factor>+0.97</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999977 pu</voltage_factor>
+				<breaker_amps>+200 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</house>
+			<house>
+				<id>17</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TM_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>H_2_T_1_BS_646</name>
+				<weather>MyClimate</weather>
+				<floor_area>+1034 sf</floor_area>
+				<gross_wall_area>+1050.21 sf</gross_wall_area>
+				<ceiling_height>+8 ft</ceiling_height>
+				<aspect_ratio>+1.5</aspect_ratio>
+				<envelope_UA>+283.468 Btu/degF</envelope_UA>
+				<window_wall_ratio>+0.15</window_wall_ratio>
+				<number_of_doors>+4</number_of_doors>
+				<exterior_wall_fraction>+1</exterior_wall_fraction>
+				<interior_exterior_wall_ratio>+1.5</interior_exterior_wall_ratio>
+				<exterior_ceiling_fraction>+1</exterior_ceiling_fraction>
+				<exterior_floor_fraction>+1</exterior_floor_fraction>
+				<window_shading>+0.67</window_shading>
+				<window_exterior_transmission_coefficient>+0.6</window_exterior_transmission_coefficient>
+				<solar_heatgain_factor>+63.3274</solar_heatgain_factor>
+				<airchange_per_hour>+1</airchange_per_hour>
+				<airchange_UA>+146.04 Btu/degF</airchange_UA>
+				<UA>+429.507 Btu/degF</UA>
+				<internal_gain>+2668.01 Btu/h</internal_gain>
+				<solar_gain>+6503.14 Btu/h</solar_gain>
+				<incident_solar_radiation>+102.691 Btu/h</incident_solar_radiation>
+				<heat_cool_gain>+0 Btu/h</heat_cool_gain>
+				<include_solar_quadrant>W|S|E|N</include_solar_quadrant>
+				<horizontal_diffuse_solar_radiation>+234.002 Btu/h</horizontal_diffuse_solar_radiation>
+				<north_incident_solar_radiation>+47.2308 Btu/h</north_incident_solar_radiation>
+				<northwest_incident_solar_radiation>+142.547 Btu/h</northwest_incident_solar_radiation>
+				<west_incident_solar_radiation>+216.663 Btu/h</west_incident_solar_radiation>
+				<southwest_incident_solar_radiation>+191.528 Btu/h</southwest_incident_solar_radiation>
+				<south_incident_solar_radiation>+81.8656 Btu/h</south_incident_solar_radiation>
+				<southeast_incident_solar_radiation>+47.2308 Btu/h</southeast_incident_solar_radiation>
+				<east_incident_solar_radiation>+47.2308 Btu/h</east_incident_solar_radiation>
+				<northeast_incident_solar_radiation>+47.2308 Btu/h</northeast_incident_solar_radiation>
+				<heating_cop_curve>DEFAULT</heating_cop_curve>
+				<heating_cap_curve>DEFAULT</heating_cap_curve>
+				<cooling_cop_curve>DEFAULT</cooling_cop_curve>
+				<cooling_cap_curve>DEFAULT</cooling_cap_curve>
+				<use_latent_heat>TRUE</use_latent_heat>
+				<include_fan_heatgain>TRUE</include_fan_heatgain>
+				<thermostat_deadband>+2 degF</thermostat_deadband>
+				<dlc_offset>+0 degF</dlc_offset>
+				<thermostat_cycle_time>120</thermostat_cycle_time>
+				<thermostat_off_cycle_time>-1</thermostat_off_cycle_time>
+				<thermostat_on_cycle_time>-1</thermostat_on_cycle_time>
+				<thermostat_last_cycle_time>2010-07-05 14:33:59 PDT</thermostat_last_cycle_time>
+				<heating_setpoint>+60 degF</heating_setpoint>
+				<cooling_setpoint>+70 degF</cooling_setpoint>
+				<design_heating_setpoint>+70 degF</design_heating_setpoint>
+				<design_cooling_setpoint>+75 degF</design_cooling_setpoint>
+				<over_sizing_factor>+0</over_sizing_factor>
+				<design_heating_capacity>+40000 Btu/h</design_heating_capacity>
+				<design_cooling_capacity>+36000 Btu/h</design_cooling_capacity>
+				<cooling_design_temperature>+96.082 degF</cooling_design_temperature>
+				<heating_design_temperature>-9.038 degF</heating_design_temperature>
+				<design_peak_solar>+195 Btu/h</design_peak_solar>
+				<design_internal_gains>+3592.27 W/sf</design_internal_gains>
+				<air_heat_fraction>+0 pu</air_heat_fraction>
+				<mass_solar_gain_fraction>+0.5 pu</mass_solar_gain_fraction>
+				<mass_internal_gain_fraction>+0.5 pu</mass_internal_gain_fraction>
+				<auxiliary_heat_capacity>+40000 Btu/h</auxiliary_heat_capacity>
+				<aux_heat_deadband>+2 degF</aux_heat_deadband>
+				<aux_heat_temperature_lockout>+10 degF</aux_heat_temperature_lockout>
+				<aux_heat_time_delay>+300 s</aux_heat_time_delay>
+				<cooling_supply_air_temp>+50 degF</cooling_supply_air_temp>
+				<heating_supply_air_temp>+150 degF</heating_supply_air_temp>
+				<duct_pressure_drop>+0.5 inH2O</duct_pressure_drop>
+				<fan_design_power>+211.847 W</fan_design_power>
+				<fan_low_power_fraction>+0 pu</fan_low_power_fraction>
+				<fan_power>+0 kW</fan_power>
+				<fan_design_airflow>+1045.7 cfm</fan_design_airflow>
+				<fan_impedance_fraction>+0.2534 pu</fan_impedance_fraction>
+				<fan_power_fraction>+0.0135 pu</fan_power_fraction>
+				<fan_current_fraction>+0.7332 pu</fan_current_fraction>
+				<fan_power_factor>+0.96 pu</fan_power_factor>
+				<heating_demand>+0</heating_demand>
+				<cooling_demand>+2.66142</cooling_demand>
+				<heating_COP>+2.5 pu</heating_COP>
+				<cooling_COP>+3.5 Btu/kWh</cooling_COP>
+				<air_temperature>+70.2884 degF</air_temperature>
+				<outdoor_temperature>+77.002 degF</outdoor_temperature>
+				<outdoor_rh>+42 %</outdoor_rh>
+				<mass_heat_capacity>+1775.92 Btu/degF</mass_heat_capacity>
+				<mass_heat_coeff>+4999.02 Btu/degF</mass_heat_coeff>
+				<mass_temperature>+70.9245 degF</mass_temperature>
+				<air_volume>+8272 cf</air_volume>
+				<air_mass>+607.992 lb</air_mass>
+				<air_heat_capacity>+438.119 Btu/degF</air_heat_capacity>
+				<latent_load_fraction>+0.3 pu</latent_load_fraction>
+				<total_thermal_mass_per_floor_area>+2 Btu/degF</total_thermal_mass_per_floor_area>
+				<interior_surface_heat_transfer_coeff>+1.46 Btu/h</interior_surface_heat_transfer_coeff>
+				<number_of_stories>+1</number_of_stories>
+				<is_AUX_on>+0</is_AUX_on>
+				<is_HEAT_on>+0</is_HEAT_on>
+				<is_COOL_on>+0</is_COOL_on>
+				<thermal_storage_present>+0</thermal_storage_present>
+				<thermal_storage_in_use>+0</thermal_storage_in_use>
+				<auxiliary_strategy>NONE</auxiliary_strategy>
+				<system_mode>OFF</system_mode>
+				<last_system_mode>OFF</last_system_mode>
+				<heating_system_type>GAS</heating_system_type>
+				<cooling_system_type>HEAT_PUMP</cooling_system_type>
+				<auxiliary_system_type>0</auxiliary_system_type>
+				<fan_type>ONE_SPEED</fan_type>
+				<thermal_integrity_level>NORMAL</thermal_integrity_level>
+				<glass_type>LOW_E_GLASS</glass_type>
+				<window_frame>THERMAL_BREAK</window_frame>
+				<glazing_treatment>CLEAR</glazing_treatment>
+				<glazing_layers>TWO</glazing_layers>
+				<motor_model>NONE</motor_model>
+				<motor_efficiency>AVERAGE</motor_efficiency>
+				<last_mode_timer>21600</last_mode_timer>
+				<hvac_motor_efficiency>+1 unit</hvac_motor_efficiency>
+				<hvac_motor_loss_power_factor>+0.125 unit</hvac_motor_loss_power_factor>
+				<Rroof>+30 degF</Rroof>
+				<Rwall>+11 degF</Rwall>
+				<Rfloor>+19 degF</Rfloor>
+				<Rwindows>+1.66667 degF</Rwindows>
+				<Rdoors>+3 degF</Rdoors>
+				<hvac_breaker_rating>+200 A</hvac_breaker_rating>
+				<hvac_power_factor>+0 unit</hvac_power_factor>
+				<hvac_load>+0</hvac_load>
+				<last_heating_load>+0</last_heating_load>
+				<last_cooling_load>+2.87144</last_cooling_load>
+				<hvac_power>+0+0j</hvac_power>
+				<total_load>+0.841065</total_load>
+				<panel>power_factor: 0.000000; power.r: 0.566664; power.i: 0.128282</panel>
+				<panel.energy>+24.1601+1.70883i kVAh</panel.energy>
+				<panel.power>+0.831225+0.128282j kVA</panel.power>
+				<panel.peak_demand>+0+0i kVA</panel.peak_demand>
+				<panel.heatgain>+2668.01 Btu/h</panel.heatgain>
+				<panel.heatgain_fraction>+0 pu</panel.heatgain_fraction>
+				<panel.current_fraction>+0 pu</panel.current_fraction>
+				<panel.impedance_fraction>+0 pu</panel.impedance_fraction>
+				<panel.power_fraction>+0 pu</panel.power_fraction>
+				<panel.power_factor>+0</panel.power_factor>
+				<panel.constant_power>+0.566664+0.128282j kVA</panel.constant_power>
+				<panel.constant_current>+0.13228+0j kVA</panel.constant_current>
+				<panel.constant_admittance>+0.13228+0j kVA</panel.constant_admittance>
+				<panel.voltage_factor>+0 pu</panel.voltage_factor>
+				<panel.breaker_amps>+0 A</panel.breaker_amps>
+				<design_internal_gain_density>+0.6 W/sf</design_internal_gain_density>
+				<compressor_on>FALSE</compressor_on>
+				<compressor_count>51</compressor_count>
+				<hvac_last_on>2010-07-05 14:30:55 PDT</hvac_last_on>
+				<hvac_last_off>2010-07-05 14:33:59 PDT</hvac_last_off>
+				<hvac_period_length>+7.66667</hvac_period_length>
+				<hvac_duty_cycle>+0.4</hvac_duty_cycle>
+				<a>+155.643</a>
+				<b>+2366.62</b>
+				<c>+429.507</c>
+				<d>+42244.1</d>
+				<c1>-12.3905</c1>
+				<c2>+11.4102</c2>
+				<A3>+1.06982</A3>
+				<A4>-0.2306</A4>
+				<k1>-26.7757</k1>
+				<k2>-1.29059</k2>
+				<r1>-0.183705</r1>
+				<r2>-15.0217</r2>
+				<Teq>+98.3547</Teq>
+				<Tevent>+71</Tevent>
+				<Qi>+2668.01</Qi>
+				<Qa>+4585.57</Qa>
+				<Qm>+4585.57</Qm>
+				<Qh>+0</Qh>
+				<Qlatent>+0</Qlatent>
+				<dTair>+24.3058</dTair>
+				<adj_cooling_cap>+39336.8</adj_cooling_cap>
+				<adj_heating_cap>+66782.4</adj_heating_cap>
+				<adj_cooling_cop>+4.33188</adj_cooling_cop>
+				<adj_heating_cop>+3.09097</adj_heating_cop>
+				<thermostat_control>FULL</thermostat_control>
+				<shape>FULL</shape>
+				<load>impedance_fraction: 0.200000; power_fraction: 0.800000; power_factor: 0.970000; power.r: 0.000000</load>
+				<energy>+6.74467+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0.2 pu</impedance_fraction>
+				<power_fraction>+0.8 pu</power_fraction>
+				<power_factor>+0.97</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999815 pu</voltage_factor>
+				<breaker_amps>+200 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</house>
+			<house>
+				<id>25</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TM_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>H_3_T_1_BS_646</name>
+				<weather>MyClimate</weather>
+				<floor_area>+1220 sf</floor_area>
+				<gross_wall_area>+1140.76 sf</gross_wall_area>
+				<ceiling_height>+8 ft</ceiling_height>
+				<aspect_ratio>+1.5</aspect_ratio>
+				<envelope_UA>+314.604 Btu/degF</envelope_UA>
+				<window_wall_ratio>+0.15</window_wall_ratio>
+				<number_of_doors>+4</number_of_doors>
+				<exterior_wall_fraction>+1</exterior_wall_fraction>
+				<interior_exterior_wall_ratio>+1.5</interior_exterior_wall_ratio>
+				<exterior_ceiling_fraction>+1</exterior_ceiling_fraction>
+				<exterior_floor_fraction>+1</exterior_floor_fraction>
+				<window_shading>+0.67</window_shading>
+				<window_exterior_transmission_coefficient>+0.6</window_exterior_transmission_coefficient>
+				<solar_heatgain_factor>+68.7878</solar_heatgain_factor>
+				<airchange_per_hour>+1</airchange_per_hour>
+				<airchange_UA>+172.31 Btu/degF</airchange_UA>
+				<UA>+486.914 Btu/degF</UA>
+				<internal_gain>-28694.8 Btu/h</internal_gain>
+				<solar_gain>+7063.87 Btu/h</solar_gain>
+				<incident_solar_radiation>+102.691 Btu/h</incident_solar_radiation>
+				<heat_cool_gain>-30362.1 Btu/h</heat_cool_gain>
+				<include_solar_quadrant>W|S|E|N</include_solar_quadrant>
+				<horizontal_diffuse_solar_radiation>+234.002 Btu/h</horizontal_diffuse_solar_radiation>
+				<north_incident_solar_radiation>+47.2308 Btu/h</north_incident_solar_radiation>
+				<northwest_incident_solar_radiation>+142.547 Btu/h</northwest_incident_solar_radiation>
+				<west_incident_solar_radiation>+216.663 Btu/h</west_incident_solar_radiation>
+				<southwest_incident_solar_radiation>+191.528 Btu/h</southwest_incident_solar_radiation>
+				<south_incident_solar_radiation>+81.8656 Btu/h</south_incident_solar_radiation>
+				<southeast_incident_solar_radiation>+47.2308 Btu/h</southeast_incident_solar_radiation>
+				<east_incident_solar_radiation>+47.2308 Btu/h</east_incident_solar_radiation>
+				<northeast_incident_solar_radiation>+47.2308 Btu/h</northeast_incident_solar_radiation>
+				<heating_cop_curve>DEFAULT</heating_cop_curve>
+				<heating_cap_curve>DEFAULT</heating_cap_curve>
+				<cooling_cop_curve>DEFAULT</cooling_cop_curve>
+				<cooling_cap_curve>DEFAULT</cooling_cap_curve>
+				<use_latent_heat>TRUE</use_latent_heat>
+				<include_fan_heatgain>TRUE</include_fan_heatgain>
+				<thermostat_deadband>+2 degF</thermostat_deadband>
+				<dlc_offset>+0 degF</dlc_offset>
+				<thermostat_cycle_time>120</thermostat_cycle_time>
+				<thermostat_off_cycle_time>-1</thermostat_off_cycle_time>
+				<thermostat_on_cycle_time>-1</thermostat_on_cycle_time>
+				<thermostat_last_cycle_time>2010-07-05 14:34:27 PDT</thermostat_last_cycle_time>
+				<heating_setpoint>+60 degF</heating_setpoint>
+				<cooling_setpoint>+76 degF</cooling_setpoint>
+				<design_heating_setpoint>+70 degF</design_heating_setpoint>
+				<design_cooling_setpoint>+75 degF</design_cooling_setpoint>
+				<over_sizing_factor>+0</over_sizing_factor>
+				<design_heating_capacity>+40000 Btu/h</design_heating_capacity>
+				<design_cooling_capacity>+36000 Btu/h</design_cooling_capacity>
+				<cooling_design_temperature>+96.082 degF</cooling_design_temperature>
+				<heating_design_temperature>-9.038 degF</heating_design_temperature>
+				<design_peak_solar>+195 Btu/h</design_peak_solar>
+				<design_internal_gains>+3864.75 W/sf</design_internal_gains>
+				<air_heat_fraction>+0 pu</air_heat_fraction>
+				<mass_solar_gain_fraction>+0.5 pu</mass_solar_gain_fraction>
+				<mass_internal_gain_fraction>+0.5 pu</mass_internal_gain_fraction>
+				<auxiliary_heat_capacity>+40000 Btu/h</auxiliary_heat_capacity>
+				<aux_heat_deadband>+2 degF</aux_heat_deadband>
+				<aux_heat_temperature_lockout>+10 degF</aux_heat_temperature_lockout>
+				<aux_heat_time_delay>+300 s</aux_heat_time_delay>
+				<cooling_supply_air_temp>+50 degF</cooling_supply_air_temp>
+				<heating_supply_air_temp>+150 degF</heating_supply_air_temp>
+				<duct_pressure_drop>+0.5 inH2O</duct_pressure_drop>
+				<fan_design_power>+211.847 W</fan_design_power>
+				<fan_low_power_fraction>+0 pu</fan_low_power_fraction>
+				<fan_power>+0.211847 kW</fan_power>
+				<fan_design_airflow>+1045.7 cfm</fan_design_airflow>
+				<fan_impedance_fraction>+0.2534 pu</fan_impedance_fraction>
+				<fan_power_fraction>+0.0135 pu</fan_power_fraction>
+				<fan_current_fraction>+0.7332 pu</fan_current_fraction>
+				<fan_power_factor>+0.96 pu</fan_power_factor>
+				<heating_demand>+0</heating_demand>
+				<cooling_demand>+2.66142</cooling_demand>
+				<heating_COP>+2.5 pu</heating_COP>
+				<cooling_COP>+3.5 Btu/kWh</cooling_COP>
+				<air_temperature>+75.8299 degF</air_temperature>
+				<outdoor_temperature>+77.002 degF</outdoor_temperature>
+				<outdoor_rh>+42 %</outdoor_rh>
+				<mass_heat_capacity>+2095.38 Btu/degF</mass_heat_capacity>
+				<mass_heat_coeff>+5581.27 Btu/degF</mass_heat_coeff>
+				<mass_temperature>+77.6613 degF</mass_temperature>
+				<air_volume>+9760 cf</air_volume>
+				<air_mass>+717.36 lb</air_mass>
+				<air_heat_capacity>+516.93 Btu/degF</air_heat_capacity>
+				<latent_load_fraction>+0.3 pu</latent_load_fraction>
+				<total_thermal_mass_per_floor_area>+2 Btu/degF</total_thermal_mass_per_floor_area>
+				<interior_surface_heat_transfer_coeff>+1.46 Btu/h</interior_surface_heat_transfer_coeff>
+				<number_of_stories>+1</number_of_stories>
+				<is_AUX_on>+0</is_AUX_on>
+				<is_HEAT_on>+0</is_HEAT_on>
+				<is_COOL_on>+1</is_COOL_on>
+				<thermal_storage_present>+0</thermal_storage_present>
+				<thermal_storage_in_use>+0</thermal_storage_in_use>
+				<auxiliary_strategy>NONE</auxiliary_strategy>
+				<system_mode>COOL</system_mode>
+				<last_system_mode>COOL</last_system_mode>
+				<heating_system_type>GAS</heating_system_type>
+				<cooling_system_type>HEAT_PUMP</cooling_system_type>
+				<auxiliary_system_type>0</auxiliary_system_type>
+				<fan_type>ONE_SPEED</fan_type>
+				<thermal_integrity_level>NORMAL</thermal_integrity_level>
+				<glass_type>LOW_E_GLASS</glass_type>
+				<window_frame>THERMAL_BREAK</window_frame>
+				<glazing_treatment>CLEAR</glazing_treatment>
+				<glazing_layers>TWO</glazing_layers>
+				<motor_model>NONE</motor_model>
+				<motor_efficiency>AVERAGE</motor_efficiency>
+				<last_mode_timer>21600</last_mode_timer>
+				<hvac_motor_efficiency>+1 unit</hvac_motor_efficiency>
+				<hvac_motor_loss_power_factor>+0.125 unit</hvac_motor_loss_power_factor>
+				<Rroof>+30 degF</Rroof>
+				<Rwall>+11 degF</Rwall>
+				<Rfloor>+19 degF</Rfloor>
+				<Rwindows>+1.66667 degF</Rwindows>
+				<Rdoors>+3 degF</Rdoors>
+				<hvac_breaker_rating>+200 A</hvac_breaker_rating>
+				<hvac_power_factor>+0 unit</hvac_power_factor>
+				<hvac_load>+2.87211</hvac_load>
+				<last_heating_load>+0</last_heating_load>
+				<last_cooling_load>+2.87211</last_cooling_load>
+				<hvac_power>+2.87211+0.719818j</hvac_power>
+				<total_load>+3.38593</total_load>
+				<panel>power_factor: 0.000000; power.r: 2.623282; power.i: 0.641745</panel>
+				<panel.energy>+11.5064+0.875966i kVAh</panel.energy>
+				<panel.power>+3.38529+0.0656584j kVA</panel.power>
+				<panel.peak_demand>+0+0i kVA</panel.peak_demand>
+				<panel.heatgain>-28694.8 Btu/h</panel.heatgain>
+				<panel.heatgain_fraction>+0 pu</panel.heatgain_fraction>
+				<panel.current_fraction>+0 pu</panel.current_fraction>
+				<panel.impedance_fraction>+0 pu</panel.impedance_fraction>
+				<panel.power_fraction>+0 pu</panel.power_fraction>
+				<panel.power_factor>+0</panel.power_factor>
+				<panel.constant_power>+2.62328+0.641745j kVA</panel.constant_power>
+				<panel.constant_current>+0.0936798+0j kVA</panel.constant_current>
+				<panel.constant_admittance>+0.668333+0.144022j kVA</panel.constant_admittance>
+				<panel.voltage_factor>+0 pu</panel.voltage_factor>
+				<panel.breaker_amps>+0 A</panel.breaker_amps>
+				<design_internal_gain_density>+0.6 W/sf</design_internal_gain_density>
+				<compressor_on>TRUE</compressor_on>
+				<compressor_count>17</compressor_count>
+				<hvac_last_on>2010-07-05 14:34:27 PDT</hvac_last_on>
+				<hvac_last_off>2010-07-05 14:29:54 PDT</hvac_last_off>
+				<hvac_period_length>+10.5167</hvac_period_length>
+				<hvac_duty_cycle>+0.567353</hvac_duty_cycle>
+				<a>+194.071</a>
+				<b>+2795.11</b>
+				<c>+486.914</c>
+				<d>+15862.4</d>
+				<c1>-11.7389</c1>
+				<c2>+10.797</c2>
+				<A3>+1.07091</A3>
+				<A4>-0.230365</A4>
+				<k1>+41.7019</k1>
+				<k2>+1.55052</k2>
+				<r1>-0.176362</r1>
+				<r2>-14.2261</r2>
+				<Teq>+32.5775</Teq>
+				<Tevent>+75</Tevent>
+				<Qi>+1667.31</Qi>
+				<Qa>-25996.5</Qa>
+				<Qm>+4365.59</Qm>
+				<Qh>-30362.1</Qh>
+				<Qlatent>+8235.96</Qlatent>
+				<dTair>-29.4125</dTair>
+				<adj_cooling_cap>+39336.8</adj_cooling_cap>
+				<adj_heating_cap>+66782.4</adj_heating_cap>
+				<adj_cooling_cop>+4.33188</adj_cooling_cop>
+				<adj_heating_cop>+3.09097</adj_heating_cop>
+				<thermostat_control>FULL</thermostat_control>
+				<shape>FULL</shape>
+				<load>impedance_fraction: 0.200000; power_fraction: 0.800000; power_factor: 0.970000; power.r: 2.298614; power.i: 0.576087</load>
+				<energy>+2.55833+0i kVAh</energy>
+				<power>+2.87327+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>-30362.1 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0.2 pu</impedance_fraction>
+				<power_fraction>+0.8 pu</power_fraction>
+				<power_factor>+0.97</power_factor>
+				<constant_power>+2.29861+0.576087j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0.574653+0.144022j kVA</constant_admittance>
+				<voltage_factor>+0.998989 pu</voltage_factor>
+				<breaker_amps>+200 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>ON</power_state>
+			</house>
+			<house>
+				<id>33</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TM_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>H_4_T_1_BS_646</name>
+				<weather>MyClimate</weather>
+				<floor_area>+1540 sf</floor_area>
+				<gross_wall_area>+1281.67 sf</gross_wall_area>
+				<ceiling_height>+8 ft</ceiling_height>
+				<aspect_ratio>+1.5</aspect_ratio>
+				<envelope_UA>+365.683 Btu/degF</envelope_UA>
+				<window_wall_ratio>+0.15</window_wall_ratio>
+				<number_of_doors>+4</number_of_doors>
+				<exterior_wall_fraction>+1</exterior_wall_fraction>
+				<interior_exterior_wall_ratio>+1.5</interior_exterior_wall_ratio>
+				<exterior_ceiling_fraction>+1</exterior_ceiling_fraction>
+				<exterior_floor_fraction>+1</exterior_floor_fraction>
+				<window_shading>+0.67</window_shading>
+				<window_exterior_transmission_coefficient>+0.6</window_exterior_transmission_coefficient>
+				<solar_heatgain_factor>+77.2844</solar_heatgain_factor>
+				<airchange_per_hour>+1</airchange_per_hour>
+				<airchange_UA>+217.506 Btu/degF</airchange_UA>
+				<UA>+583.189 Btu/degF</UA>
+				<internal_gain>+3991.39 Btu/h</internal_gain>
+				<solar_gain>+7936.4 Btu/h</solar_gain>
+				<incident_solar_radiation>+102.691 Btu/h</incident_solar_radiation>
+				<heat_cool_gain>+0 Btu/h</heat_cool_gain>
+				<include_solar_quadrant>W|S|E|N</include_solar_quadrant>
+				<horizontal_diffuse_solar_radiation>+234.002 Btu/h</horizontal_diffuse_solar_radiation>
+				<north_incident_solar_radiation>+47.2308 Btu/h</north_incident_solar_radiation>
+				<northwest_incident_solar_radiation>+142.547 Btu/h</northwest_incident_solar_radiation>
+				<west_incident_solar_radiation>+216.663 Btu/h</west_incident_solar_radiation>
+				<southwest_incident_solar_radiation>+191.528 Btu/h</southwest_incident_solar_radiation>
+				<south_incident_solar_radiation>+81.8656 Btu/h</south_incident_solar_radiation>
+				<southeast_incident_solar_radiation>+47.2308 Btu/h</southeast_incident_solar_radiation>
+				<east_incident_solar_radiation>+47.2308 Btu/h</east_incident_solar_radiation>
+				<northeast_incident_solar_radiation>+47.2308 Btu/h</northeast_incident_solar_radiation>
+				<heating_cop_curve>DEFAULT</heating_cop_curve>
+				<heating_cap_curve>DEFAULT</heating_cap_curve>
+				<cooling_cop_curve>DEFAULT</cooling_cop_curve>
+				<cooling_cap_curve>DEFAULT</cooling_cap_curve>
+				<use_latent_heat>TRUE</use_latent_heat>
+				<include_fan_heatgain>TRUE</include_fan_heatgain>
+				<thermostat_deadband>+2 degF</thermostat_deadband>
+				<dlc_offset>+0 degF</dlc_offset>
+				<thermostat_cycle_time>120</thermostat_cycle_time>
+				<thermostat_off_cycle_time>-1</thermostat_off_cycle_time>
+				<thermostat_on_cycle_time>-1</thermostat_on_cycle_time>
+				<thermostat_last_cycle_time>2010-07-05 14:34:06 PDT</thermostat_last_cycle_time>
+				<heating_setpoint>+60 degF</heating_setpoint>
+				<cooling_setpoint>+78 degF</cooling_setpoint>
+				<design_heating_setpoint>+70 degF</design_heating_setpoint>
+				<design_cooling_setpoint>+75 degF</design_cooling_setpoint>
+				<over_sizing_factor>+0</over_sizing_factor>
+				<design_heating_capacity>+50000 Btu/h</design_heating_capacity>
+				<design_cooling_capacity>+42000 Btu/h</design_cooling_capacity>
+				<cooling_design_temperature>+96.082 degF</cooling_design_temperature>
+				<heating_design_temperature>-9.038 degF</heating_design_temperature>
+				<design_peak_solar>+195 Btu/h</design_peak_solar>
+				<design_internal_gains>+4283.85 W/sf</design_internal_gains>
+				<air_heat_fraction>+0 pu</air_heat_fraction>
+				<mass_solar_gain_fraction>+0.5 pu</mass_solar_gain_fraction>
+				<mass_internal_gain_fraction>+0.5 pu</mass_internal_gain_fraction>
+				<auxiliary_heat_capacity>+50000 Btu/h</auxiliary_heat_capacity>
+				<aux_heat_deadband>+2 degF</aux_heat_deadband>
+				<aux_heat_temperature_lockout>+10 degF</aux_heat_temperature_lockout>
+				<aux_heat_time_delay>+300 s</aux_heat_time_delay>
+				<cooling_supply_air_temp>+50 degF</cooling_supply_air_temp>
+				<heating_supply_air_temp>+150 degF</heating_supply_air_temp>
+				<duct_pressure_drop>+0.5 inH2O</duct_pressure_drop>
+				<fan_design_power>+211.847 W</fan_design_power>
+				<fan_low_power_fraction>+0 pu</fan_low_power_fraction>
+				<fan_power>+0 kW</fan_power>
+				<fan_design_airflow>+1219.98 cfm</fan_design_airflow>
+				<fan_impedance_fraction>+0.2534 pu</fan_impedance_fraction>
+				<fan_power_fraction>+0.0135 pu</fan_power_fraction>
+				<fan_current_fraction>+0.7332 pu</fan_current_fraction>
+				<fan_power_factor>+0.96 pu</fan_power_factor>
+				<heating_demand>+0</heating_demand>
+				<cooling_demand>+3.10499</cooling_demand>
+				<heating_COP>+2.5 pu</heating_COP>
+				<cooling_COP>+3.5 Btu/kWh</cooling_COP>
+				<air_temperature>+77.9219 degF</air_temperature>
+				<outdoor_temperature>+77.002 degF</outdoor_temperature>
+				<outdoor_rh>+42 %</outdoor_rh>
+				<mass_heat_capacity>+2644.99 Btu/degF</mass_heat_capacity>
+				<mass_heat_coeff>+6531.91 Btu/degF</mass_heat_coeff>
+				<mass_temperature>+78.9766 degF</mass_temperature>
+				<air_volume>+12320 cf</air_volume>
+				<air_mass>+905.52 lb</air_mass>
+				<air_heat_capacity>+652.518 Btu/degF</air_heat_capacity>
+				<latent_load_fraction>+0.3 pu</latent_load_fraction>
+				<total_thermal_mass_per_floor_area>+2 Btu/degF</total_thermal_mass_per_floor_area>
+				<interior_surface_heat_transfer_coeff>+1.46 Btu/h</interior_surface_heat_transfer_coeff>
+				<number_of_stories>+1</number_of_stories>
+				<is_AUX_on>+0</is_AUX_on>
+				<is_HEAT_on>+0</is_HEAT_on>
+				<is_COOL_on>+0</is_COOL_on>
+				<thermal_storage_present>+0</thermal_storage_present>
+				<thermal_storage_in_use>+0</thermal_storage_in_use>
+				<auxiliary_strategy>NONE</auxiliary_strategy>
+				<system_mode>OFF</system_mode>
+				<last_system_mode>OFF</last_system_mode>
+				<heating_system_type>GAS</heating_system_type>
+				<cooling_system_type>HEAT_PUMP</cooling_system_type>
+				<auxiliary_system_type>0</auxiliary_system_type>
+				<fan_type>ONE_SPEED</fan_type>
+				<thermal_integrity_level>NORMAL</thermal_integrity_level>
+				<glass_type>LOW_E_GLASS</glass_type>
+				<window_frame>THERMAL_BREAK</window_frame>
+				<glazing_treatment>CLEAR</glazing_treatment>
+				<glazing_layers>TWO</glazing_layers>
+				<motor_model>NONE</motor_model>
+				<motor_efficiency>AVERAGE</motor_efficiency>
+				<last_mode_timer>21600</last_mode_timer>
+				<hvac_motor_efficiency>+1 unit</hvac_motor_efficiency>
+				<hvac_motor_loss_power_factor>+0.125 unit</hvac_motor_loss_power_factor>
+				<Rroof>+30 degF</Rroof>
+				<Rwall>+11 degF</Rwall>
+				<Rfloor>+19 degF</Rfloor>
+				<Rwindows>+1.66667 degF</Rwindows>
+				<Rdoors>+3 degF</Rdoors>
+				<hvac_breaker_rating>+200 A</hvac_breaker_rating>
+				<hvac_power_factor>+0 unit</hvac_power_factor>
+				<hvac_load>+0</hvac_load>
+				<last_heating_load>+0</last_heating_load>
+				<last_cooling_load>+3.31579</last_cooling_load>
+				<hvac_power>+0+0j</hvac_power>
+				<total_load>+1.27456</total_load>
+				<panel>power_factor: 0.000000; power.r: 0.671486; power.i: 0.089244</panel>
+				<panel.energy>+23.5262+1.19124i kVAh</panel.energy>
+				<panel.power>+1.27144+0.0892441j kVA</panel.power>
+				<panel.peak_demand>+0+0i kVA</panel.peak_demand>
+				<panel.heatgain>+3991.39 Btu/h</panel.heatgain>
+				<panel.heatgain_fraction>+0 pu</panel.heatgain_fraction>
+				<panel.current_fraction>+0 pu</panel.current_fraction>
+				<panel.impedance_fraction>+0 pu</panel.impedance_fraction>
+				<panel.power_fraction>+0 pu</panel.power_fraction>
+				<panel.power_factor>+0</panel.power_factor>
+				<panel.constant_power>+0.671486+0.0892441j kVA</panel.constant_power>
+				<panel.constant_current>+0.299975+0j kVA</panel.constant_current>
+				<panel.constant_admittance>+0.299975+0j kVA</panel.constant_admittance>
+				<panel.voltage_factor>+0 pu</panel.voltage_factor>
+				<panel.breaker_amps>+0 A</panel.breaker_amps>
+				<design_internal_gain_density>+0.6 W/sf</design_internal_gain_density>
+				<compressor_on>FALSE</compressor_on>
+				<compressor_count>20</compressor_count>
+				<hvac_last_on>2010-07-05 14:30:36 PDT</hvac_last_on>
+				<hvac_last_off>2010-07-05 14:34:06 PDT</hvac_last_off>
+				<hvac_period_length>+11.0333</hvac_period_length>
+				<hvac_duty_cycle>+0.317221</hvac_duty_cycle>
+				<a>+264.226</a>
+				<b>+3533.66</b>
+				<c>+583.189</c>
+				<d>+56834.5</d>
+				<c1>-10.9041</c1>
+				<c2>+10.0103</c2>
+				<A3>+1.07259</A3>
+				<A4>-0.230004</A4>
+				<k1>-18.3356</k1>
+				<k2>-1.1972</k2>
+				<r1>-0.167127</r1>
+				<r2>-13.2065</r2>
+				<Teq>+97.4547</Teq>
+				<Tevent>+79</Tevent>
+				<Qi>+3991.39</Qi>
+				<Qa>+5963.89</Qa>
+				<Qm>+5963.89</Qm>
+				<Qh>+0</Qh>
+				<Qlatent>+0</Qlatent>
+				<dTair>+18.8752</dTair>
+				<adj_cooling_cap>+45892.9</adj_cooling_cap>
+				<adj_heating_cap>+83477.9</adj_heating_cap>
+				<adj_cooling_cop>+4.33188</adj_cooling_cop>
+				<adj_heating_cop>+3.09097</adj_heating_cop>
+				<thermostat_control>FULL</thermostat_control>
+				<shape>FULL</shape>
+				<load>impedance_fraction: 0.200000; power_fraction: 0.800000; power_factor: 0.970000; power.r: 0.000000</load>
+				<energy>+3.61865+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0.2 pu</impedance_fraction>
+				<power_fraction>+0.8 pu</power_fraction>
+				<power_factor>+0.97</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999787 pu</voltage_factor>
+				<breaker_amps>+200 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</house>
+			<house>
+				<id>41</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TM_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>H_5_T_1_BS_646</name>
+				<weather>MyClimate</weather>
+				<floor_area>+1120 sf</floor_area>
+				<gross_wall_area>+1093.01 sf</gross_wall_area>
+				<ceiling_height>+8 ft</ceiling_height>
+				<aspect_ratio>+1.5</aspect_ratio>
+				<envelope_UA>+298.02 Btu/degF</envelope_UA>
+				<window_wall_ratio>+0.15</window_wall_ratio>
+				<number_of_doors>+4</number_of_doors>
+				<exterior_wall_fraction>+1</exterior_wall_fraction>
+				<interior_exterior_wall_ratio>+1.5</interior_exterior_wall_ratio>
+				<exterior_ceiling_fraction>+1</exterior_ceiling_fraction>
+				<exterior_floor_fraction>+1</exterior_floor_fraction>
+				<window_shading>+0.67</window_shading>
+				<window_exterior_transmission_coefficient>+0.6</window_exterior_transmission_coefficient>
+				<solar_heatgain_factor>+65.9084</solar_heatgain_factor>
+				<airchange_per_hour>+1</airchange_per_hour>
+				<airchange_UA>+158.186 Btu/degF</airchange_UA>
+				<UA>+456.206 Btu/degF</UA>
+				<internal_gain>+1153.89 Btu/h</internal_gain>
+				<solar_gain>+6768.18 Btu/h</solar_gain>
+				<incident_solar_radiation>+102.691 Btu/h</incident_solar_radiation>
+				<heat_cool_gain>+0 Btu/h</heat_cool_gain>
+				<include_solar_quadrant>W|S|E|N</include_solar_quadrant>
+				<horizontal_diffuse_solar_radiation>+234.002 Btu/h</horizontal_diffuse_solar_radiation>
+				<north_incident_solar_radiation>+47.2308 Btu/h</north_incident_solar_radiation>
+				<northwest_incident_solar_radiation>+142.547 Btu/h</northwest_incident_solar_radiation>
+				<west_incident_solar_radiation>+216.663 Btu/h</west_incident_solar_radiation>
+				<southwest_incident_solar_radiation>+191.528 Btu/h</southwest_incident_solar_radiation>
+				<south_incident_solar_radiation>+81.8656 Btu/h</south_incident_solar_radiation>
+				<southeast_incident_solar_radiation>+47.2308 Btu/h</southeast_incident_solar_radiation>
+				<east_incident_solar_radiation>+47.2308 Btu/h</east_incident_solar_radiation>
+				<northeast_incident_solar_radiation>+47.2308 Btu/h</northeast_incident_solar_radiation>
+				<heating_cop_curve>DEFAULT</heating_cop_curve>
+				<heating_cap_curve>DEFAULT</heating_cap_curve>
+				<cooling_cop_curve>DEFAULT</cooling_cop_curve>
+				<cooling_cap_curve>DEFAULT</cooling_cap_curve>
+				<use_latent_heat>TRUE</use_latent_heat>
+				<include_fan_heatgain>TRUE</include_fan_heatgain>
+				<thermostat_deadband>+2 degF</thermostat_deadband>
+				<dlc_offset>+0 degF</dlc_offset>
+				<thermostat_cycle_time>120</thermostat_cycle_time>
+				<thermostat_off_cycle_time>-1</thermostat_off_cycle_time>
+				<thermostat_on_cycle_time>-1</thermostat_on_cycle_time>
+				<thermostat_last_cycle_time>2010-07-05 14:29:21 PDT</thermostat_last_cycle_time>
+				<heating_setpoint>+60 degF</heating_setpoint>
+				<cooling_setpoint>+78 degF</cooling_setpoint>
+				<design_heating_setpoint>+70 degF</design_heating_setpoint>
+				<design_cooling_setpoint>+75 degF</design_cooling_setpoint>
+				<over_sizing_factor>+0</over_sizing_factor>
+				<design_heating_capacity>+40000 Btu/h</design_heating_capacity>
+				<design_cooling_capacity>+36000 Btu/h</design_cooling_capacity>
+				<cooling_design_temperature>+96.082 degF</cooling_design_temperature>
+				<heating_design_temperature>-9.038 degF</heating_design_temperature>
+				<design_peak_solar>+195 Btu/h</design_peak_solar>
+				<design_internal_gains>+3721.39 W/sf</design_internal_gains>
+				<air_heat_fraction>+0 pu</air_heat_fraction>
+				<mass_solar_gain_fraction>+0.5 pu</mass_solar_gain_fraction>
+				<mass_internal_gain_fraction>+0.5 pu</mass_internal_gain_fraction>
+				<auxiliary_heat_capacity>+40000 Btu/h</auxiliary_heat_capacity>
+				<aux_heat_deadband>+2 degF</aux_heat_deadband>
+				<aux_heat_temperature_lockout>+10 degF</aux_heat_temperature_lockout>
+				<aux_heat_time_delay>+300 s</aux_heat_time_delay>
+				<cooling_supply_air_temp>+50 degF</cooling_supply_air_temp>
+				<heating_supply_air_temp>+150 degF</heating_supply_air_temp>
+				<duct_pressure_drop>+0.5 inH2O</duct_pressure_drop>
+				<fan_design_power>+211.847 W</fan_design_power>
+				<fan_low_power_fraction>+0 pu</fan_low_power_fraction>
+				<fan_power>+0 kW</fan_power>
+				<fan_design_airflow>+1045.7 cfm</fan_design_airflow>
+				<fan_impedance_fraction>+0.2534 pu</fan_impedance_fraction>
+				<fan_power_fraction>+0.0135 pu</fan_power_fraction>
+				<fan_current_fraction>+0.7332 pu</fan_current_fraction>
+				<fan_power_factor>+0.96 pu</fan_power_factor>
+				<heating_demand>+0</heating_demand>
+				<cooling_demand>+2.66142</cooling_demand>
+				<heating_COP>+2.5 pu</heating_COP>
+				<cooling_COP>+3.5 Btu/kWh</cooling_COP>
+				<air_temperature>+78.8486 degF</air_temperature>
+				<outdoor_temperature>+77.002 degF</outdoor_temperature>
+				<outdoor_rh>+42 %</outdoor_rh>
+				<mass_heat_capacity>+1923.63 Btu/degF</mass_heat_capacity>
+				<mass_heat_coeff>+5271.43 Btu/degF</mass_heat_coeff>
+				<mass_temperature>+78.9386 degF</mass_temperature>
+				<air_volume>+8960 cf</air_volume>
+				<air_mass>+658.56 lb</air_mass>
+				<air_heat_capacity>+474.558 Btu/degF</air_heat_capacity>
+				<latent_load_fraction>+0.3 pu</latent_load_fraction>
+				<total_thermal_mass_per_floor_area>+2 Btu/degF</total_thermal_mass_per_floor_area>
+				<interior_surface_heat_transfer_coeff>+1.46 Btu/h</interior_surface_heat_transfer_coeff>
+				<number_of_stories>+1</number_of_stories>
+				<is_AUX_on>+0</is_AUX_on>
+				<is_HEAT_on>+0</is_HEAT_on>
+				<is_COOL_on>+0</is_COOL_on>
+				<thermal_storage_present>+0</thermal_storage_present>
+				<thermal_storage_in_use>+0</thermal_storage_in_use>
+				<auxiliary_strategy>NONE</auxiliary_strategy>
+				<system_mode>OFF</system_mode>
+				<last_system_mode>OFF</last_system_mode>
+				<heating_system_type>GAS</heating_system_type>
+				<cooling_system_type>HEAT_PUMP</cooling_system_type>
+				<auxiliary_system_type>0</auxiliary_system_type>
+				<fan_type>ONE_SPEED</fan_type>
+				<thermal_integrity_level>NORMAL</thermal_integrity_level>
+				<glass_type>LOW_E_GLASS</glass_type>
+				<window_frame>THERMAL_BREAK</window_frame>
+				<glazing_treatment>CLEAR</glazing_treatment>
+				<glazing_layers>TWO</glazing_layers>
+				<motor_model>NONE</motor_model>
+				<motor_efficiency>AVERAGE</motor_efficiency>
+				<last_mode_timer>21600</last_mode_timer>
+				<hvac_motor_efficiency>+1 unit</hvac_motor_efficiency>
+				<hvac_motor_loss_power_factor>+0.125 unit</hvac_motor_loss_power_factor>
+				<Rroof>+30 degF</Rroof>
+				<Rwall>+11 degF</Rwall>
+				<Rfloor>+19 degF</Rfloor>
+				<Rwindows>+1.66667 degF</Rwindows>
+				<Rdoors>+3 degF</Rdoors>
+				<hvac_breaker_rating>+200 A</hvac_breaker_rating>
+				<hvac_power_factor>+0 unit</hvac_power_factor>
+				<hvac_load>+0</hvac_load>
+				<last_heating_load>+0</last_heating_load>
+				<last_cooling_load>+2.87196</last_cooling_load>
+				<hvac_power>+0+0j</hvac_power>
+				<total_load>+0.356315</total_load>
+				<panel>power_factor: 0.000000; power.r: 0.275079; power.i: 0.074331</panel>
+				<panel.energy>+10.2031+0.970782i kVAh</panel.energy>
+				<panel.power>+0.348476+0.0743312j kVA</panel.power>
+				<panel.peak_demand>+0+0i kVA</panel.peak_demand>
+				<panel.heatgain>+1153.89 Btu/h</panel.heatgain>
+				<panel.heatgain_fraction>+0 pu</panel.heatgain_fraction>
+				<panel.current_fraction>+0 pu</panel.current_fraction>
+				<panel.impedance_fraction>+0 pu</panel.impedance_fraction>
+				<panel.power_fraction>+0 pu</panel.power_fraction>
+				<panel.power_factor>+0</panel.power_factor>
+				<panel.constant_power>+0.275079+0.0743312j kVA</panel.constant_power>
+				<panel.constant_current>+0.0366984+0j kVA</panel.constant_current>
+				<panel.constant_admittance>+0.0366984+0j kVA</panel.constant_admittance>
+				<panel.voltage_factor>+0 pu</panel.voltage_factor>
+				<panel.breaker_amps>+0 A</panel.breaker_amps>
+				<design_internal_gain_density>+0.6 W/sf</design_internal_gain_density>
+				<compressor_on>FALSE</compressor_on>
+				<compressor_count>15</compressor_count>
+				<hvac_last_on>2010-07-05 14:26:39 PDT</hvac_last_on>
+				<hvac_last_off>2010-07-05 14:29:21 PDT</hvac_last_off>
+				<hvac_period_length>+11.1333</hvac_period_length>
+				<hvac_duty_cycle>+0.242515</hvac_duty_cycle>
+				<a>+173.174</a>
+				<b>+2564.66</b>
+				<c>+456.206</c>
+				<d>+43050.9</d>
+				<c1>-12.0694</c1>
+				<c2>+11.1081</c2>
+				<A3>+1.07033</A3>
+				<A4>-0.230489</A4>
+				<k1>-15.1879</k1>
+				<k2>-0.330628</k2>
+				<r1>-0.180071</r1>
+				<r2>-14.6297</r2>
+				<Teq>+94.3671</Teq>
+				<Tevent>+79</Tevent>
+				<Qi>+1153.89</Qi>
+				<Qa>+3961.04</Qa>
+				<Qm>+3961.04</Qm>
+				<Qh>+0</Qh>
+				<Qlatent>+0</Qlatent>
+				<dTair>+7.5719</dTair>
+				<adj_cooling_cap>+39336.8</adj_cooling_cap>
+				<adj_heating_cap>+66782.4</adj_heating_cap>
+				<adj_cooling_cop>+4.33188</adj_cooling_cop>
+				<adj_heating_cop>+3.09097</adj_heating_cop>
+				<thermostat_control>FULL</thermostat_control>
+				<shape>FULL</shape>
+				<load>impedance_fraction: 0.200000; power_fraction: 0.800000; power_factor: 0.970000; power.r: 0.000000</load>
+				<energy>+1.8462+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0.2 pu</impedance_fraction>
+				<power_fraction>+0.8 pu</power_fraction>
+				<power_factor>+0.97</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.99994 pu</voltage_factor>
+				<breaker_amps>+200 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</house>
+		</house_list>
+		<waterheater_list>
+			<inherits_from>residential_enduse</inherits_from>
+			<waterheater>
+				<id>12</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(waterheater:12)</name>
+				<tank_volume>+50 gal</tank_volume>
+				<tank_UA>+3.7 Btu</tank_UA>
+				<tank_diameter>+1.5 ft</tank_diameter>
+				<water_demand>+0 gpm</water_demand>
+				<heating_element_capacity>+3.5 kW</heating_element_capacity>
+				<inlet_water_temperature>+60 degF</inlet_water_temperature>
+				<heat_mode>ELECTRIC</heat_mode>
+				<location>INSIDE</location>
+				<tank_setpoint>+100 degF</tank_setpoint>
+				<thermostat_deadband>+3 degF</thermostat_deadband>
+				<temperature>+99.7318 degF</temperature>
+				<height>+3.78239 ft</height>
+				<demand>+0 gpm</demand>
+				<actual_load>+0 kW</actual_load>
+				<previous_load>+3.49894 kW</previous_load>
+				<actual_power>+0+0j kVA</actual_power>
+				<is_waterheater_on>+0</is_waterheater_on>
+				<shape>+0</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.000000; power.r: 0.000000</load>
+				<energy>+1.58569+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+72.0312 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999977 pu</voltage_factor>
+				<breaker_amps>+30 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</waterheater>
+			<waterheater>
+				<id>20</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(waterheater:20)</name>
+				<tank_volume>+50 gal</tank_volume>
+				<tank_UA>+3.7 Btu</tank_UA>
+				<tank_diameter>+1.5 ft</tank_diameter>
+				<water_demand>+0 gpm</water_demand>
+				<heating_element_capacity>+3.5 kW</heating_element_capacity>
+				<inlet_water_temperature>+60 degF</inlet_water_temperature>
+				<heat_mode>ELECTRIC</heat_mode>
+				<location>INSIDE</location>
+				<tank_setpoint>+100 degF</tank_setpoint>
+				<thermostat_deadband>+3 degF</thermostat_deadband>
+				<temperature>+101.486 degF</temperature>
+				<height>+3.78209 ft</height>
+				<demand>+0 gpm</demand>
+				<actual_load>+0 kW</actual_load>
+				<previous_load>+3.48885 kW</previous_load>
+				<actual_power>+0+0j kVA</actual_power>
+				<is_waterheater_on>+0</is_waterheater_on>
+				<shape>+0</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.000000; power.r: 0.000000</load>
+				<energy>+4.54514+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+115.431 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999815 pu</voltage_factor>
+				<breaker_amps>+30 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</waterheater>
+			<waterheater>
+				<id>28</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(waterheater:28)</name>
+				<tank_volume>+50 gal</tank_volume>
+				<tank_UA>+3.7 Btu</tank_UA>
+				<tank_diameter>+1.5 ft</tank_diameter>
+				<water_demand>+0 gpm</water_demand>
+				<heating_element_capacity>+3.5 kW</heating_element_capacity>
+				<inlet_water_temperature>+60 degF</inlet_water_temperature>
+				<heat_mode>ELECTRIC</heat_mode>
+				<location>INSIDE</location>
+				<tank_setpoint>+100 degF</tank_setpoint>
+				<thermostat_deadband>+3 degF</thermostat_deadband>
+				<temperature>+101.493 degF</temperature>
+				<height>+3.78239 ft</height>
+				<demand>+0 gpm</demand>
+				<actual_load>+0 kW</actual_load>
+				<previous_load>+3.48591 kW</previous_load>
+				<actual_power>+0+0j kVA</actual_power>
+				<is_waterheater_on>+0</is_waterheater_on>
+				<shape>+0</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.000000; power.r: 0.000000</load>
+				<energy>+2.45097+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+94.9527 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.998989 pu</voltage_factor>
+				<breaker_amps>+30 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</waterheater>
+			<waterheater>
+				<id>36</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(waterheater:36)</name>
+				<tank_volume>+50 gal</tank_volume>
+				<tank_UA>+3.7 Btu</tank_UA>
+				<tank_diameter>+1.5 ft</tank_diameter>
+				<water_demand>+0 gpm</water_demand>
+				<heating_element_capacity>+3.5 kW</heating_element_capacity>
+				<inlet_water_temperature>+60 degF</inlet_water_temperature>
+				<heat_mode>ELECTRIC</heat_mode>
+				<location>INSIDE</location>
+				<tank_setpoint>+100 degF</tank_setpoint>
+				<thermostat_deadband>+3 degF</thermostat_deadband>
+				<temperature>+101.445 degF</temperature>
+				<height>+3.78239 ft</height>
+				<demand>+0 gpm</demand>
+				<actual_load>+0 kW</actual_load>
+				<previous_load>+3.49043 kW</previous_load>
+				<actual_power>+0+0j kVA</actual_power>
+				<is_waterheater_on>+0</is_waterheater_on>
+				<shape>+0</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.000000; power.r: 0.000000</load>
+				<energy>+2.71931+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+87.034 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999787 pu</voltage_factor>
+				<breaker_amps>+30 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</waterheater>
+			<waterheater>
+				<id>44</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:00 PDT</clock>
+				<name>(waterheater:44)</name>
+				<tank_volume>+50 gal</tank_volume>
+				<tank_UA>+3.7 Btu</tank_UA>
+				<tank_diameter>+1.5 ft</tank_diameter>
+				<water_demand>+0 gpm</water_demand>
+				<heating_element_capacity>+3.5 kW</heating_element_capacity>
+				<inlet_water_temperature>+60 degF</inlet_water_temperature>
+				<heat_mode>ELECTRIC</heat_mode>
+				<location>INSIDE</location>
+				<tank_setpoint>+100 degF</tank_setpoint>
+				<thermostat_deadband>+3 degF</thermostat_deadband>
+				<temperature>+101.487 degF</temperature>
+				<height>+3.78118 ft</height>
+				<demand>+0 gpm</demand>
+				<actual_load>+0 kW</actual_load>
+				<previous_load>+3.49552 kW</previous_load>
+				<actual_power>+0+0j kVA</actual_power>
+				<is_waterheater_on>+0</is_waterheater_on>
+				<shape>+0</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.000000; power.r: 0.000000</load>
+				<energy>+3.90444+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+83.7627 Btu/h</heatgain>
+				<heatgain_fraction>+0 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.99994 pu</voltage_factor>
+				<breaker_amps>+30 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>OFF</power_state>
+			</waterheater>
+		</waterheater_list>
+		<lights_list>
+			<inherits_from>residential_enduse</inherits_from>
+			<lights>
+				<id>10</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(lights:10)</name>
+				<type>INCANDESCENT</type>
+				<placement>INDOOR</placement>
+				<installed_power>+0.998289 kW</installed_power>
+				<power_density>+0.00101866 W/sf</power_density>
+				<curtailment>+0 pu</curtailment>
+				<demand>+0.303336 pu</demand>
+				<actual_power>+0.302817+0.0995311j kVA</actual_power>
+				<shape>+0.302817+0.0995311j kVA</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.950000; power.r: 0.302817; power.i: 0.099531</load>
+				<energy>+4.05877+1.33405i kVAh</energy>
+				<power>+0.302817+0.0995311j kVA</power>
+				<peak_demand>+0.34411+0.113104j kVA</peak_demand>
+				<heatgain>+929.929 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0.302817+0.0995311j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999971 pu</voltage_factor>
+				<breaker_amps>+40 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</lights>
+			<lights>
+				<id>18</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(lights:18)</name>
+				<type>INCANDESCENT</type>
+				<placement>INDOOR</placement>
+				<installed_power>+0.927028 kW</installed_power>
+				<power_density>+0.000896545 W/sf</power_density>
+				<curtailment>+0 pu</curtailment>
+				<demand>+0.421012 pu</demand>
+				<actual_power>+0.39029+0.128282j kVA</actual_power>
+				<shape>+0.39029+0.128282j kVA</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.950000; power.r: 0.390290; power.i: 0.128282</load>
+				<energy>+5.199+1.70883i kVAh</energy>
+				<power>+0.39029+0.128282j kVA</power>
+				<peak_demand>+0.39916+0.131198j kVA</peak_demand>
+				<heatgain>+1198.55 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0.39029+0.128282j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999808 pu</voltage_factor>
+				<breaker_amps>+40 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</lights>
+			<lights>
+				<id>26</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(lights:26)</name>
+				<type>INCANDESCENT</type>
+				<placement>INDOOR</placement>
+				<installed_power>+0.860731 kW</installed_power>
+				<power_density>+0.000705517 W/sf</power_density>
+				<curtailment>+0 pu</curtailment>
+				<demand>+0.232083 pu</demand>
+				<actual_power>+0.199761+0.0656584j kVA</actual_power>
+				<shape>+0.199761+0.0656584j kVA</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.950000; power.r: 0.199761; power.i: 0.065658</load>
+				<energy>+2.66507+0.875966i kVAh</energy>
+				<power>+0.199761+0.0656584j kVA</power>
+				<peak_demand>+0.204301+0.0671506j kVA</peak_demand>
+				<heatgain>+613.452 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0.199761+0.0656584j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999038 pu</voltage_factor>
+				<breaker_amps>+40 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</lights>
+			<lights>
+				<id>34</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(lights:34)</name>
+				<type>INCANDESCENT</type>
+				<placement>INDOOR</placement>
+				<installed_power>+0.991723 kW</installed_power>
+				<power_density>+0.000643976 W/sf</power_density>
+				<curtailment>+0 pu</curtailment>
+				<demand>+0.273786 pu</demand>
+				<actual_power>+0.271519+0.0892441j kVA</actual_power>
+				<shape>+0.271519+0.0892441j kVA</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.950000; power.r: 0.271519; power.i: 0.089244</load>
+				<energy>+3.62428+1.19124i kVAh</energy>
+				<power>+0.271519+0.0892441j kVA</power>
+				<peak_demand>+0.308545+0.101414j kVA</peak_demand>
+				<heatgain>+833.817 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0.271519+0.0892441j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+1.00003 pu</voltage_factor>
+				<breaker_amps>+40 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</lights>
+			<lights>
+				<id>42</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(lights:42)</name>
+				<type>INCANDESCENT</type>
+				<placement>INDOOR</placement>
+				<installed_power>+0.840842 kW</installed_power>
+				<power_density>+0.000750752 W/sf</power_density>
+				<curtailment>+0 pu</curtailment>
+				<demand>+0.268954 pu</demand>
+				<actual_power>+0.226148+0.0743312j kVA</actual_power>
+				<shape>+0.226148+0.0743312j kVA</shape>
+				<load>impedance_fraction: 1.000000; power_factor: 0.950000; power.r: 0.226148; power.i: 0.074331</load>
+				<energy>+2.95354+0.970782i kVAh</energy>
+				<power>+0.226148+0.0743312j kVA</power>
+				<peak_demand>+0.226148+0.0743312j kVA</peak_demand>
+				<heatgain>+694.484 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+1 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0.226148+0.0743312j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.99989 pu</voltage_factor>
+				<breaker_amps>+40 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</lights>
+		</lights_list>
+		<refrigerator_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</refrigerator_list>
+		<clotheswasher_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</clotheswasher_list>
+		<dishwasher_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</dishwasher_list>
+		<occupantload_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</occupantload_list>
+		<plugload_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</plugload_list>
+		<microwave_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</microwave_list>
+		<range_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</range_list>
+		<freezer_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</freezer_list>
+		<dryer_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</dryer_list>
+		<evcharger_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</evcharger_list>
+		<evcharger_det_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</evcharger_det_list>
+		<evse_list>
+			<inherits_from>residential_enduse</inherits_from>
+			<evse>
+				<id>13</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>EV_H_1_T_1_BS_646</name>
+				<charge_current>+30 A</charge_current>
+				<is_240>TRUE</is_240>
+				<time_to_leave_home>+0 A</time_to_leave_home>
+				<variation_mean>-390 s</variation_mean>
+				<variation_std_dev>+487 s</variation_std_dev>
+				<variation_trip_mean>+0 mile</variation_trip_mean>
+				<variation_trip_std_dev>+0 mile</variation_trip_std_dev>
+				<mileage_classification>+33 mile</mileage_classification>
+				<work_charging_available>FALSE</work_charging_available>
+				<data_file>data_sample_NHTS.csv</data_file>
+				<vehicle_index>1</vehicle_index>
+				<vehicle_location>WORK</vehicle_location>
+				<travel_distance>+32 mile</travel_distance>
+				<arrival_at_work>+800</arrival_at_work>
+				<duration_at_work>+28800 s</duration_at_work>
+				<arrival_at_home>+1730</arrival_at_home>
+				<duration_at_home>+50400 s</duration_at_home>
+				<battery_capacity>+0.633172 kWh</battery_capacity>
+				<battery_SOC>+0.633172 %</battery_SOC>
+				<battery_size>+100 kWh</battery_size>
+				<mileage_efficiency>+0.33 mile/kWh</mileage_efficiency>
+				<maximum_charge_rate>+7200 W</maximum_charge_rate>
+				<charging_efficiency>+0.9 unit</charging_efficiency>
+				<shape>+0.9 unit</shape>
+				<load>power_factor: 0.950000; power.r: 0.000000</load>
+				<energy>+0+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999977 pu</voltage_factor>
+				<breaker_amps>+36 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</evse>
+			<evse>
+				<id>21</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>EV_H_2_T_1_BS_646</name>
+				<charge_current>+30 A</charge_current>
+				<is_240>TRUE</is_240>
+				<time_to_leave_home>+0 A</time_to_leave_home>
+				<variation_mean>-413 s</variation_mean>
+				<variation_std_dev>+2115 s</variation_std_dev>
+				<variation_trip_mean>+0 mile</variation_trip_mean>
+				<variation_trip_std_dev>+0 mile</variation_trip_std_dev>
+				<mileage_classification>+33 mile</mileage_classification>
+				<work_charging_available>FALSE</work_charging_available>
+				<data_file>data_sample_NHTS.csv</data_file>
+				<vehicle_index>1</vehicle_index>
+				<vehicle_location>WORK</vehicle_location>
+				<travel_distance>+32 mile</travel_distance>
+				<arrival_at_work>+800</arrival_at_work>
+				<duration_at_work>+28800 s</duration_at_work>
+				<arrival_at_home>+1730</arrival_at_home>
+				<duration_at_home>+50400 s</duration_at_home>
+				<battery_capacity>+51.3045 kWh</battery_capacity>
+				<battery_SOC>+51.3045 %</battery_SOC>
+				<battery_size>+100 kWh</battery_size>
+				<mileage_efficiency>+0.33 mile/kWh</mileage_efficiency>
+				<maximum_charge_rate>+7200 W</maximum_charge_rate>
+				<charging_efficiency>+0.9 unit</charging_efficiency>
+				<shape>+0.9 unit</shape>
+				<load>power_factor: 0.950000; power.r: 0.000000</load>
+				<energy>+2.2463+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999815 pu</voltage_factor>
+				<breaker_amps>+36 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</evse>
+			<evse>
+				<id>29</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>EV_H_3_T_1_BS_646</name>
+				<charge_current>+30 A</charge_current>
+				<is_240>TRUE</is_240>
+				<time_to_leave_home>+0 A</time_to_leave_home>
+				<variation_mean>-375 s</variation_mean>
+				<variation_std_dev>+2376 s</variation_std_dev>
+				<variation_trip_mean>+0 mile</variation_trip_mean>
+				<variation_trip_std_dev>+0 mile</variation_trip_std_dev>
+				<mileage_classification>+33 mile</mileage_classification>
+				<work_charging_available>FALSE</work_charging_available>
+				<data_file>data_sample_NHTS.csv</data_file>
+				<vehicle_index>1</vehicle_index>
+				<vehicle_location>WORK</vehicle_location>
+				<travel_distance>+32 mile</travel_distance>
+				<arrival_at_work>+800</arrival_at_work>
+				<duration_at_work>+28800 s</duration_at_work>
+				<arrival_at_home>+1730</arrival_at_home>
+				<duration_at_home>+50400 s</duration_at_home>
+				<battery_capacity>+0 kWh</battery_capacity>
+				<battery_SOC>+0 %</battery_SOC>
+				<battery_size>+100 kWh</battery_size>
+				<mileage_efficiency>+0.33 mile/kWh</mileage_efficiency>
+				<maximum_charge_rate>+7200 W</maximum_charge_rate>
+				<charging_efficiency>+0.9 unit</charging_efficiency>
+				<shape>+0.9 unit</shape>
+				<load>power_factor: 0.950000; power.r: 0.000000</load>
+				<energy>+0+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.998989 pu</voltage_factor>
+				<breaker_amps>+36 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</evse>
+			<evse>
+				<id>37</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>EV_H_4_T_1_BS_646</name>
+				<charge_current>+30 A</charge_current>
+				<is_240>TRUE</is_240>
+				<time_to_leave_home>+0 A</time_to_leave_home>
+				<variation_mean>-27 s</variation_mean>
+				<variation_std_dev>+2465 s</variation_std_dev>
+				<variation_trip_mean>+0 mile</variation_trip_mean>
+				<variation_trip_std_dev>+0 mile</variation_trip_std_dev>
+				<mileage_classification>+33 mile</mileage_classification>
+				<work_charging_available>FALSE</work_charging_available>
+				<data_file>data_sample_NHTS.csv</data_file>
+				<vehicle_index>1</vehicle_index>
+				<vehicle_location>DRIVING_HOME</vehicle_location>
+				<travel_distance>+32 mile</travel_distance>
+				<arrival_at_work>+800</arrival_at_work>
+				<duration_at_work>+28800 s</duration_at_work>
+				<arrival_at_home>+1730</arrival_at_home>
+				<duration_at_home>+50400 s</duration_at_home>
+				<battery_capacity>+2.91103 kWh</battery_capacity>
+				<battery_SOC>+2.91103 %</battery_SOC>
+				<battery_size>+100 kWh</battery_size>
+				<mileage_efficiency>+0.33 mile/kWh</mileage_efficiency>
+				<maximum_charge_rate>+7200 W</maximum_charge_rate>
+				<charging_efficiency>+0.9 unit</charging_efficiency>
+				<shape>+0.9 unit</shape>
+				<load>power_factor: 0.950000; power.r: 0.000000</load>
+				<energy>+1.27635+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.999787 pu</voltage_factor>
+				<breaker_amps>+36 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</evse>
+			<evse>
+				<id>45</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>EV_H_5_T_1_BS_646</name>
+				<charge_current>+30 A</charge_current>
+				<is_240>TRUE</is_240>
+				<time_to_leave_home>+0 A</time_to_leave_home>
+				<variation_mean>+241 s</variation_mean>
+				<variation_std_dev>+2732 s</variation_std_dev>
+				<variation_trip_mean>+0 mile</variation_trip_mean>
+				<variation_trip_std_dev>+0 mile</variation_trip_std_dev>
+				<mileage_classification>+33 mile</mileage_classification>
+				<work_charging_available>FALSE</work_charging_available>
+				<data_file>data_sample_NHTS.csv</data_file>
+				<vehicle_index>1</vehicle_index>
+				<vehicle_location>WORK</vehicle_location>
+				<travel_distance>+32 mile</travel_distance>
+				<arrival_at_work>+800</arrival_at_work>
+				<duration_at_work>+28800 s</duration_at_work>
+				<arrival_at_home>+1730</arrival_at_home>
+				<duration_at_home>+50400 s</duration_at_home>
+				<battery_capacity>+0.501804 kWh</battery_capacity>
+				<battery_SOC>+0.501804 %</battery_SOC>
+				<battery_size>+100 kWh</battery_size>
+				<mileage_efficiency>+0.33 mile/kWh</mileage_efficiency>
+				<maximum_charge_rate>+7200 W</maximum_charge_rate>
+				<charging_efficiency>+0.9 unit</charging_efficiency>
+				<shape>+0.9 unit</shape>
+				<load>power_factor: 0.950000; power.r: 0.000000</load>
+				<energy>+0+0i kVAh</energy>
+				<power>+0+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+0 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0 pu</current_fraction>
+				<impedance_fraction>+0 pu</impedance_fraction>
+				<power_fraction>+0 pu</power_fraction>
+				<power_factor>+0.95</power_factor>
+				<constant_power>+0+0j kVA</constant_power>
+				<constant_current>+0+0j kVA</constant_current>
+				<constant_admittance>+0+0j kVA</constant_admittance>
+				<voltage_factor>+0.99994 pu</voltage_factor>
+				<breaker_amps>+36 A</breaker_amps>
+				<configuration>IS220</configuration>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</evse>
+		</evse_list>
+		<ZIPload_list>
+			<inherits_from>residential_enduse</inherits_from>
+			<ZIPload>
+				<id>11</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(ZIPload:11)</name>
+				<heat_fraction>+0.9</heat_fraction>
+				<base_power>+0.269647 kW</base_power>
+				<power_pf>+1</power_pf>
+				<current_pf>+1</current_pf>
+				<impedance_pf>+1</impedance_pf>
+				<is_240>FALSE</is_240>
+				<breaker_val>+1000 A</breaker_val>
+				<actual_power>+0.269643+0j kVA</actual_power>
+				<multiplier>+1</multiplier>
+				<heatgain_only>FALSE</heatgain_only>
+				<demand_response_mode>FALSE</demand_response_mode>
+				<number_of_devices>0</number_of_devices>
+				<thermostatic_control_range>0</thermostatic_control_range>
+				<number_of_devices_off>+0</number_of_devices_off>
+				<number_of_devices_on>+0</number_of_devices_on>
+				<rate_of_cooling>-1 K/h</rate_of_cooling>
+				<rate_of_heating>-1 K/h</rate_of_heating>
+				<temperature>0</temperature>
+				<phi>+0.2</phi>
+				<demand_rate>+0.2 1/h</demand_rate>
+				<nominal_power>+0</nominal_power>
+				<duty_cycle>-1 pu</duty_cycle>
+				<recovery_duty_cycle>-1 pu</recovery_duty_cycle>
+				<period>+0 h</period>
+				<phase>+0 pu</phase>
+				<shape>+0 pu</shape>
+				<load>impedance_fraction: 0.300000; current_fraction: 0.300000; power_fraction: 0.400000; power_factor: 1.000000; power.r: 0.107859</load>
+				<energy>+3.30331+0i kVAh</energy>
+				<power>+0.269647+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+828.031 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0.3 pu</current_fraction>
+				<impedance_fraction>+0.3 pu</impedance_fraction>
+				<power_fraction>+0.4 pu</power_fraction>
+				<power_factor>+1</power_factor>
+				<constant_power>+0.107859+0j kVA</constant_power>
+				<constant_current>+0.080894+0j kVA</constant_current>
+				<constant_admittance>+0.080894+0j kVA</constant_admittance>
+				<voltage_factor>+0.999984 pu</voltage_factor>
+				<breaker_amps>+1000 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</ZIPload>
+			<ZIPload>
+				<id>19</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(ZIPload:19)</name>
+				<heat_fraction>+0.9</heat_fraction>
+				<base_power>+0.440935 kW</base_power>
+				<power_pf>+1</power_pf>
+				<current_pf>+1</current_pf>
+				<impedance_pf>+1</impedance_pf>
+				<is_240>FALSE</is_240>
+				<breaker_val>+1000 A</breaker_val>
+				<actual_power>+0.440864+0j kVA</actual_power>
+				<multiplier>+1</multiplier>
+				<heatgain_only>FALSE</heatgain_only>
+				<demand_response_mode>FALSE</demand_response_mode>
+				<number_of_devices>0</number_of_devices>
+				<thermostatic_control_range>0</thermostatic_control_range>
+				<number_of_devices_off>+0</number_of_devices_off>
+				<number_of_devices_on>+0</number_of_devices_on>
+				<rate_of_cooling>-1 K/h</rate_of_cooling>
+				<rate_of_heating>-1 K/h</rate_of_heating>
+				<temperature>0</temperature>
+				<phi>+0.2</phi>
+				<demand_rate>+0.2 1/h</demand_rate>
+				<nominal_power>+0</nominal_power>
+				<duty_cycle>-1 pu</duty_cycle>
+				<recovery_duty_cycle>-1 pu</recovery_duty_cycle>
+				<period>+0 h</period>
+				<phase>+0 pu</phase>
+				<shape>+0 pu</shape>
+				<load>impedance_fraction: 0.300000; current_fraction: 0.300000; power_fraction: 0.400000; power_factor: 1.000000; power.r: 0.176374</load>
+				<energy>+5.39483+0i kVAh</energy>
+				<power>+0.440935+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+1354.02 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0.3 pu</current_fraction>
+				<impedance_fraction>+0.3 pu</impedance_fraction>
+				<power_fraction>+0.4 pu</power_fraction>
+				<power_factor>+1</power_factor>
+				<constant_power>+0.176374+0j kVA</constant_power>
+				<constant_current>+0.13228+0j kVA</constant_current>
+				<constant_admittance>+0.13228+0j kVA</constant_admittance>
+				<voltage_factor>+0.999822 pu</voltage_factor>
+				<breaker_amps>+1000 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</ZIPload>
+			<ZIPload>
+				<id>27</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(ZIPload:27)</name>
+				<heat_fraction>+0.9</heat_fraction>
+				<base_power>+0.312266 kW</base_power>
+				<power_pf>+1</power_pf>
+				<current_pf>+1</current_pf>
+				<impedance_pf>+1</impedance_pf>
+				<is_240>FALSE</is_240>
+				<breaker_val>+1000 A</breaker_val>
+				<actual_power>+0.311968+0j kVA</actual_power>
+				<multiplier>+1</multiplier>
+				<heatgain_only>FALSE</heatgain_only>
+				<demand_response_mode>FALSE</demand_response_mode>
+				<number_of_devices>0</number_of_devices>
+				<thermostatic_control_range>0</thermostatic_control_range>
+				<number_of_devices_off>+0</number_of_devices_off>
+				<number_of_devices_on>+0</number_of_devices_on>
+				<rate_of_cooling>-1 K/h</rate_of_cooling>
+				<rate_of_heating>-1 K/h</rate_of_heating>
+				<temperature>0</temperature>
+				<phi>+0.2</phi>
+				<demand_rate>+0.2 1/h</demand_rate>
+				<nominal_power>+0</nominal_power>
+				<duty_cycle>-1 pu</duty_cycle>
+				<recovery_duty_cycle>-1 pu</recovery_duty_cycle>
+				<period>+0 h</period>
+				<phase>+0 pu</phase>
+				<shape>+0 pu</shape>
+				<load>impedance_fraction: 0.300000; current_fraction: 0.300000; power_fraction: 0.400000; power_factor: 1.000000; power.r: 0.124906</load>
+				<energy>+3.83203+0i kVAh</energy>
+				<power>+0.312266+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+958.907 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0.3 pu</current_fraction>
+				<impedance_fraction>+0.3 pu</impedance_fraction>
+				<power_fraction>+0.4 pu</power_fraction>
+				<power_factor>+1</power_factor>
+				<constant_power>+0.124906+0j kVA</constant_power>
+				<constant_current>+0.0936798+0j kVA</constant_current>
+				<constant_admittance>+0.0936798+0j kVA</constant_admittance>
+				<voltage_factor>+0.99894 pu</voltage_factor>
+				<breaker_amps>+1000 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</ZIPload>
+			<ZIPload>
+				<id>35</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(ZIPload:35)</name>
+				<heat_fraction>+0.9</heat_fraction>
+				<base_power>+0.999916 kW</base_power>
+				<power_pf>+1</power_pf>
+				<current_pf>+1</current_pf>
+				<impedance_pf>+1</impedance_pf>
+				<is_240>FALSE</is_240>
+				<breaker_val>+1000 A</breaker_val>
+				<actual_power>+0.999505+0j kVA</actual_power>
+				<multiplier>+1</multiplier>
+				<heatgain_only>FALSE</heatgain_only>
+				<demand_response_mode>FALSE</demand_response_mode>
+				<number_of_devices>0</number_of_devices>
+				<thermostatic_control_range>0</thermostatic_control_range>
+				<number_of_devices_off>+0</number_of_devices_off>
+				<number_of_devices_on>+0</number_of_devices_on>
+				<rate_of_cooling>-1 K/h</rate_of_cooling>
+				<rate_of_heating>-1 K/h</rate_of_heating>
+				<temperature>0</temperature>
+				<phi>+0.2</phi>
+				<demand_rate>+0.2 1/h</demand_rate>
+				<nominal_power>+0</nominal_power>
+				<duty_cycle>-1 pu</duty_cycle>
+				<recovery_duty_cycle>-1 pu</recovery_duty_cycle>
+				<period>+0 h</period>
+				<phase>+0 pu</phase>
+				<shape>+0 pu</shape>
+				<load>impedance_fraction: 0.300000; current_fraction: 0.300000; power_fraction: 0.400000; power_factor: 1.000000; power.r: 0.399966</load>
+				<energy>+12.2456+0i kVAh</energy>
+				<power>+0.999916+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+3070.54 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0.3 pu</current_fraction>
+				<impedance_fraction>+0.3 pu</impedance_fraction>
+				<power_fraction>+0.4 pu</power_fraction>
+				<power_factor>+1</power_factor>
+				<constant_power>+0.399966+0j kVA</constant_power>
+				<constant_current>+0.299975+0j kVA</constant_current>
+				<constant_admittance>+0.299975+0j kVA</constant_admittance>
+				<voltage_factor>+0.999543 pu</voltage_factor>
+				<breaker_amps>+1000 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</ZIPload>
+			<ZIPload>
+				<id>43</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>H_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>(ZIPload:43)</name>
+				<heat_fraction>+0.9</heat_fraction>
+				<base_power>+0.122328 kW</base_power>
+				<power_pf>+1</power_pf>
+				<current_pf>+1</current_pf>
+				<impedance_pf>+1</impedance_pf>
+				<is_240>FALSE</is_240>
+				<breaker_val>+1000 A</breaker_val>
+				<actual_power>+0.122327+0j kVA</actual_power>
+				<multiplier>+1</multiplier>
+				<heatgain_only>FALSE</heatgain_only>
+				<demand_response_mode>FALSE</demand_response_mode>
+				<number_of_devices>0</number_of_devices>
+				<thermostatic_control_range>0</thermostatic_control_range>
+				<number_of_devices_off>+0</number_of_devices_off>
+				<number_of_devices_on>+0</number_of_devices_on>
+				<rate_of_cooling>-1 K/h</rate_of_cooling>
+				<rate_of_heating>-1 K/h</rate_of_heating>
+				<temperature>0</temperature>
+				<phi>+0.2</phi>
+				<demand_rate>+0.2 1/h</demand_rate>
+				<nominal_power>+0</nominal_power>
+				<duty_cycle>-1 pu</duty_cycle>
+				<recovery_duty_cycle>-1 pu</recovery_duty_cycle>
+				<period>+0 h</period>
+				<phase>+0 pu</phase>
+				<shape>+0 pu</shape>
+				<load>impedance_fraction: 0.300000; current_fraction: 0.300000; power_fraction: 0.400000; power_factor: 1.000000; power.r: 0.048931</load>
+				<energy>+1.49891+0i kVAh</energy>
+				<power>+0.122328+0j kVA</power>
+				<peak_demand>+0+0i kVA</peak_demand>
+				<heatgain>+375.645 Btu/h</heatgain>
+				<heatgain_fraction>+0.9 pu</heatgain_fraction>
+				<current_fraction>+0.3 pu</current_fraction>
+				<impedance_fraction>+0.3 pu</impedance_fraction>
+				<power_fraction>+0.4 pu</power_fraction>
+				<power_factor>+1</power_factor>
+				<constant_power>+0.0489312+0j kVA</constant_power>
+				<constant_current>+0.0366984+0j kVA</constant_current>
+				<constant_admittance>+0.0366984+0j kVA</constant_admittance>
+				<voltage_factor>+0.99999 pu</voltage_factor>
+				<breaker_amps>+1000 A</breaker_amps>
+				<override>NORMAL</override>
+				<power_state>-1</power_state>
+			</ZIPload>
+		</ZIPload_list>
+		<thermal_storage_list>
+			<inherits_from>residential_enduse</inherits_from>
+		</thermal_storage_list>
+	</residential>
+	<powerflow>
+		<version.major>3</version.major>
+		<version.minor>0</version.minor>
+		<node_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</node_list>
+		<link_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</link_list>
+		<capacitor_list>
+			<inherits_from>node</inherits_from>
+		</capacitor_list>
+		<fuse_list>
+			<inherits_from>link</inherits_from>
+		</fuse_list>
+		<meter_list>
+			<inherits_from>node</inherits_from>
+		</meter_list>
+		<line_list>
+			<inherits_from>link</inherits_from>
+		</line_list>
+		<line_spacing_list>
+		</line_spacing_list>
+		<overhead_line_list>
+			<inherits_from>line</inherits_from>
+		</overhead_line_list>
+		<underground_line_list>
+			<inherits_from>line</inherits_from>
+		</underground_line_list>
+		<overhead_line_conductor_list>
+		</overhead_line_conductor_list>
+		<underground_line_conductor_list>
+		</underground_line_conductor_list>
+		<line_configuration_list>
+		</line_configuration_list>
+		<relay_list>
+			<inherits_from>link</inherits_from>
+		</relay_list>
+		<transformer_configuration_list>
+		</transformer_configuration_list>
+		<transformer_list>
+			<inherits_from>link</inherits_from>
+		</transformer_list>
+		<load_list>
+			<inherits_from>node</inherits_from>
+		</load_list>
+		<regulator_configuration_list>
+		</regulator_configuration_list>
+		<regulator_list>
+			<inherits_from>link</inherits_from>
+		</regulator_list>
+		<triplex_node_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</triplex_node_list>
+		<triplex_meter_list>
+			<inherits_from>triplex_node</inherits_from>
+			<triplex_meter>
+				<id>6</id>
+				<rank>5</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TP_T_1_BS_646</name>
+				<measured_real_energy>+80356.5 Wh</measured_real_energy>
+				<measured_reactive_energy>+10292.3 VAh</measured_reactive_energy>
+				<measured_power>+6518.36+10.4086d VA</measured_power>
+				<indiv_measured_power_1>+2944.09+16.1162d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+3582.71+360.415j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+23093.9 W</measured_demand>
+				<measured_real_power>+6411.09 W</measured_real_power>
+				<measured_reactive_power>+1177.65 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+120-120d V</measured_voltage_1>
+				<measured_voltage_2>+120-120d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-17.6828-17.007j A</measured_current_1>
+				<measured_current_2>+17.529+24.3542j A</measured_current_2>
+				<measured_current_N>+0.153831-7.34724j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>SWING</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+120-120d V</voltage_1>
+				<voltage_2>+120-120d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+240-120d V</voltage_12>
+				<voltage_1N>+120-120d V</voltage_1N>
+				<voltage_2N>+120-120d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>FALSE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+			<triplex_meter>
+				<id>8</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TPL_1_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TM_1_T_1_BS_646</name>
+				<measured_real_energy>+10954.2 Wh</measured_real_energy>
+				<measured_reactive_energy>+1837.05 VAh</measured_reactive_energy>
+				<measured_power>+581.048+9.86317d VA</measured_power>
+				<indiv_measured_power_1>+318.755+18.1949d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+269.643+4.26326e-014j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+3949.66 W</measured_demand>
+				<measured_real_power>+572.46 W</measured_real_power>
+				<measured_reactive_power>+99.5311 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+119.996-120d V</measured_voltage_1>
+				<measured_voltage_2>+119.998-120d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-1.98009-1.77075j A</measured_current_1>
+				<measured_current_2>+1.12354+1.946j A</measured_current_2>
+				<measured_current_N>+0.856545-0.175258j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+119.996-120d V</voltage_1>
+				<voltage_2>+119.998-120d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+239.995-120d V</voltage_12>
+				<voltage_1N>+119.996-120d V</voltage_1N>
+				<voltage_2N>+119.998-120d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>TRUE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+			<triplex_meter>
+				<id>16</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TPL_2_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TM_2_T_1_BS_646</name>
+				<measured_real_energy>+24146.6 Wh</measured_real_energy>
+				<measured_reactive_energy>+3398.61 VAh</measured_reactive_energy>
+				<measured_power>+840.996+8.77392d VA</measured_power>
+				<indiv_measured_power_1>+410.832+18.1949d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+440.864+0j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+7941.93 W</measured_demand>
+				<measured_real_power>+831.154 W</measured_real_power>
+				<measured_reactive_power>+128.282 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+119.977-119.996d V</measured_voltage_1>
+				<measured_voltage_2>+119.979-120.004d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-2.55234-2.28278j A</measured_current_1>
+				<measured_current_2>+1.8375+3.18209j A</measured_current_2>
+				<measured_current_N>+0.71484-0.899312j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+119.977-119.996d V</voltage_1>
+				<voltage_2>+119.979-120.004d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+239.956-120d V</voltage_12>
+				<voltage_1N>+119.977-119.996d V</voltage_1N>
+				<voltage_2N>+119.979-120.004d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>TRUE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+			<triplex_meter>
+				<id>24</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TPL_3_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TM_3_T_1_BS_646</name>
+				<measured_real_energy>+11498.1 Wh</measured_real_energy>
+				<measured_reactive_energy>+1516.86 VAh</measured_reactive_energy>
+				<measured_power>+3473.8+13.0684d VA</measured_power>
+				<indiv_measured_power_1>+1690.34+14.5864d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+1747.98+359.783j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+6869.99 W</measured_demand>
+				<measured_real_power>+3383.84 W</measured_real_power>
+				<measured_reactive_power>+785.476 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+119.885-119.992d V</measured_voltage_1>
+				<measured_voltage_2>+119.873-120.001d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-9.89643-10.043j A</measured_current_1>
+				<measured_current_2>+9.89043+11.1275j A</measured_current_2>
+				<measured_current_N>+0.00600211-1.08443j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+119.885-119.992d V</voltage_1>
+				<voltage_2>+119.873-120.001d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+239.757-119.997d V</voltage_12>
+				<voltage_1N>+119.885-119.992d V</voltage_1N>
+				<voltage_2N>+119.873-120.001d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>TRUE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+			<triplex_meter>
+				<id>32</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TPL_4_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TM_4_T_1_BS_646</name>
+				<measured_real_energy>+23514.8 Wh</measured_real_energy>
+				<measured_reactive_energy>+2097.85 VAh</measured_reactive_energy>
+				<measured_power>+1274.15+4.01639d VA</measured_power>
+				<indiv_measured_power_1>+285.81+18.1949d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+999.505-2.27374e-013j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+8427.98 W</measured_demand>
+				<measured_real_power>+1271.02 W</measured_real_power>
+				<measured_reactive_power>+89.2441 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+120.004-119.992d V</measured_voltage_1>
+				<measured_voltage_2>+119.945-120.011d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-1.77512-1.58788j A</measured_current_1>
+				<measured_current_2>+4.16784+7.21583j A</measured_current_2>
+				<measured_current_N>-2.39272-5.62795j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+120.004-119.992d V</voltage_1>
+				<voltage_2>+119.945-120.011d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+239.949-120.001d V</voltage_12>
+				<voltage_1N>+120.004-119.992d V</voltage_1N>
+				<voltage_2N>+119.945-120.011d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>TRUE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+			<triplex_meter>
+				<id>40</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TPL_5_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TM_5_T_1_BS_646</name>
+				<measured_real_energy>+10197.5 Wh</measured_real_energy>
+				<measured_reactive_energy>+1433.37 VAh</measured_reactive_energy>
+				<measured_power>+356.314+12.041d VA</measured_power>
+				<indiv_measured_power_1>+238.051+18.1949d VA</indiv_measured_power_1>
+				<indiv_measured_power_2>+122.327-3.55271e-014j VA</indiv_measured_power_2>
+				<indiv_measured_power_N>+0+0d VA</indiv_measured_power_N>
+				<measured_demand>+6708.08 W</measured_demand>
+				<measured_real_power>+348.475 W</measured_real_power>
+				<measured_reactive_power>+74.3312 VAr</measured_reactive_power>
+				<meter_power_consumption>+0+0j VA</meter_power_consumption>
+				<measured_voltage_1>+119.987-119.999d V</measured_voltage_1>
+				<measured_voltage_2>+119.999-120d V</measured_voltage_2>
+				<measured_voltage_N>+0+0d V</measured_voltage_N>
+				<measured_current_1>-1.47887-1.32253j A</measured_current_1>
+				<measured_current_2>+0.509705+0.882824j A</measured_current_2>
+				<measured_current_N>+0.969168+0.439706j A</measured_current_N>
+				<customer_interrupted>FALSE</customer_interrupted>
+				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
+				<monthly_bill>+0</monthly_bill>
+				<previous_monthly_bill>+0</previous_monthly_bill>
+				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
+				<monthly_fee>+0</monthly_fee>
+				<monthly_energy>+0 kWh</monthly_energy>
+				<bill_mode>NONE</bill_mode>
+				<bill_day>15</bill_day>
+				<price>+0</price>
+				<price_base>+0</price_base>
+				<first_tier_price>+0</first_tier_price>
+				<first_tier_energy>+0 kWh</first_tier_energy>
+				<second_tier_price>+0</second_tier_price>
+				<second_tier_energy>+0 kWh</second_tier_energy>
+				<third_tier_price>+0</third_tier_price>
+				<third_tier_energy>+0 kWh</third_tier_energy>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00012 V</maximum_voltage_error>
+				<voltage_1>+119.987-119.999d V</voltage_1>
+				<voltage_2>+119.999-120d V</voltage_2>
+				<voltage_N>+0+0d V</voltage_N>
+				<voltage_12>+239.986-120d V</voltage_12>
+				<voltage_1N>+119.987-119.999d V</voltage_1N>
+				<voltage_2N>+119.999-120d V</voltage_2N>
+				<current_1>+0+0i A</current_1>
+				<current_2>+0+0i A</current_2>
+				<current_N>+0+0i A</current_N>
+				<current_1_real>+0 A</current_1_real>
+				<current_2_real>+0 A</current_2_real>
+				<current_N_real>+0 A</current_N_real>
+				<current_1_reac>+0 A</current_1_reac>
+				<current_2_reac>+0 A</current_2_reac>
+				<current_N_reac>+0 A</current_N_reac>
+				<current_12>+0+0i A</current_12>
+				<current_12_real>+0 A</current_12_real>
+				<current_12_reac>+0 A</current_12_reac>
+				<residential_nominal_current_1>+0+0j A</residential_nominal_current_1>
+				<residential_nominal_current_2>+0+0j A</residential_nominal_current_2>
+				<residential_nominal_current_12>+0+0j A</residential_nominal_current_12>
+				<residential_nominal_current_1_real>+0 A</residential_nominal_current_1_real>
+				<residential_nominal_current_1_imag>+0 A</residential_nominal_current_1_imag>
+				<residential_nominal_current_2_real>+0 A</residential_nominal_current_2_real>
+				<residential_nominal_current_2_imag>+0 A</residential_nominal_current_2_imag>
+				<residential_nominal_current_12_real>+0 A</residential_nominal_current_12_real>
+				<residential_nominal_current_12_imag>+0 A</residential_nominal_current_12_imag>
+				<power_1>+0+0i VA</power_1>
+				<power_2>+0+0i VA</power_2>
+				<power_12>+0+0i VA</power_12>
+				<power_1_real>+0 W</power_1_real>
+				<power_2_real>+0 W</power_2_real>
+				<power_12_real>+0 W</power_12_real>
+				<power_1_reac>+0 VAr</power_1_reac>
+				<power_2_reac>+0 VAr</power_2_reac>
+				<power_12_reac>+0 VAr</power_12_reac>
+				<shunt_1>+0+0j S</shunt_1>
+				<shunt_2>+0+0j S</shunt_2>
+				<shunt_12>+0+0j S</shunt_12>
+				<impedance_1>+0+0i Ohm</impedance_1>
+				<impedance_2>+0+0i Ohm</impedance_2>
+				<impedance_12>+0+0i Ohm</impedance_12>
+				<impedance_1_real>+0 Ohm</impedance_1_real>
+				<impedance_2_real>+0 Ohm</impedance_2_real>
+				<impedance_12_real>+0 Ohm</impedance_12_real>
+				<impedance_1_reac>+0 Ohm</impedance_1_reac>
+				<impedance_2_reac>+0 Ohm</impedance_2_reac>
+				<impedance_12_reac>+0 Ohm</impedance_12_reac>
+				<house_present>TRUE</house_present>
+				<NR_mode>FALSE</NR_mode>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+876.433 min</current_uptime>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_meter>
+		</triplex_meter_list>
+		<triplex_line_list>
+			<inherits_from>line</inherits_from>
+			<triplex_line>
+				<id>7</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TP_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TPL_1_T_1_BS_646</name>
+				<configuration>trip_line_config</configuration>
+				<length>+6 ft</length>
+				<status>16777217</status>
+				<from>TP_T_1_BS_646</from>
+				<to>TM_1_T_1_BS_646</to>
+				<power_in>+581.062+9.8632d VA</power_in>
+				<power_out>+572.46+99.5311j VA</power_out>
+				<power_out_real>+572.46 W</power_out_real>
+				<power_losses>+0.0140852+10.9836d VA</power_losses>
+				<power_in_A>+318.764+18.1945d VA</power_in_A>
+				<power_in_B>+269.647+0.00182343j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+302.817+99.5311j VA</power_out_A>
+				<power_out_B>+269.643-4.26326e-014j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0.00963473+5.12224d VA</power_losses_A>
+				<power_losses_B>+0.00423096+0.00182343j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>-1.98009-1.77075j A</current_out_A>
+				<current_out_B>+1.12354+1.946j A</current_out_B>
+				<current_out_C>+0.608499+0.21737j A</current_out_C>
+				<current_in_A>-1.98009-1.77075j A</current_in_A>
+				<current_in_B>+1.12354+1.946j A</current_in_B>
+				<current_in_C>+0.608499+0.21737j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<flow_direction>CN|BF|AF</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating>+1000 A</continuous_rating>
+				<emergency_rating>+2000 A</emergency_rating>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_line>
+			<triplex_line>
+				<id>15</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TP_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TPL_2_T_1_BS_646</name>
+				<configuration>trip_line_config</configuration>
+				<length>+34 ft</length>
+				<status>16777217</status>
+				<from>TP_T_1_BS_646</from>
+				<to>TM_2_T_1_BS_646</to>
+				<power_in>+841.161+8.77432d VA</power_in>
+				<power_out>+831.154+128.282j VA</power_out>
+				<power_out_real>+831.154 W</power_out_real>
+				<power_losses>+0.165225+10.782d VA</power_losses>
+				<power_in_A>+410.911+18.1909d VA</power_in_A>
+				<power_in_B>+440.943+0.0330319j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+390.29+128.282j VA</power_out_A>
+				<power_out_B>+440.864+8.52651e-014j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0.0836919-1.45337d VA</power_losses_A>
+				<power_losses_B>+0.0786434+0.0330319j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>-2.55234-2.28278j A</current_out_A>
+				<current_out_B>+1.8375+3.18209j A</current_out_B>
+				<current_out_C>+0.796319-0.294538j A</current_out_C>
+				<current_in_A>-2.55234-2.28278j A</current_in_A>
+				<current_in_B>+1.8375+3.18209j A</current_in_B>
+				<current_in_C>+0.796319-0.294538j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<flow_direction>CN|BF|AF</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating>+1000 A</continuous_rating>
+				<emergency_rating>+2000 A</emergency_rating>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_line>
+			<triplex_line>
+				<id>23</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TP_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TPL_3_T_1_BS_646</name>
+				<configuration>trip_line_config</configuration>
+				<length>+45 ft</length>
+				<status>16777217</status>
+				<from>TP_T_1_BS_646</from>
+				<to>TM_3_T_1_BS_646</to>
+				<power_in>+3477.33+13.0651d VA</power_in>
+				<power_out>+3383.84+785.476j VA</power_out>
+				<power_out_real>+3383.84 W</power_out_real>
+				<power_losses>+3.53322+9.82492d VA</power_losses>
+				<power_in_A>+1691.97+14.5787d VA</power_in_A>
+				<power_in_B>+1749.83+360.195j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+1635.86+425.693j VA</power_out_A>
+				<power_out_B>+1747.98+359.783j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+1.64411+6.66133d VA</power_losses_A>
+				<power_losses_B>+1.8484+0.412185j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>-9.89643-10.043j A</current_out_A>
+				<current_out_B>+9.89043+11.1275j A</current_out_B>
+				<current_out_C>+0.419232-0.683088j A</current_out_C>
+				<current_in_A>-9.89643-10.043j A</current_in_A>
+				<current_in_B>+9.89043+11.1275j A</current_in_B>
+				<current_in_C>+0.419232-0.683088j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<flow_direction>CN|BF|AF</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating>+1000 A</continuous_rating>
+				<emergency_rating>+2000 A</emergency_rating>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_line>
+			<triplex_line>
+				<id>31</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TP_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TPL_4_T_1_BS_646</name>
+				<configuration>trip_line_config</configuration>
+				<length>+26 ft</length>
+				<status>16777217</status>
+				<from>TP_T_1_BS_646</from>
+				<to>TM_4_T_1_BS_646</to>
+				<power_in>+1274.62+4.02138d VA</power_in>
+				<power_out>+1271.02+89.2441j VA</power_out>
+				<power_out_real>+1271.02 W</power_out_real>
+				<power_losses>+0.483148+17.2971d VA</power_losses>
+				<power_in_A>+285.801+18.1867d VA</power_in_A>
+				<power_in_B>+999.962+0.184825j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+271.519+89.2441j VA</power_out_A>
+				<power_out_B>+999.505+1.13687e-013j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0.0414178-83.7543d VA</power_losses_A>
+				<power_losses_B>+0.456792+0.184825j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>-1.77512-1.58788j A</current_out_A>
+				<current_out_B>+4.16784+7.21583j A</current_out_B>
+				<current_out_C>+0.643773-4.47366j A</current_out_C>
+				<current_in_A>-1.77512-1.58788j A</current_in_A>
+				<current_in_B>+4.16784+7.21583j A</current_in_B>
+				<current_in_C>+0.643773-4.47366j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<flow_direction>CN|BF|AR</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating>+1000 A</continuous_rating>
+				<emergency_rating>+2000 A</emergency_rating>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_line>
+			<triplex_line>
+				<id>39</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>TP_T_1_BS_646</parent>
+				<clock>2010-07-05 14:36:26 PDT</clock>
+				<name>TPL_5_T_1_BS_646</name>
+				<configuration>trip_line_config</configuration>
+				<length>+26 ft</length>
+				<status>16777217</status>
+				<from>TP_T_1_BS_646</from>
+				<to>TM_5_T_1_BS_646</to>
+				<power_in>+356.342+12.0411d VA</power_in>
+				<power_out>+348.475+74.3312j VA</power_out>
+				<power_out_real>+348.475 W</power_out_real>
+				<power_losses>+0.0276617+13.7429d VA</power_losses>
+				<power_in_A>+238.077+18.1943d VA</power_in_A>
+				<power_in_B>+122.328+0.000654353j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+226.148+74.3312j VA</power_out_A>
+				<power_out_B>+122.327+7.10543e-015j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0.0263793+12.9622d VA</power_losses_A>
+				<power_losses_B>+0.00116265+0.000654353j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>-1.47887-1.32253j A</current_out_A>
+				<current_out_B>+0.509705+0.882824j A</current_out_B>
+				<current_out_C>+0.444091+0.649189j A</current_out_C>
+				<current_in_A>-1.47887-1.32253j A</current_in_A>
+				<current_in_B>+0.509705+0.882824j A</current_in_B>
+				<current_in_C>+0.444091+0.649189j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<flow_direction>CN|BF|AF</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating>+1000 A</continuous_rating>
+				<emergency_rating>+2000 A</emergency_rating>
+				<phases>BS</phases>
+				<nominal_voltage>+120 V</nominal_voltage>
+			</triplex_line>
+		</triplex_line_list>
+		<triplex_line_configuration_list>
+			<triplex_line_configuration>
+				<id>2</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 00:00:00 PDT</clock>
+				<name>trip_line_config</name>
+				<conductor_1>triplex_line_conductor:3</conductor_1>
+				<conductor_2>triplex_line_conductor:4</conductor_2>
+				<conductor_N>triplex_line_conductor:5</conductor_N>
+				<insulation_thickness>+0.08 in</insulation_thickness>
+				<diameter>+0.368 in</diameter>
+				<z11>+0+0j Ohm/mile</z11>
+				<z12>+0+0j Ohm/mile</z12>
+				<z21>+0+0j Ohm/mile</z21>
+				<z22>+0+0j Ohm/mile</z22>
+			</triplex_line_configuration>
+		</triplex_line_configuration_list>
+		<triplex_line_conductor_list>
+			<triplex_line_conductor>
+				<id>3</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 00:00:00 PDT</clock>
+				<name>(triplex_line_conductor:3)</name>
+				<resistance>+0.97 Ohm/mile</resistance>
+				<geometric_mean_radius>+0.01111 ft</geometric_mean_radius>
+				<rating.summer.continuous>+202 A</rating.summer.continuous>
+				<rating.summer.emergency>+212.1 A</rating.summer.emergency>
+				<rating.winter.continuous>+202 A</rating.winter.continuous>
+				<rating.winter.emergency>+212.1 A</rating.winter.emergency>
+			</triplex_line_conductor>
+			<triplex_line_conductor>
+				<id>4</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 00:00:00 PDT</clock>
+				<name>(triplex_line_conductor:4)</name>
+				<resistance>+0.97 Ohm/mile</resistance>
+				<geometric_mean_radius>+0.01111 ft</geometric_mean_radius>
+				<rating.summer.continuous>+202 A</rating.summer.continuous>
+				<rating.summer.emergency>+212.1 A</rating.summer.emergency>
+				<rating.winter.continuous>+202 A</rating.winter.continuous>
+				<rating.winter.emergency>+212.1 A</rating.winter.emergency>
+			</triplex_line_conductor>
+			<triplex_line_conductor>
+				<id>5</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2010-07-05 00:00:00 PDT</clock>
+				<name>(triplex_line_conductor:5)</name>
+				<resistance>+0.97 Ohm/mile</resistance>
+				<geometric_mean_radius>+0.01111 ft</geometric_mean_radius>
+				<rating.summer.continuous>+202 A</rating.summer.continuous>
+				<rating.summer.emergency>+212.1 A</rating.summer.emergency>
+				<rating.winter.continuous>+202 A</rating.winter.continuous>
+				<rating.winter.emergency>+212.1 A</rating.winter.emergency>
+			</triplex_line_conductor>
+		</triplex_line_conductor_list>
+		<switch_list>
+			<inherits_from>link</inherits_from>
+		</switch_list>
+		<substation_list>
+			<inherits_from>node</inherits_from>
+		</substation_list>
+		<pqload_list>
+			<inherits_from>load</inherits_from>
+		</pqload_list>
+		<voltdump_list>
+		</voltdump_list>
+		<series_reactor_list>
+			<inherits_from>link</inherits_from>
+		</series_reactor_list>
+		<restoration_list>
+		</restoration_list>
+		<frequency_gen_list>
+		</frequency_gen_list>
+		<volt_var_control_list>
+		</volt_var_control_list>
+		<fault_check_list>
+		</fault_check_list>
+		<motor_list>
+			<inherits_from>node</inherits_from>
+		</motor_list>
+		<billdump_list>
+		</billdump_list>
+		<power_metrics_list>
+		</power_metrics_list>
+		<currdump_list>
+		</currdump_list>
+		<recloser_list>
+			<inherits_from>switch</inherits_from>
+		</recloser_list>
+		<sectionalizer_list>
+			<inherits_from>switch</inherits_from>
+		</sectionalizer_list>
+		<emissions_list>
+		</emissions_list>
+	</powerflow>
+</gridlabd>

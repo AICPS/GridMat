@@ -1,0 +1,178 @@
+#set warn=1
+#set verbose=0
+#set debug=0
+
+clock {
+	timezone PST+8PDT;
+	starttime '2005-11-01 00:00:00 PST';
+	stoptime '2005-11-02 00:00:00 PST';
+};
+
+#include "water_and_setpoint_schedule.glm";
+#include "appliance_schedules.glm";
+#include "IEEE_13.glm";
+
+module residential;
+
+class spec{
+	double travel_distance[mile];
+	double mileage_efficiency[mile/kWh];
+	
+	double charge_rate[W];
+}
+
+
+object spec{
+	name "spec2";
+	travel_distance 40.0;
+	mileage_efficiency 3;
+	
+	charge_rate 2400;
+}
+
+object house{
+	object evcharger_det {
+		name EVSE;
+		charge_rate 3300;
+		variation_mean 0.0;
+		variation_std_dev 0.0;
+		variation_trip_mean 0.0;
+		variation_trip_std_dev 0.0;
+		work_charging_available false;
+		vehicle_location HOME;
+		travel_distance spec2.travel_distance;
+		arrival_at_work 730; 
+		duration_at_work 28800;
+		arrival_at_home 1730; 
+		duration_at_home 28800;
+		battery_SOC 100;
+		battery_size 40;
+		mileage_classification 0.0;
+		mileage_efficiency 2.8;
+		maximum_charge_rate 3300;
+		charging_efficiency	0.95;        
+	};
+	object occupantload {
+		name occupant_H_1;
+		schedule_skew -254;
+		number_of_occupants 4;
+		occupancy_fraction OCCUPANT;
+		heatgain_per_person 335;
+		configuration IS220;
+		groupid House_Type_2;
+	};
+	object lights {
+		name light_H_1;
+		installed_power 0.900000kW;
+		demand LIGHTS;
+		type INCANDESCENT;
+		placement INDOOR;
+		schedule_skew 237;
+		groupid House_Type_2;
+	};
+	object dishwasher {
+		name dishwasher_H_5;
+		schedule_skew 603;
+		energy_baseline 1.300000kWh;
+		Heateddry_option_check true;
+		daily_dishwasher_demand DISHWASHER*60;
+		groupid House_Type_2;
+	};
+	object lights {
+		name light_H_5;
+		installed_power 0.900000kW;
+		demand LIGHTS;
+		type INCANDESCENT;
+		placement INDOOR;
+		schedule_skew -1619;
+		groupid House_Type_2;
+	};
+	object waterheater {
+		name waterheater_H_5;
+		schedule_skew 1465;
+		tank_volume 60.000000;
+		heating_element_capacity 4.000000kW;
+		demand WATERHEATER;
+		groupid House_Type_2;
+	};
+	object plugload {
+		name plugload_H_5;
+		schedule_skew -690;
+		installed_power 1.500000kW;
+		demand PLUGS;
+		groupid House_Type_2;
+	};
+	object refrigerator {
+		name refrigerator_H_5;
+		schedule_skew 2505;
+		defrost_power 0.600000kW;
+		door_opening_criterion REFRIGERATOR;
+		daily_door_opening 52;
+		size 25.000000;
+		state COMPRESSSOR_OFF_NORMAL;
+		defrost_criterion DOOR_OPENINGS;
+		groupid House_Type_2;
+	};
+	object clotheswasher {
+		name clotheswasher_H_5;
+		schedule_skew 457;
+		motor_power 1.000000kW;
+		demand CLOTHESWASHER*600;
+		state STOPPED;
+		groupid House_Type_2;
+	};
+	object dryer{
+		name dryer_H_5;
+		schedule_skew -1517;
+		energy_baseline 2.500000kWh;
+		state STOPPED;
+		daily_dryer_demand DRYER;
+		queue_min 0;
+		queue_max 2;
+		groupid House_Type_2;
+	};
+	object range{
+		name range_H_5;
+		schedule_skew -804;
+		heating_element_capacity 2.500000kW;
+		oven_volume 8.000000;
+		demand_oven RANGE*60;
+		oven_setpoint 120.000000;
+		queue_min 0;
+		queue_max 2;
+		groupid House_Type_2;
+	};
+}
+
+
+module tape;
+object collector { 
+	group "class=evcharger_det";  
+	property "avg(power.real)"; 
+	interval 600;
+	file chargerpower.csv;
+}
+
+object collector {
+	group "class=dryer";
+	property avg(daily_dryer_demand);
+	interval 60;
+	limit 38880;
+	file power_dryer.csv;
+}
+
+object multi_recorder {
+	property EVSE:charge_rate,EVSE:maximum_charge_rate;
+	file "EV6.csv";
+	interval 600;
+}
+object multi_recorder {
+	property EVSE:battery_capacity,EVSE:battery_SOC;
+	file "EV7.csv";
+	interval 600;
+}
+object multi_recorder {
+    property occupant_H_1:occupancy_fraction, light_H_1:installed_power, light_H_1:actual_power;
+    file "occupant_H_1.csv";
+    interval 600;
+}

@@ -1,0 +1,1107 @@
+class transformer
+phases
+nominal_voltage
+status
+		 power_in
+		 power_out
+		 power_out_real
+		 power_losses
+		 power_in_A
+		 power_in_B
+		 power_in_C
+		 power_out_A
+		 power_out_B
+		 power_out_C
+		 power_losses_A
+		 power_losses_B
+		 power_losses_C
+		 current_out_A
+		 current_out_B
+		 current_out_C
+		 current_in_A
+		 current_in_B
+		 current_in_C
+		 fault_current_in_A
+		 fault_current_in_B
+		 fault_current_in_C
+		 fault_current_out_A
+		 fault_current_out_B
+		 fault_current_out_C
+		 flow_direction
+		 mean_repair_time
+		 continuous_rating
+		 emergency_rating
+	 ambient_temperature[degC] 
+	 top_oil_hot_spot_temperature[degC] 
+	 winding_hot_spot_temperature[degC] 
+	 percent_loss_of_life 
+	 aging_constant 
+	 use_thermal_model 
+	 transformer_replacement_count
+	 aging_granularity 
+
+class triplex_meter
+		phases
+		 nominal_voltage
+	 bustype
+	 busflags
+	object reference_bus
+	 maximum_voltage_error
+	 voltage_1
+	 voltage_2
+	 voltage_N
+	 voltage_12
+	 voltage_1N
+	 voltage_2N
+	 current_1
+	 current_2
+	 current_N
+	 current_1_real
+	 current_2_real
+	 current_N_real
+	 current_1_reac
+	 current_2_reac
+	 current_N_reac
+	 current_12
+	 current_12_real
+	 current_12_reac
+	 residential_nominal_current_1
+	 residential_nominal_current_2
+	 residential_nominal_current_12
+	 residential_nominal_current_1_real
+	 residential_nominal_current_1_imag
+	 residential_nominal_current_2_real
+	 residential_nominal_current_2_imag
+	 residential_nominal_current_12_real
+	 residential_nominal_current_12_imag
+	 power_1
+	 power_2
+	 power_12
+	 power_1_real
+	 power_2_real
+	 power_12_real
+	 power_1_reac
+	 power_2_reac
+	 power_12_reac
+	 shunt_1
+	 shunt_2
+	 shunt_12
+	 impedance_1
+	 impedance_2
+	 impedance_12
+	 impedance_1_real
+	 impedance_2_real
+	 impedance_12_real
+	 impedance_1_reac
+	 impedance_2_reac
+	 impedance_12_reac
+	 house_present
+	 NR_mode
+	service_status
+	 service_status_
+	 previous_uptime
+	 current_uptime
+
+	 power_in
+			 power_out
+			 power_out_real
+			 power_losses
+			 power_in_A
+			 power_in_B
+			 power_in_C
+			 power_out_A
+			 power_out_B
+			 power_out_C
+			 power_losses_A
+			 power_losses_B
+			 power_losses_C
+			 current_out_A
+			 current_out_B
+			 current_out_C
+			 current_in_A
+			 current_in_B
+			 current_in_C
+			 fault_current_in_A
+			 fault_current_in_B
+			 fault_current_in_C
+			 fault_current_out_A
+			 fault_current_out_B
+			 fault_current_out_C
+
+class triplex_line_configuration 
+	object conductor_1
+	object conductor_2
+	object conductor_N
+	 insulation_thickness
+	 diameter
+	object spacing
+	 z11
+	 z12
+	 z21
+	 z22
+
+class house 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	 floor_area // home conditioned floor area
+	 gross_wall_area // gross outdoor wall area
+	 ceiling_height // average ceiling height
+	 aspect_ratio // aspect ratio of the home's footprint
+	 envelope_UA // overall UA of the home's envelope
+	 window_wall_ratio // ratio of window area to wall area
+	 number_of_doors // ratio of door area to wall area
+	 exterior_wall_fraction // ratio of exterior wall ratio to wall area
+	 interior_exterior_wall_ratio // ratio of interior to exterior walls
+	 exterior_ceiling_fraction // ratio of external ceiling sf to floor area
+	 exterior_floor_fraction // ratio of floor area used in UA calculation
+	 window_shading // transmission coefficient through window due to glazing
+	 window_exterior_transmission_coefficient // coefficient for the amount of energy that passes through window
+	 solar_heatgain_factor // product of the window area, window transmitivity, and the window exterior transmission coefficient
+	 airchange_per_hour // number of air-changes per hour
+	 airchange_UA // additional UA due to air infiltration
+	 UA // the total UA
+	 internal_gain // internal heat gains
+	 solar_gain // solar heat gains
+	 incident_solar_radiation // average incident solar radiation hitting the house
+	 heat_cool_gain // system heat gains(losses)
+	 include_solar_quadrant // bit  for determining which solar incidence quadrants should be included in the solar heatgain
+	 horizontal_diffuse_solar_radiation // incident solar radiation hitting the top of the house
+	 north_incident_solar_radiation // incident solar radiation hitting the north side of the house
+	 northwest_incident_solar_radiation // incident solar radiation hitting the northwest side of the house
+	 west_incident_solar_radiation // incident solar radiation hitting the west side of the house
+	 southwest_incident_solar_radiation // incident solar radiation hitting the southwest side of the house
+	 south_incident_solar_radiation // incident solar radiation hitting the south side of the house
+	 southeast_incident_solar_radiation // incident solar radiation hitting the southeast side of the house
+	 east_incident_solar_radiation // incident solar radiation hitting the east side of the house
+	 northeast_incident_solar_radiation // incident solar radiation hitting the northeast side of the house
+	 heating_cop_curve // Defines the function type to use for the adjusted heating COP as a function of outside air temperature.
+	 heating_cap_curve // Defines the function type to use for the adjusted heating capacity as a function of outside air temperature.
+	cooling_cop_curve // Defines the function type to use for the adjusted cooling COP as a function of outside air temperature.
+	 cooling_cap_curve // Defines the function type to use for the adjusted cooling capacity as a function of outside air temperature.
+	 use_latent_heat // ean for using the heat latency of the air to the humidity when cooling.
+	 include_fan_heatgain // ean to choose whether to include the heat generated by the fan in the ETP model.
+	 thermostat_deadband // deadband of thermostat control
+	 dlc_off // used as a cap to off the thermostat deadband for direct load control applications
+	 thermostat_cycle_time // minimum time in seconds between thermostat updates
+	 thermostat_off_cycle_time // the minimum amount of time the thermostat cycle must stay in the off state
+	 thermostat_on_cycle_time // the minimum amount of time the thermostat cycle must stay in the on state
+	 thermostat_last_cycle_time // last time the thermostat changed state
+	 heating_point // thermostat heating point
+	 cooling_point // thermostat cooling point
+	 design_heating_point // system design heating point
+	 design_cooling_point // system design cooling point
+	 over_sizing_factor // over sizes the heating and cooling system from standard specifications (0.2 ='s 120% sizing)
+	 design_heating_capacity // system heating capacity
+	 design_cooling_capacity // system cooling capacity
+	 cooling_design_temperature // system cooling design temperature
+	 heating_design_temperature // system heating design temperature
+	 design_peak_solar // system design solar load
+	 design_internal_gains// system design internal gains
+	 air_heat_fraction // fraction of heat gain/loss that goes to air (as opposed to mass)
+	 mass_solar_gain_fraction // fraction of the heat gain/loss from the solar gains that goes to the mass
+	 mass_internal_gain_fraction // fraction of heat gain/loss from the internal gains that goes to the mass
+	 auxiliary_heat_capacity // installed auxiliary heating capacity
+	 aux_heat_deadband // temperature off from standard heat activation to auxiliary heat activation
+	 aux_heat_temperature_lockout // temperature at which auxiliary heat will not engage above
+	 aux_heat_time_delay // time required for heater to run until auxiliary heating engages
+	 cooling_supply_air_temp // temperature of air blown out of the cooling system
+	 heating_supply_air_temp // temperature of air blown out of the heating system
+	 duct_pressure_drop[inH2O] // end-to-end pressure drop for the ventilation ducts, in inches of water
+	 fan_design_power // designed maximum power draw of the ventilation fan
+	 fan_low_power_fraction // fraction of ventilation fan power draw during low-power mode (two-speed only)
+	 fan_power // current ventilation fan power draw
+	 fan_design_airflow[cfm] // designed airflow for the ventilation system
+	 fan_impedance_fraction // Impedance component of fan ZIP load
+	 fan_power_fraction // Power component of fan ZIP load
+	 fan_current_fraction // Current component of fan ZIP load
+	 fan_power_factor // Power factor of the fan load
+	 heating_demand // the current power draw to run the heating system
+	 cooling_demand // the current power draw to run the cooling system
+	 heating_COP // system heating performance coefficient
+	 cooling_COP[Btu/kWh] // system cooling performance coefficient
+	 air_temperature // indoor air temperature
+	 outdoor_temperature // outdoor air temperature
+	 outdoor_rh[%] // outdoor relative humidity
+	 mass_heat_capacity // interior mass heat capacity
+	 mass_heat_coeff // interior mass heat exchange coefficient
+	 mass_temperature // interior mass temperature
+	 air_volume // air volume
+	 air_mass[lb] // air mass
+	 air_heat_capacity // air thermal mass
+	 latent_load_fraction // fractional increase in cooling load due to latent heat
+	 total_thermal_mass_per_floor_area
+	 interior_surface_heat_transfer_coeff
+	 number_of_stories // number of stories within the structure
+	 is_AUX_on // logic statement to determine population statistics - is the AUX on? 0 no, 1 yes
+	 is_HEAT_on // logic statement to determine population statistics - is the HEAT on? 0 no, 1 yes
+	 is_COOL_on // logic statement to determine population statistics - is the COOL on? 0 no, 1 yes
+	 thermal_storage_present // logic statement for determining if energy storage is present
+	 thermal_storage_in_use // logic statement for determining if energy storage is being utilized
+	  system_type // heating/cooling system type/options
+	 auxiliary_strategy // auxiliary heating activation strategies
+	  system_mode // heating/cooling system operation state
+	  last_system_mode // heating/cooling system operation state
+	  heating_system_type
+	  cooling_system_type
+	 auxiliary_system_type
+	  fan_type
+	 thermal_integrity_level // default envelope UA tings
+	  glass_type // glass used in the windows
+	  window_frame // type of window frame
+	  glazing_treatment // the treatment to increase the reflectivity of the exterior windows
+	  glazing_layers // number of layers of glass in each window
+	  motor_model // indicates the level of detail used in modelling the hvac motor parameters
+	  motor_efficiency // when using motor model, describes the efficiency of the motor
+	 last_mode_timer
+	 hvac_motor_efficiency // when using motor model, percent efficiency of hvac motor
+	 hvac_motor_loss_power_factor // when using motor model, power factor of motor losses
+	 Rroof // roof R-value
+	 Rwall // wall R-value
+	 Rfloor // floor R-value
+	 Rwindows // window R-value
+	 Rdoors // door R-value
+	 hvac_breaker_rating // determines the amount of current the HVAC circuit breaker can handle
+	 hvac_power_factor // power factor of hvac
+	 hvac_load // heating/cooling system load
+	 last_heating_load // stores the previous heating/cooling system load
+	 last_cooling_load // stores the previous heating/cooling system load
+	 hvac_power // describes hvac load  power consumption
+	 total_load // total panel enduse load
+	 panel.energy // the total energy consumed since the last meter reading
+	 panel.power // the total power consumption of the load
+	 panel.peak_demand // the peak power consumption since the last meter reading
+	 panel.heatgain // the heat transferred from the enduse to the parent
+	 panel.heatgain_fraction // the fraction of the heat that goes to the parent
+	 panel.current_fraction // the fraction of total power that is constant current
+	 panel.impedance_fraction // the fraction of total power that is constant impedance
+	 panel.power_fraction // the fraction of the total power that is constant power
+	 panel.power_factor // the power factor of the load
+	 panel.constant_power // the constant power portion of the total load
+	 panel.constant_current // the constant current portion of the total load
+	 panel.constant_admittance // the constant admittance portion of the total load
+	 panel.voltage_factor // the voltage change factor
+	 panel.breaker_amps // the rated breaker amperage
+	 panel.configuration // the load configuration options
+	 design_internal_gain_density// average density of heat generating devices in the house
+	 compressor_on
+	 compressor_count
+	 hvac_last_on
+	 hvac_last_off
+	 hvac_period_length
+	 hvac_duty_cycle
+	 thermostat_control // determine level of internal thermostatic control
+
+class lights 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 type // lighting type (affects power_factor)
+	 placement // lighting location (affects where heatgains go)
+	 installed_power // installed lighting capacity
+	 power_density// installed power density
+	 curtailment // lighting curtailment factor
+	 demand // the current lighting demand
+	 actual_power // actual power demand of lights object
+
+
+class waterheater 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+
+	 tank_volume // the volume of water in the tank when it is full
+	 tank_UA // the UA of the tank (surface area divided by R-value)
+	 tank_diameter // the diameter of the water heater tank
+	 water_demand// the hot water draw from the water heater
+	 heating_element_capacity // the power of the heating element
+	 inlet_water_temperature // the inlet temperature of the water tank
+	 heat_mode // the energy source for heating the water heater
+	 location // whether the water heater is inside or outside
+	 tank_setpoint // the temperature around which the water heater will heat its contents
+	 thermostat_deadband // the degree to heat the water tank, when needed
+	 temperature // the outlet temperature of the water tank
+	 height // the height of the hot water column within the water tank
+	 demand// the water consumption
+	 actual_load // the actual load based on the current voltage across the coils
+	 previous_load // the actual load based on current voltage stored for use in controllers
+	 actual_power // the actual power based on the current voltage across the coils
+	 is_waterheater_on // simple logic output to determine state of waterheater (1-on, 0-off)
+
+class refrigerator 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		configuration // the load configuration options
+		 override
+		 power_state
+	
+	 size
+	 rated_capacity
+	 temperature
+	 point
+	 deadband
+	 cycle_time
+	 output
+	 event_temp
+	 UA
+	 compressor_off_normal_energy
+	 compressor_off_normal_power
+	 compressor_on_normal_energy
+	 compressor_on_normal_power
+	 defrost_energy
+	 defrost_power
+	 icemaking_energy
+	 icemaking_power
+	 ice_making_probability
+	 FF_Door_Openings
+	 door_opening_energy
+	 door_opening_power
+	 DO_Thershold
+	 dr_mode_
+	 energy_needed
+	 energy_used
+	 refrigerator_power
+	 icemaker_running
+	 check_DO
+	 is_240
+	 defrostDelayed
+	 long_compressor_cycle_due
+	 long_compressor_cycle_time
+	 long_compressor_cycle_power
+	 long_compressor_cycle_energy
+	 long_compressor_cycle_threshold
+	 defrost_criterion
+	 run_defrost
+	 door_opening_criterion
+	 compressor_defrost_time
+	 delay_defrost_time
+	 daily_door_opening
+	 state
+
+
+class clotheswasher 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 motor_power
+	 circuit_split
+	 queue // the total laundry accumulated
+	 demand // the amount of laundry accumulating daily
+	 energy_meter
+	 stall_voltage
+	 start_voltage
+	 clothesWasherPower
+	 stall_impedance
+	 trip_delay
+	 re_delay
+	 Is_on
+	 normal_perc
+	 perm_press_perc
+	 NORMAL_PREWASH_POWER
+	 NORMAL_WASH_POWER
+	 NORMAL_SPIN_LOW_POWER
+	 NORMAL_SPIN_MEDIUM_POWER
+	 NORMAL_SPIN_HIGH_POWER
+	 NORMAL_SMALLWASH_POWER
+	 NORMAL_PREWASH_ENERGY
+	 NORMAL_WASH_ENERGY
+	 NORMAL_SPIN_LOW_ENERGY
+	 NORMAL_SPIN_MEDIUM_ENERGY
+	 NORMAL_SPIN_HIGH_ENERGY
+	 NORMAL_SMALLWASH_ENERGY
+	 PERMPRESS_PREWASH_POWER
+	 PERMPRESS_WASH_POWER
+	 PERMPRESS_SPIN_LOW_POWER
+	 PERMPRESS_SPIN_MEDIUM_POWER
+	 PERMPRESS_SPIN_HIGH_POWER
+	 PERMPRESS_SMALLWASH_POWER
+	 PERMPRESS_PREWASH_ENERGY
+	 PERMPRESS_WASH_ENERGY
+	 PERMPRESS_SPIN_LOW_ENERGY
+	 PERMPRESS_SPIN_MEDIUM_ENERGY
+	 PERMPRESS_SPIN_HIGH_ENERGY
+	 PERMPRESS_SMALLWASH_ENERGY
+	 GENTLE_PREWASH_POWER
+	 GENTLE_WASH_POWER
+	 GENTLE_SPIN_LOW_POWER
+	 GENTLE_SPIN_MEDIUM_POWER
+	 GENTLE_SPIN_HIGH_POWER
+	 GENTLE_SMALLWASH_POWER
+	 GENTLE_PREWASH_ENERGY
+	 GENTLE_WASH_ENERGY
+	 GENTLE_SPIN_LOW_ENERGY
+	 GENTLE_SPIN_MEDIUM_ENERGY
+	 GENTLE_SPIN_HIGH_ENERGY
+	 GENTLE_SMALLWASH_ENERGY
+	 queue_min
+	 queue_max
+	 clotheswasher_run_prob
+	 state
+	spin_mode
+	 wash_mode
+
+class dishwasher 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 control_power
+	 dishwasher_coil_power_1
+	 dishwasher_coil_power_2
+	 dishwasher_coil_power_3
+	 motor_power
+	 circuit_split
+	 queue // number of loads accumulated
+	 stall_voltage
+	 start_voltage
+	 stall_impedance
+	 trip_delay
+	 re_delay
+	 total_power
+	 state
+	 energy_baseline
+	 energy_used
+	 control_check1
+	 control_check2
+	 control_check3
+	 control_check4
+	 control_check5
+	 control_check6
+	 control_check7
+	 control_check8
+	 control_check9
+	 control_check10
+	 control_check11
+	 control_check12
+	 control_check_temp
+	 motor_only_check1
+	 motor_only_check2
+	 motor_only_check3
+	 motor_only_check4
+	 motor_only_check5
+	 motor_only_check6
+	 motor_only_check7
+	 motor_only_check8
+	 motor_only_check9
+	 motor_only_temp1
+	 motor_only_temp2
+	 motor_coil_only_check1
+	 motor_coil_only_check2
+	 heateddry_check1
+	 heateddry_check2
+	 coil_only_check1
+	 coil_only_check2
+	 coil_only_check3
+	 Heateddry_option_check
+	 queue_min
+	 queue_max
+	 pulse_interval_1
+	 pulse_interval_2
+	 pulse_interval_3
+	 pulse_interval_4
+	 pulse_interval_5
+	 pulse_interval_6
+	 pulse_interval_7
+	 pulse_interval_8
+	 pulse_interval_9
+	 pulse_interval_10
+	 pulse_interval_11
+	 pulse_interval_12
+	 pulse_interval_13
+	 pulse_interval_14
+	 pulse_interval_15
+	 pulse_interval_16
+	 pulse_interval_17
+	 pulse_interval_18
+	 pulse_interval_19
+	 dishwasher_run_prob
+	 energy_needed
+	 dishwasher_demand
+	 daily_dishwasher_demand
+	 actual_dishwasher_demand
+	 motor_on_off
+	 motor_coil_on_off
+	 is_240 // load is 220/240 V (across both phases)
+
+
+class plugload 
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 circuit_split
+	 demand
+	 installed_power // installed plugs capacity
+	 actual_power // actual power demand
+
+
+class microwave
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 installed_power // rated microwave power level
+	 standby_power // standby microwave power draw (unshaped only)
+	 circuit_split
+	 state // on/off state of the microwave
+	 cycle_length // length of the combined on/off cycle between uses
+	 runtime // 
+	 state_time // 
+
+
+class range {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 oven_volume // the volume of the oven
+	 oven_UA // the UA of the oven (surface area divided by R-value)
+	 oven_diameter // the diameter of the oven
+	 oven_demand// the hot food take out from the oven
+	 heating_element_capacity // the power of the heating element
+	 inlet_food_temperature // the inlet temperature of the food
+	 heat_mode // the energy source for heating the oven
+	 location // whether the range is inside or outside
+	 oven_point // the temperature around which the oven will heat its contents
+	 thermostat_deadband // the degree to heat the food in the oven, when needed
+	 temperature // the outlet temperature of the oven
+	 height // the height of the oven
+	 food_density // food density
+	 specificheat_food
+	 queue_cooktop // number of loads accumulated
+	 queue_oven // number of loads accumulated
+	 queue_min
+	 queue_max
+	 time_cooktop_operation
+	 time_cooktop_ting
+	 cooktop_run_prob
+	 oven_run_prob
+	 cooktop_coil_ting_1
+	 cooktop_coil_ting_2
+	 cooktop_coil_ting_3
+	 total_power_oven
+	 total_power_cooktop
+	 total_power_range
+	 demand_cooktop // number of loads accumulating daily
+	 demand_oven // number of loads accumulating daily
+	 stall_voltage
+	 start_voltage
+	 stall_impedance
+	 trip_delay
+	 re_delay
+	 time_oven_operation
+	 time_oven_ting
+	 state_cooktop
+	 cooktop_energy_baseline
+	 cooktop_energy_used
+	 Toff
+	 Ton
+	 cooktop_interval_ting_1
+	 cooktop_interval_ting_2
+	 cooktop_interval_ting_3
+	 cooktop_energy_needed
+	 heat_needed
+	 oven_check
+	 remainon
+	 cooktop_check
+	 actual_load // the actual load based on the current voltage across the coils
+	 previous_load // the actual load based on current voltage stored for use in controllers
+	 actual_power // the actual power based on the current voltage across the coils
+	 is_range_on // simple logic output to determine state of range (1-on, 0-off)
+
+
+class freezer {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 size
+	 rated_capacity
+	 temperature
+	 point
+	 deadband
+	 next_time
+	 output
+	 event_temp
+	 UA
+	 state
+
+
+class dryer {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 motor_power
+	 dryer_coil_power
+	 controls_power
+	 circuit_split
+	 queue // number of loads accumulated
+	 queue_min
+	 queue_max
+	 stall_voltage
+	 start_voltage
+	 stall_impedance
+	 trip_delay
+	 re_delay
+	 total_power
+	 state
+	 energy_baseline
+	 energy_used
+	 next_t
+	 control_check
+	 motor_only_check1
+	 motor_only_check2
+	 motor_only_check3
+	 motor_only_check4
+	 motor_only_check5
+	 motor_only_check6
+	 dryer_on
+	 dryer_ready
+	 dryer_check
+	 motor_coil_only_check1
+	 motor_coil_only_check2
+	 motor_coil_only_check3
+	 motor_coil_only_check4
+	 motor_coil_only_check5
+	 motor_coil_only_check6
+	 dryer_run_prob
+	 dryer_turn_on
+	 pulse_interval_1
+	 pulse_interval_2
+	 pulse_interval_3
+	 pulse_interval_4
+	 pulse_interval_5
+	 pulse_interval_6
+	 pulse_interval_7
+	 energy_needed
+	 daily_dryer_demand
+	 actual_dryer_demand
+	 motor_on_off
+	 motor_coil_on_off
+	 is_240 // load is 220/240 V (across both phases)
+
+
+class evcharger {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 charger_type
+	 vehicle_type
+	 state
+	 p_go_home
+	 p_go_work
+	 work_dist
+	 capacity
+	 charge
+	 charge_at_work
+	 charge_throttle
+	 demand_profile
+	 charger_status // Turn ON/OFF charger status
+	 energy_demand // amount of energy needs to drive next time
+
+
+class evcharger_det {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 charge_current // Charging current rate of the vehicle
+	 is_240 // Charger is 220/240 V (across both phases)
+	 time_to_leave_home // Remaining time to leave home in sec
+	 variation_mean // Mean of normal variation of schedule variation
+	 variation_std_dev // Standard deviation of normal variation of schedule times
+	 variation_trip_mean // Mean of normal variation of trip distance variation
+	 variation_trip_std_dev // Standard deviation of normal variation of trip distance
+	 mileage_classification // Mileage classification of electric vehicle
+	 work_charging_available // Charging available when at work
+	 data_file // Path to .CSV file with vehicle travel information
+	 vehicle_index // Index of vehicles in file this particular vehicle's data
+	 {DRIVING_WORK=4, DRIVING_HOME=3, WORK=2, HOME=1, UNKNOWN=0 vehicle_location
+	 travel_distance // Distance vehicle travels from home to home
+	 arrival_at_work // Time vehicle arrives at work - HHMM
+	 duration_at_work // Duration the vehicle remains at work
+	 arrival_at_home // Time vehicle arrives at home - HHMM
+	 duration_at_home // Duration the vehicle remains at home
+	 battery_capacity // Current capacity of the battery in kWh
+	 battery_SOC[%] // State of charge of battery
+	 battery_size // Full capacity of battery
+	 mileage_efficiency[mile/kWh] // Efficiency of drive train in mile/kWh
+	 maximum_charge_rate // Maximum output rate of charger in kW
+	 charging_efficiency // Efficiency of charger (ratio) when charging
+
+
+class occupantload {
+	
+	
+		
+		
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		 configuration // the load configuration options
+		 override
+		 power_state
+	
+
+	 number_of_occupants
+	 occupancy_fraction
+	 heatgain_per_person
+
+class stubauction {
+	unit // unit of quantity
+	 period // interval of time between market clearings
+	 last.P // last cleared price
+	 current_market.clearing_price // next cleared price
+	 past_market.clearing_price // last cleared price
+	 next.P // next cleared price
+	 avg24 // daily average of price
+	 std24 // daily stdev of price
+	 avg72 // three day price average
+	 std72 // three day price stdev
+	 avg168 // weekly average of price
+	 std168 // weekly stdev of price
+	 market_id // unique identifier of market clearing
+	 verbose // enable verbose stubauction operations
+	 control_mode // the control mode to use for determining average and deviation calculations
+
+
+class auction {
+	unit // unit of quantity
+	 period // interval of time between market clearings
+	 latency // latency between market clearing and delivery
+	 market_id // unique identifier of market clearing
+	network // the comm network used by object to talk to the market (if any)
+	 verbose // enable verbose auction operations
+	linkref // (DEPRECATED) reference to link object that has demand as power_out (only used when not all loads are bidding)
+	 pricecap // (DEPRECATED) the maximum price (magnitude) allowed
+	 price_cap // the maximum price (magnitude) allowed
+	 special_mode
+	 statistic_mode
+	 fixed_price
+	 fixed_quantity
+	capacity_reference_object
+	capacity_reference_property
+	 capacity_reference_bid_price
+	 max_capacity_reference_bid_quantity
+	 capacity_reference_bid_quantity
+	 init_price
+	 init_stdev
+	 future_mean_price
+	 use_future_mean_price
+	 current_market.start_time
+	 current_market.end_time
+	 current_market.clearing_price
+	 current_market.clearing_quantity
+	 current_market.clearing_type
+	 current_market.marginal_quantity_load
+	 current_market.marginal_quantity
+	 current_market.marginal_quantity_bid
+	 current_market.marginal_quantity_frac
+	 current_market.seller_total_quantity
+	 current_market.buyer_total_quantity
+	 current_market.seller_min_price
+	 current_market.buyer_total_unrep
+	 current_market.cap_ref_unrep
+	 next_market.start_time
+	 next_market.end_time
+	 next_market.clearing_price
+	 next_market.clearing_quantity
+	 next_market.clearing_type
+	 next_market.marginal_quantity_load
+	 next_market.marginal_quantity_bid
+	 next_market.marginal_quantity_frac
+	 next_market.seller_total_quantity
+	 next_market.buyer_total_quantity
+	 next_market.seller_min_price
+	 next_market.cap_ref_unrep
+	 past_market.start_time
+	 past_market.end_time
+	 past_market.clearing_price
+	 past_market.clearing_quantity
+	 past_market.clearing_type
+	 past_market.marginal_quantity_load
+	 past_market.marginal_quantity_bid
+	 past_market.marginal_quantity_frac
+	 past_market.seller_total_quantity
+	 past_market.buyer_total_quantity
+	 past_market.seller_min_price
+	 past_market.cap_ref_unrep
+	 margin_mode
+	 warmup
+	 ignore_pricecap
+	 transaction_log_file
+	 transaction_log_limit
+	 curve_log_file
+	 curve_log_limit
+	 curve_log_info
+
+	class evse {
+		shape
+		load // the enduse load description
+		 energy // the total energy consumed since the last meter reading
+		 power // the total power consumption of the load
+		 peak_demand // the peak power consumption since the last meter reading
+		 heatgain // the heat transferred from the enduse to the parent
+		 heatgain_fraction // the fraction of the heat that goes to the parent
+		 current_fraction // the fraction of total power that is constant current
+		 impedance_fraction // the fraction of total power that is constant impedance
+		 power_fraction // the fraction of the total power that is constant power
+		 power_factor // the power factor of the load
+		 constant_power // the constant power portion of the total load
+		 constant_current // the constant current portion of the total load
+		 constant_admittance // the constant admittance portion of the total load
+		 voltage_factor // the voltage change factor
+		 breaker_amps // the rated breaker amperage
+		configuration // the load configuration options
+		 override
+		 power_state
+	 charge_current // Charging current rate of the vehicle
+	 is_240 // Charger is 220/240 V (across both phases)
+	 time_to_leave_home // Remaining time to leave home in sec
+	 variation_mean // Mean of normal variation of schedule variation
+	 variation_std_dev // Standard deviation of normal variation of schedule times
+	 variation_SOC_mean // Mean of normal variation of SOC variation
+	 variation_SOC_std_dev // Standard deviation of normal variation of SOC
+	 variation_trip_mean // Mean of normal variation of trip distance variation
+	 variation_trip_std_dev // Standard deviation of normal variation of trip distance
+	 mileage_classification // Mileage classification of electric vehicle
+	 work_charging_available // Charging available when at work
+	 data_file // Path to .CSV file with vehicle travel information
+	 vehicle_index // Index of vehicles in file this particular vehicle's data
+	 vehicle_location
+	 travel_distance // Distance vehicle travels from home to home
+	 arrival_at_work // Time vehicle arrives at work - HHMM
+	 duration_at_work // Duration the vehicle remains at work
+	 arrival_at_home // Time vehicle arrives at home - HHMM
+	 duration_at_home // Duration the vehicle remains at home
+	 battery_charge // Current capacity of the battery in kWh
+	 battery_SOC // State of charge of battery
+	 battery_size // Full capacity of battery
+	 mileage_efficiency // Efficiency of drive train in mile/kWh
+	 maximum_charge_rate // Maximum output rate of charger in kW
+	 charging_efficiency // Efficiency of charger (ratio) when charging
