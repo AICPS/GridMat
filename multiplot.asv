@@ -1,0 +1,16 @@
+hvac_oscillation = csvread("T_1_AS_632.csv",9,1);
+normal = csvread("Default_Outputs\T_1_AS_632.csv",9,1);
+hvac_outputs2 = csvread("HVAC_Outputs2\T_1_AS_632.csv",9,1);
+hvac_evse =  csvread("HVAC_EVSE_Outputs\T_1_AS_632.csv",9,1);
+
+plot(hvac_oscillation);
+hold on;
+plot(normal);
+hold on;
+plot(hvac_outputs2);
+hold on;
+plot(hvac_evse);
+hold on;
+
+legend("Hvac Oscillation","Normal","HVAC when house empty", "HVAC when EVSE on");
+ylabel("kVA");

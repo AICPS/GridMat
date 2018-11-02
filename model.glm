@@ -12,27 +12,123 @@ clock {
 #include "appliance_schedules.glm";
 #include "IEEE_13.glm";
 
-module residential;
+module climate;
+module tape;
+module powerflow;
+module residential {
+	implicit_enduses NONE;
+};
 
+//power line config from transformer to meter
+object triplex_line_configuration {
+	name trip_line_config;
+	conductor_1 object triplex_line_conductor {
+		resistance 0.97;
+		geometric_mean_radius 0.01111;
+	};
+	conductor_2 object triplex_line_conductor {
+		resistance 0.97;
+		geometric_mean_radius 0.01111;
+	};
+	conductor_N object triplex_line_conductor {
+		resistance 0.97;
+		geometric_mean_radius 0.01111;
+	};
+	insulation_thickness 0.08;
+	diameter 0.368;
+}
+object transformer_configuration {
+        name transformer_config_T_1;
+		connect_type SINGLE_PHASE_CENTER_TAPPED;
+		install_type POLETOP;
+		shunt_impedance 10000+10000j;
+		primary_voltage 2401.777000;
+		secondary_voltage 120.000000;
+		powerA_rating 20.000000 kVA;
+		impedance 0.00033+0.0022j;
+}
+//transformer from IEEE 13 node 632 to triplex meter 
+object transformer {
+	name T_1_AS_632;
+	from node632;
+	to TP_T_1_AS_632;
+	phases AS;
+    aging_granularity 300;
+    percent_loss_of_life 20;
+	configuration transformer_config_T_1;
+	groupid Distribution_Trans_AS;
+}
+
+//transformer meter
+object triplex_meter {
+	name TP_T_1_AS_632;
+	phases AS;
+	nominal_voltage 120.000000;
+	groupid Trans_Meter_AS;
+}
+
+//line from transformer meter to house energy meter
+object triplex_line {
+	name TPL_1_T_1_AS_632;
+	phases AS;
+	from TP_T_1_AS_632;
+	to TM_1_T_1_AS_632;
+	length 2.000000;
+	configuration trip_line_config;
+	groupid Triplex_Line_AS;
+}
+
+//house energy meter
+object triplex_meter {
+	name TM_1_T_1_AS_632;
+	phases AS;
+	nominal_voltage 120.000000;
+	groupid House_Meter;
+}
+
+//EV specification
 class spec{
 	double travel_distance[mile];
 	double mileage_efficiency[mile/kWh];
-	
 	double charge_rate[W];
 }
-
-
 object spec{
 	name "spec2";
 	travel_distance 40.0;
 	mileage_efficiency 3;
-	
 	charge_rate 2400;
 }
 
+object climate {
+	name MyClimate;
+	tmyfile NJ-Newark.tmy2;
+	interpolate LINEAR;
+	object recorder {
+		property temperature;
+		limit 388800;
+		interval 60;
+		file temp_out.csv;
+	};
+}
+
+//house type 1 w/ ev charger
 object house{
+    parent TM_1_T_1_AS_632;
+    name H_1;
+	schedule_skew -430;
+	floor_area 2100.000000;
+	number_of_stories 1.000000;
+	heating_system_type GAS;
+	cooling_system_type ELECTRIC;
+	thermal_integrity_level NORMAL;
+	motor_efficiency AVERAGE;
+	cooling_setpoint 73.000000;
+	heating_setpoint 68.000000;
+	groupid House_Type_1;
+
 	object evcharger_det {
 		name EVSE;
+        breaker_amps +30A;
 		charge_rate 3300;
 		variation_mean 0.0;
 		variation_std_dev 0.0;
@@ -52,100 +148,135 @@ object house{
 		maximum_charge_rate 3300;
 		charging_efficiency	0.95;        
 	};
+
 	object occupantload {
 		name occupant_H_1;
-		schedule_skew -254;
-		number_of_occupants 4;
+		schedule_skew -1581;
+		number_of_occupants 2;
 		occupancy_fraction OCCUPANT;
 		heatgain_per_person 335;
 		configuration IS220;
-		groupid House_Type_2;
+		groupid House_Type_1;
+	};
+	object dishwasher {
+		name dishwasher_H_1;
+		schedule_skew 1653;
+		energy_baseline 1.000000kWh;
+		Heateddry_option_check true;
+		daily_dishwasher_demand DISHWASHER*40;
+		groupid House_Type_1;
 	};
 	object lights {
 		name light_H_1;
-		installed_power 0.900000kW;
+		installed_power 0.800000kW;
 		demand LIGHTS;
 		type INCANDESCENT;
 		placement INDOOR;
-		schedule_skew 237;
-		groupid House_Type_2;
-	};
-	object dishwasher {
-		name dishwasher_H_5;
-		schedule_skew 603;
-		energy_baseline 1.300000kWh;
-		Heateddry_option_check true;
-		daily_dishwasher_demand DISHWASHER*60;
-		groupid House_Type_2;
-	};
-	object lights {
-		name light_H_5;
-		installed_power 0.900000kW;
-		demand LIGHTS;
-		type INCANDESCENT;
-		placement INDOOR;
-		schedule_skew -1619;
-		groupid House_Type_2;
+		schedule_skew 1524;
+		groupid House_Type_1;
 	};
 	object waterheater {
-		name waterheater_H_5;
-		schedule_skew 1465;
-		tank_volume 60.000000;
-		heating_element_capacity 4.000000kW;
+		name waterheater_H_1;
+		schedule_skew -310;
+		tank_volume 40.000000;
+		heating_element_capacity 3.000000kW;
 		demand WATERHEATER;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 	object plugload {
-		name plugload_H_5;
-		schedule_skew -690;
-		installed_power 1.500000kW;
+		name plugload_H_1;
+		schedule_skew 1670;
+		installed_power 1.000000kW;
 		demand PLUGS;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 	object refrigerator {
-		name refrigerator_H_5;
-		schedule_skew 2505;
-		defrost_power 0.600000kW;
+		name refrigerator_H_1;
+		schedule_skew -2591;
+		defrost_power 0.500000kW;
 		door_opening_criterion REFRIGERATOR;
-		daily_door_opening 52;
-		size 25.000000;
+		daily_door_opening 30;
+		size 20.000000;
 		state COMPRESSSOR_OFF_NORMAL;
 		defrost_criterion DOOR_OPENINGS;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 	object clotheswasher {
-		name clotheswasher_H_5;
-		schedule_skew 457;
-		motor_power 1.000000kW;
-		demand CLOTHESWASHER*600;
+		name clotheswasher_H_1;
+		schedule_skew -1771;
+		motor_power 0.800000kW;
+		demand CLOTHESWASHER*400;
 		state STOPPED;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 	object dryer{
-		name dryer_H_5;
-		schedule_skew -1517;
-		energy_baseline 2.500000kWh;
+		name dryer_H_1;
+		schedule_skew -409;
+		energy_baseline 2.000000kWh;
 		state STOPPED;
 		daily_dryer_demand DRYER;
 		queue_min 0;
 		queue_max 2;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 	object range{
-		name range_H_5;
-		schedule_skew -804;
-		heating_element_capacity 2.500000kW;
-		oven_volume 8.000000;
-		demand_oven RANGE*60;
-		oven_setpoint 120.000000;
+		name range_H_1;
+		schedule_skew -991;
+		heating_element_capacity 2.000000kW;
+		oven_volume 5.000000;
+		demand_oven RANGE*40;
+		oven_setpoint 150;
 		queue_min 0;
 		queue_max 2;
-		groupid House_Type_2;
+		groupid House_Type_1;
 	};
 }
 
+object multi_recorder {
+    property T_1_AS_632:power_out_real;
+    file "T_1_AS_632.csv";
+    interval 600;
+}
 
-module tape;
+//measured real-time power usage (W)
+object multi_recorder {
+    property TM_1_T_1_AS_632:measured_demand,TM_1_T_1_AS_632:measured_power;
+    file "TM_1_T_1_AS_632_measured_power.csv";
+    interval 600;
+}
+
+//measured cumulative energy usage (Wh)
+object multi_recorder {
+    property TM_1_T_1_AS_632:measured_real_energy;
+    file "TM_1_T_1_AS_632_measured_energy.csv";
+    interval 600;
+}
+
+object collector {
+	group "class=triplex_meter";  
+	property "avg(measured_real_power)"; 
+	interval 600;
+	file house_power.csv;
+}
+//heating and cooling load (kW)
+object multi_recorder {
+    property H_1:hvac_load;
+    file "H_1_HVAC.csv";
+    interval 600;
+}
+
+object multi_recorder {
+    property H_1:air_temperature;
+    file "H_1_ambient_temp.csv";
+    interval 600;
+}
+
+object multi_recorder {
+    property TM_1_T_1_AS_632:monthly_bill;
+    file "TM_1_T_1_AS_632_prices.csv";
+    interval 600;
+}
+
 object collector { 
 	group "class=evcharger_det";  
 	property "avg(power.real)"; 
@@ -153,26 +284,24 @@ object collector {
 	file chargerpower.csv;
 }
 
-object collector {
-	group "class=dryer";
-	property avg(daily_dryer_demand);
-	interval 60;
-	limit 38880;
-	file power_dryer.csv;
-}
-
 object multi_recorder {
 	property EVSE:charge_rate,EVSE:maximum_charge_rate;
-	file "EV6.csv";
+	file "EV_charge_rate.csv";
 	interval 600;
 }
 object multi_recorder {
 	property EVSE:battery_capacity,EVSE:battery_SOC;
-	file "EV7.csv";
+	file "EV_battery.csv";
 	interval 600;
 }
 object multi_recorder {
-    property occupant_H_1:occupancy_fraction, light_H_1:installed_power, light_H_1:actual_power;
+    property waterheater_H_1:power.real;
+    file "water_heater_load.csv";
+    interval 600;
+}
+
+object multi_recorder {
+    property occupant_H_1:occupancy_fraction, light_H_1:actual_power;
     file "occupant_H_1.csv";
     interval 600;
 }

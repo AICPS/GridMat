@@ -120211,20 +120211,6 @@ object collector {
 	file power_waterheater_1_summer_weekday.csv;
 }
 object collector {
-	group "class=waterheater AND groupid=House_Type_2";
-	property avg(power.mag);
-	interval 60;
-	limit 38880;
-	file power_waterheater_2_summer_weekday.csv;
-}
-object collector {
-	group "class=waterheater";
-	property avg(demand);
-	interval 60;
-	limit 38880;
-	file power_waterheater_d_summer_weekday.csv;
-}
-object collector {
 	group "class=plugload AND groupid=House_Type_1";
 	property avg(actual_power.mag);
 	interval 60;

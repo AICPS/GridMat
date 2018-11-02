@@ -19,7 +19,7 @@ if(~isempty(contfiles))
         %dos('');
     end
 end
-pause(10);
+pause(15);
 fopen(socket);
 loopshow=0;
 time=starttime;

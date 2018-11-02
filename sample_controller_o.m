@@ -1,1 +1,2 @@
-readValue(socket,sprintf('light_H_1/installed_power=%f',lights(1)));
+readValue(socket,sprintf('H_1/cooling_setpoint=%f',house_2));
+readValue(socket,sprintf('H_1/heating_setpoint=%f',house_3));
