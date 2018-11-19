@@ -1,13 +1,10 @@
 %#PARAM
 %#I occupant_H_1/occupancy_fraction=occupantload(1);
-%#B H_1/cooling_setpoint=house_2;
-%#B H_1/heating_setpoint=house_3;
+%#B TM_1_T_1_AS_632/service_status=triplex_meter_2;
 %#END
 
-if(house_2 == 1)
-    house_2 = 90;
-    house_3 = 75;
+if(occupantload(1) == 0)
+    triplex_meter_2 = 0;
 else
-    house_2 = 1;
-    house_3 = 0;
+    triplex_meter_2 = 1;
 end

@@ -1,2 +1,1 @@
-readValue(socket,sprintf('H_1/cooling_setpoint=%f',house_2));
-readValue(socket,sprintf('H_1/heating_setpoint=%f',house_3));
+readValue(socket,sprintf('TM_1_T_1_AS_632/service_status=%f',triplex_meter_2));
