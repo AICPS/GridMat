@@ -1,0 +1,67 @@
+clock {
+	timezone PST+8PDT;
+	starttime '2005-01-01 00:00:00 PST';
+	stoptime '2005-01-02 00:00:00 PST';
+};
+
+module residential;
+
+class spec{
+	double travel_distance[mile];
+	double mileage_efficiency[mile/kWh];
+	
+	double charge_rate[W];
+}
+
+
+object spec{
+	name "spec2";
+	travel_distance 40.0;
+	mileage_efficiency 3;
+	
+	charge_rate 2400;
+}
+
+object house{
+	object evcharger_det {
+		name EVSE;
+		charge_rate 3300;
+		variation_mean 0.0;
+		variation_std_dev 0.0;
+		variation_trip_mean 0.0;
+		variation_trip_std_dev 0.0;
+		work_charging_available false;
+		vehicle_location HOME;
+		travel_distance spec2.travel_distance;
+		arrival_at_work 730; 
+		duration_at_work 28800;
+		arrival_at_home 1730; 
+		duration_at_home 28800;
+		battery_SOC 100;
+		battery_size 40;
+		mileage_classification 0.0;
+		mileage_efficiency 2.8;
+		maximum_charge_rate 3300;
+		charging_efficiency	0.95;        
+	};
+}
+
+
+
+module tape;
+object collector { 
+	group "class=evcharger_det";  
+	property "avg(power.real)"; 
+	interval 600;
+	file power.csv;
+}
+object multi_recorder {
+	property EVSE:charge_rate,EVSE:maximum_charge_rate;
+	file "EV6.csv";
+	interval 600;
+}
+object multi_recorder {
+	property EVSE:battery_capacity,EVSE:battery_SOC;
+	file "EV7.csv";
+	interval 600;
+}

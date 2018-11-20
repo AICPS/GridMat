@@ -14,7 +14,7 @@ while(1)
     end
     if(i> 3000)
         fclose(socket);
-        fprintf("Simulation Complete\n");
+        fprintf('Simulation Complete\n');
         break;
     end
 end

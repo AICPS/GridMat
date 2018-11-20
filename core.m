@@ -8,7 +8,8 @@ path='\\aicps-server\ahourai\New\3.0\VS2005\x64\release;\\aicps-server\ahourai\N
 %% main loop
 [pathfile,namefile,ext] = fileparts(glmfile);
 datestring = datestr(addtodate(starttime,1,'second'),31);
-dos(['cd ',pathfile,' & gridlabd ',namefile,ext,' --server --define pauseat="',datestring,'" &']);
+%%dos(['cd ',pathfile,' & gridlabd ',namefile,ext,' --server --define pauseat="',datestring,'" &']);
+dos(['cd ',pathfile,' & gridlabd ',namefile,ext,' --server --verbose --define pauseat="',datestr(addtodate(starttime,1,'second'),31),'" &']);
 socket = tcpip('localhost', 6267, 'NetworkRole', 'client');
 fclose(socket);
 contfiles=get(handles.controller_popupmenu,'String');
