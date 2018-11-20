@@ -1,0 +1,336 @@
+// This file has a model of the IEEE 13 node test feeder with houses attached
+
+#set profiler=1
+#set threadcount=1;
+#set randomseed=1;
+#set relax_naming_rules=1;
+
+clock {
+	timezone PST+8PDT;
+	starttime '2005-01-01 00:00:00 PST';
+	stoptime '2005-01-03 00:00:00 PST';
+};
+
+module tape;
+
+module powerflow;
+module climate;
+module residential {
+	implicit_enduses NONE;
+	ANSI_voltage_check FALSE;
+};
+
+schedule waterdemand {
+	* 0-5 * * * 0;
+	0-16 6 * * * 0;
+	17-34 6 * * * 0.2;
+	35-59 6 * * * 0.4;
+	0-11 7 * * * 0.3;
+	12-59 7 * * * 0;
+	* 8-16 * * * .05;
+	* 17 * * * 0;
+	0-15 18 * * * 0;
+	16-59 18 * * * 0.8;
+	* 19-21 * * * 0;
+	00-45 22 * * * 0;
+	46-59 22 * * * 0.6;
+	* 23 * * * 0;
+}
+
+schedule heatingsetpoint {
+	* 0-4 * * * 60;
+	* 5 * * * 70;
+	00-30 6 * * * 70;
+	31-59 6 * * * 60;
+	* 7-16 * * * 60;
+	* 17-21 * * * 70;
+	* 22-23 * * * 60;
+}
+
+schedule ZIP1base_power {
+	00-29  00   *   *  *   1.686360
+	30-59  00   *   *  *   1.616535
+	00-29  01   *   *  *   1.593260
+	30-59  01   *   *  *   1.553267
+	00-29  02   *   *  *   1.539935
+	30-59  02   *   *  *   1.523217
+	00-29  03   *   *  *   1.517644
+	30-59  03   *   *  *   1.526276
+	00-29  04   *   *  *   1.529154
+	30-59  04   *   *  *   1.579583
+	00-29  05   *   *  *   1.596393
+	30-59  05   *   *  *   1.731125
+	00-29  06   *   *  *   1.776036
+	30-59  06   *   *  *   1.971087
+	00-29  07   *   *  *   2.036104
+	30-59  07   *   *  *   2.123794
+	00-29  08   *   *  *   2.153025
+	30-59  08   *   *  *   2.120079
+	00-29  09   *   *  *   2.109097
+	30-59  09   *   *  *   2.081561
+	00-29  10   *   *  *   2.072382
+	30-59  10   *   *  *   2.056046
+	00-29  11   *   *  *   2.050600
+	30-59  11   *   *  *   2.028199
+	00-29  12   *   *  *   2.020733
+	30-59  12   *   *  *   2.011171
+	00-29  13   *   *  *   2.007984
+	30-59  13   *   *  *   2.000226
+	00-29  14   *   *  *   1.997640
+	30-59  14   *   *  *   1.997694
+	00-29  15   *   *  *   1.997713
+	30-59  15   *   *  *   2.029784
+	00-29  16   *   *  *   2.040474
+	30-59  16   *   *  *   2.157669
+	00-29  17   *   *  *   2.196733
+	30-59  17   *   *  *   2.262461
+	00-29  18   *   *  *   2.284370
+	30-59  18   *   *  *   2.273333
+	00-29  19   *   *  *   2.269654
+	30-59  19   *   *  *   2.239386
+	00-29  20   *   *  *   2.229297
+	30-59  20   *   *  *   2.178758
+	00-29  21   *   *  *   2.161912
+	30-59  21   *   *  *   2.064059
+	00-29  22   *   *  *   2.031441
+	30-59  22   *   *  *   1.897692
+	00-29  23   *   *  *   1.853109
+	30-59  23   *   *  *   1.728047
+}
+
+
+class spec{
+	double travel_distance[mile];
+	double mileage_efficiency[mile/kWh];
+	double charge_rate[W];
+	double max_charge_rate[W];
+	int32 number;
+}
+
+//ROUTE 1
+
+object spec{
+	name "leaf";
+	travel_distance 36.1;
+	mileage_efficiency 3.591;
+	charge_rate 1650;
+	max_charge_rate 1650;
+	number 2; 
+}
+
+object spec{
+	name "tesla";
+	travel_distance 36.1;
+	mileage_efficiency 4.381;
+	charge_rate 1650;
+	max_charge_rate 1650;
+	number 1;
+}
+
+object spec{
+	name "fiat";
+	travel_distance 36.1;
+	mileage_efficiency 3.914;
+	charge_rate 1650;
+	max_charge_rate 1650;
+	number 2;
+}
+
+object triplex_line_conductor {
+	name tp_line_conductor;
+	resistance 0.97;
+	geometric_mean_radius 0.0111;
+};
+
+object triplex_line_configuration {
+	name triplex_line_configuration_1;
+	conductor_1 tp_line_conductor;
+	conductor_2 tp_line_conductor;
+	conductor_N tp_line_conductor;
+	insulation_thickness 0.08;
+	diameter 0.368;
+}
+
+// Transformer 1
+object triplex_meter {
+	name transformer1; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+object triplex_line {
+	name Bus11;
+	nominal_voltage 120;
+	phases AS;
+	configuration triplex_line_configuration_1;
+	from transformer1;
+	to trip_meter11;
+}
+
+object triplex_line {
+	name Bus12;
+	nominal_voltage 120;
+	phases AS;
+	configuration triplex_line_configuration_1;
+	from transformer1;
+	to trip_meter12;
+}
+
+
+object triplex_meter {
+	name trip_meter11; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// Houses Without EV
+object house:..20 {
+	parent trip_meter11;
+	floor_area 2500;
+	heating_setpoint heatingsetpoint;
+	cooling_setpoint 80;
+	thermostat_deadband 2;
+	object ZIPload {
+		base_power ZIP1base_power;
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand;
+	};
+}
+
+object triplex_meter {
+	name trip_meter12; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// House With EV LEAF
+object house:..2 {
+	parent trip_meter12;
+	object evcharger_det:..2 {
+		charge_rate 0;
+		variation_mean 0.0;
+		variation_std_dev 0.0;
+		variation_trip_mean 0.0;
+		variation_trip_std_dev 0.0;
+		work_charging_available false;
+		vehicle_location HOME;
+		
+		arrival_at_work 800; 
+		duration_at_work 28800;
+		arrival_at_home 1800;
+		duration_at_home 45000;
+		
+		travel_distance leaf.travel_distance;
+		mileage_efficiency leaf.mileage_efficiency;
+		maximum_charge_rate leaf.charge_rate;
+		
+		battery_SOC 100;
+		battery_size 12;
+		mileage_classification 0.0;
+		charging_efficiency	0.97;        
+	};
+}
+
+// House With EV FIAT
+object house:..2 {
+	parent trip_meter12;
+	object evcharger_det:..2 {
+		charge_rate 0;
+		variation_mean 0.0;
+		variation_std_dev 0.0;
+		variation_trip_mean 0.0;
+		variation_trip_std_dev 0.0;
+		work_charging_available false;
+		vehicle_location HOME;
+		
+		arrival_at_work 800; 
+		duration_at_work 28800;
+		arrival_at_home 1800;
+		duration_at_home 45000;
+		
+		travel_distance fiat.travel_distance;
+		mileage_efficiency fiat.mileage_efficiency;
+		maximum_charge_rate fiat.charge_rate;
+		
+		battery_SOC 100;
+		battery_size 12;
+		mileage_classification 0.0;
+		charging_efficiency	0.97;        
+	};
+}
+
+// House With EV TESLA
+object house:..1 {
+	parent trip_meter12;
+	object evcharger_det:..2 {
+		charge_rate 0;
+		variation_mean 0.0;
+		variation_std_dev 0.0;
+		variation_trip_mean 0.0;
+		variation_trip_std_dev 0.0;
+		work_charging_available false;
+		vehicle_location HOME;
+		
+		arrival_at_work 800; 
+		duration_at_work 28800;
+		arrival_at_home 1800;
+		duration_at_home 45000;
+		
+		travel_distance tesla.travel_distance;
+		mileage_efficiency tesla.mileage_efficiency;
+		maximum_charge_rate tesla.charge_rate;
+		
+		battery_SOC 100;
+		battery_size 30;
+		mileage_classification 0.0;
+		charging_efficiency	0.97;        
+	};
+}
+
+
+object multi_recorder {
+	property transformer1:measured_power.real;
+	file "transformer.csv";
+	interval 60;
+}
+
+object multi_recorder {
+	property trip_meter11:measured_power.real;
+	file "house.csv";
+	interval 60;
+}
+
+object multi_recorder {
+	property trip_meter12:measured_power.real;
+	file "evcharger.csv";
+	interval 60;
+}
+
+object collector { 
+	group "class=evcharger_det";  
+	property "avg(battery_SOC)"; 
+	interval 60;
+	file SOC.csv;
+}
+
+object collector { 
+	group "class=evcharger_det";  
+	property "avg(charge_rate)"; 
+	interval 60;
+	file EV2.csv;
+}
+
+object collector { 
+	group "class=evcharger_det";  
+	property "avg(maximum_charge_rate)"; 
+	interval 60;
+	file EV3.csv;
+}

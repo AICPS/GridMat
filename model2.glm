@@ -16862,7 +16862,7 @@ object house {
 		heating_element_capacity 2.500000kW;
 		oven_volume 8.000000;
 		demand_oven RANGE*60;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_2;
@@ -16975,7 +16975,7 @@ object house {
 		heating_element_capacity 2.000000kW;
 		oven_volume 5.000000;
 		demand_oven RANGE*40;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_1;
@@ -17088,7 +17088,7 @@ object house {
 		heating_element_capacity 2.000000kW;
 		oven_volume 5.000000;
 		demand_oven RANGE*40;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_1;
@@ -17201,7 +17201,7 @@ object house {
 		heating_element_capacity 2.500000kW;
 		oven_volume 8.000000;
 		demand_oven RANGE*60;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_2;
@@ -17314,7 +17314,7 @@ object house {
 		heating_element_capacity 2.000000kW;
 		oven_volume 5.000000;
 		demand_oven RANGE*40;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_1;
@@ -17427,7 +17427,7 @@ object house {
 		heating_element_capacity 2.500000kW;
 		oven_volume 8.000000;
 		demand_oven RANGE*60;
-		oven_setpoint 150.000000;
+		oven_setpoint 400.000000;
 		queue_min 0;
 		queue_max 2;
 		groupid House_Type_2;

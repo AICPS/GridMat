@@ -13,8 +13,8 @@ while(1)
         break;
     end
     if(i> 3000)
+        error(sprintf('Maximum try to read data on the Socket\nCommand: %s\nSocket is closed!',command));
         fclose(socket);
-        fprintf("Simulation Complete\n");
         break;
     end
 end

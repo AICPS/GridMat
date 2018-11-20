@@ -1,0 +1,603 @@
+// This file has a model of the IEEE 13 node test feeder with houses attached
+
+#set profiler=1
+#set threadcount=1;
+#set randomseed=1;
+#set relax_naming_rules=1;
+#define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+
+clock {
+	timestamp '2000-01-01 0:00:00';
+	stoptime '2000-02-01 0:00:00';
+	timezone EST+8EDT;
+}
+
+module tape;
+
+module powerflow;
+module climate;
+module residential {
+	implicit_enduses NONE;
+	ANSI_voltage_check FALSE;
+};
+
+schedule waterdemand1 {
+	* 0-5 * * * 0;
+	0-16 6 * * * 0;
+	17-34 6 * * * 0.2;
+	35-59 6 * * * 0.4;
+	0-11 7 * * * 0.3;
+	12-59 7 * * * 0;
+	* 8-16 * * * .05;
+	* 17 * * * 0;
+	0-15 18 * * * 0;
+	16-59 18 * * * 0.8;
+	* 19-21 * * * 0;
+	00-45 22 * * * 0;
+	46-59 22 * * * 0.6;
+	* 23 * * * 0;
+}
+
+schedule waterdemand2 {
+	* 0-4 * * * 0;
+	0-10 5 * * * .4;
+	11-37 5 * * * 0.1;
+	38-59 5 * * * 0.6;
+	0-16 6 * * * 0.4;
+	17-59 6 * * * 0;
+	* 7-16 * * * 0.01;
+	0-12 17 * * * 0.5;
+	13-59 17 * * * 0;
+	* 18-23 * * * 0;
+}
+
+schedule waterdemand3 {
+	* 0-6 * * * 0;
+	0-16 7 * * * 0;
+	17-34 7 * * * 0.4;
+	35-59 7 * * * 0.8;
+	0-11 8 * * * 0.1;
+	12-59 8 * * * 0;
+	* 9-15 * * * 0.005;
+	* 16 * * * 0.1;
+	* 17 * * * 0.2;
+	0-27 18 * * * 0.7;
+	28-59 18 * * * 0;
+	* 19-23 * * * 0;
+}
+
+schedule heatingsetpoint1 {
+	* 0-4 * * * 60;
+	* 5 * * * 70;
+	00-30 6 * * * 70;
+	31-59 6 * * * 60;
+	* 7-16 * * * 60;
+	* 17-21 * * * 70;
+	* 22-23 * * * 60;
+}
+schedule heatingsetpoint2 {
+	* 0-5 * * * 60;
+	* 6 * * * 70;
+	00-15 7 * * * 70;
+	16-59 7 * * * 60;
+	* 8-17 * * * 60;
+	* 18-22 * * * 70;
+	* 23 * * * 60;
+}
+schedule heatingsetpoint3 {
+	* 0-6 * * * 60;
+	* 7 * * * 70;
+	00-23 8 * * * 70;
+	24-59 8 * * * 60;
+	* 9-18 * * * 60;
+	* 19-20 * * * 70;
+	* 21-23 * * * 60;
+}
+schedule heatingsetpoint4 {
+	* 0-4 * * * 60;
+	00-30 5 * * * 60;
+	31-59 5 * * * 70;
+	* 6-7 * * * 70;
+	00-30 8 * * * 70;
+	31-59 8 * * * 60;
+	* 9-17 * * * 60;
+	00-30 18 * * * 60;
+	31-59 18 * * * 70;
+	* 19-20 * * * 70;
+	00-45 21 * * * 70;
+	46-59 21 * * * 60;
+	* 22-23 * * * 60;
+}
+schedule heatingsetpoint5 {
+	* 0-6 * * * 60;
+	00-30 7 * * * 60;
+	31-59 7 * * * 70;
+	* 8 * * * 70;
+	00-30 9 * * * 70;
+	31-59 9 * * * 60;
+	* 10-16 * * * 60;
+	00-15 17 * * * 60;
+	16-59 17 * * * 70;
+	* 18-22 * * * 70;
+	00-42 23 * * * 70;
+	43-59 23 * * * 60;
+}
+
+
+schedule ZIP1base_power {
+	00-29  00   *   *  *   1.686360
+	30-59  00   *   *  *   1.616535
+	00-29  01   *   *  *   1.593260
+	30-59  01   *   *  *   1.553267
+	00-29  02   *   *  *   1.539935
+	30-59  02   *   *  *   1.523217
+	00-29  03   *   *  *   1.517644
+	30-59  03   *   *  *   1.526276
+	00-29  04   *   *  *   1.529154
+	30-59  04   *   *  *   1.579583
+	00-29  05   *   *  *   1.596393
+	30-59  05   *   *  *   1.731125
+	00-29  06   *   *  *   1.776036
+	30-59  06   *   *  *   1.971087
+	00-29  07   *   *  *   2.036104
+	30-59  07   *   *  *   2.123794
+	00-29  08   *   *  *   2.153025
+	30-59  08   *   *  *   2.120079
+	00-29  09   *   *  *   2.109097
+	30-59  09   *   *  *   2.081561
+	00-29  10   *   *  *   2.072382
+	30-59  10   *   *  *   2.056046
+	00-29  11   *   *  *   2.050600
+	30-59  11   *   *  *   2.028199
+	00-29  12   *   *  *   2.020733
+	30-59  12   *   *  *   2.011171
+	00-29  13   *   *  *   2.007984
+	30-59  13   *   *  *   2.000226
+	00-29  14   *   *  *   1.997640
+	30-59  14   *   *  *   1.997694
+	00-29  15   *   *  *   1.997713
+	30-59  15   *   *  *   2.029784
+	00-29  16   *   *  *   2.040474
+	30-59  16   *   *  *   2.157669
+	00-29  17   *   *  *   2.196733
+	30-59  17   *   *  *   2.262461
+	00-29  18   *   *  *   2.284370
+	30-59  18   *   *  *   2.273333
+	00-29  19   *   *  *   2.269654
+	30-59  19   *   *  *   2.239386
+	00-29  20   *   *  *   2.229297
+	30-59  20   *   *  *   2.178758
+	00-29  21   *   *  *   2.161912
+	30-59  21   *   *  *   2.064059
+	00-29  22   *   *  *   2.031441
+	30-59  22   *   *  *   1.897692
+	00-29  23   *   *  *   1.853109
+	30-59  23   *   *  *   1.728047
+}
+
+// House 1 meter
+object triplex_meter {
+	name trip_meter1; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 2 meter
+object triplex_meter {
+	name trip_meter2; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// House 3 meter
+object triplex_meter {
+	name trip_meter3; 
+	phases BS; 
+	nominal_voltage 120;
+}
+
+// House 4 meter
+object triplex_meter {
+	name trip_meter4; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 5 meter
+object triplex_meter {
+	name trip_meter5; 
+	phases BS; 
+	nominal_voltage 120;
+}
+
+// House 6 meter
+object triplex_meter {
+	name trip_meter6; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 7 meter
+object triplex_meter {
+	name trip_meter7; 
+	phases BS; 
+	nominal_voltage 120;
+}
+
+// House 8 meter
+object triplex_meter {
+	name trip_meter8; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 9 meter
+object triplex_meter {
+	name trip_meter9; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// House 10 meter
+object triplex_meter {
+	name trip_meter10; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// House 11 meter
+object triplex_meter {
+	name trip_meter11; 
+	phases BS; 
+	nominal_voltage 120;
+}
+
+// House 12 meter
+object triplex_meter {
+	name trip_meter12; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 13 meter
+object triplex_meter {
+	name trip_meter13; 
+	phases AS; 
+	nominal_voltage 120;
+}
+
+// House 14 meter
+object triplex_meter {
+	name trip_meter14; 
+	phases BS; 
+	nominal_voltage 120;
+}
+
+// House 15 meter
+object triplex_meter {
+	name trip_meter15; 
+	phases CS; 
+	nominal_voltage 120;
+}
+
+// House 1
+object house:..20 {
+	parent trip_meter1;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint4+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	thermostat_deadband random.normal (2,.5);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand1*random.normal(1,.2);
+	};
+}
+
+// House 2
+object house:..20 {
+	parent trip_meter2;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 3
+object house:..20 {
+	parent trip_meter3;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand2*random.normal(1,.2);
+	};
+}
+
+// House 4
+object house:..20 {
+	parent trip_meter4;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint5+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 5
+object house:..20 {
+	parent trip_meter5;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 6
+object house:..20 {
+	parent trip_meter6;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint3+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand1*random.normal(1,.2);
+	};
+}
+
+// House 7
+object house:..20 {
+	parent trip_meter7;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint5+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand2*random.normal(1,.2);
+	};
+}
+
+// House 8
+object house:..20 {
+	parent trip_meter8;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand2*random.normal(1,.2);
+	};
+}
+
+// House 9
+object house:..20 {
+	parent trip_meter9;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint5+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 10
+object house:..20 {
+	parent trip_meter10;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint4+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 11
+object house:..20 {
+	parent trip_meter11;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand2*random.normal(1,.2);
+	};
+}
+
+// House 12
+object house:..20 {
+	parent trip_meter12;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint1+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+// House 13
+object house:..20 {
+	parent trip_meter13;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint3+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand2*random.normal(1,.2);
+	};
+}
+
+// House 14
+object house:..20 {
+	parent trip_meter14;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint4+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand1*random.normal(1,.2);
+	};
+}
+
+// House 15
+object house:..20 {
+	parent trip_meter15;
+	floor_area random.normal(1750,400);
+	heating_setpoint heatingsetpoint2+random.normal(0,4);
+	cooling_setpoint random.normal (80,2);
+	object ZIPload {
+		base_power ZIP1base_power*random.normal(1,.25);
+		power_fraction 0.2;
+		impedance_fraction 0.3;
+		current_fraction 0.5;
+		power_pf 0.9;
+		current_pf 0.6;
+		impedance_pf 0.8;
+	};
+	object waterheater {
+		location INSIDE;
+		water_demand waterdemand3*random.normal(1,.2);
+	};
+}
+
+object multi_recorder {
+	property trip_meter1:measured_real_power,trip_meter2:measured_real_power,trip_meter3:measured_real_power,trip_meter4:measured_real_power,trip_meter5:measured_real_power,trip_meter6:measured_real_power,trip_meter7:measured_real_power,trip_meter8:measured_real_power,trip_meter9:measured_real_power,trip_meter10:measured_real_power,trip_meter11:measured_real_power,trip_meter12:measured_real_power,trip_meter13:measured_real_power,trip_meter14:measured_real_power,trip_meter15:measured_real_power;
+	file "IEEE_13_Node_With_Houses.csv";
+	interval 60;
+}
