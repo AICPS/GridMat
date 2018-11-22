@@ -1,0 +1,6 @@
+ERROR    [INIT] : occupantload must have a parent house
+ERROR    [INIT] : last error message was repeated 1 times
+ERROR    [INIT] : init_by_deferral(): object occupantload:0 initialization failed
+ERROR    [INIT] : model initialization failed
+FATAL    [INIT] : shutdown after simulation stopped prematurely
+FATAL    [INIT] : environment startup failed: Invalid argument

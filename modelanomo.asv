@@ -1,0 +1,130 @@
+//step 1 include the clock
+clock {
+	timezone PST+8PDT;
+	starttime '2005-01-01 00:00:00 PST';
+	stoptime '2005-01-01 05:00:00 PST';
+};
+
+module powerflow;
+
+object overhead_line_conductor:100{
+    geometric_mean_radius 0.0244;
+    resistance 0.306;
+}
+
+object overhead_line_conductor:101{
+    geometric_mean_radius 0.00814;
+    resistance 0.592;
+}
+
+object line_spacing:200{
+    distance_AB 2.5;
+    distance_BC 4.5;
+    distance_AC 7.0;
+    distance_AN 5.625;
+    distance_BN 4.272;
+    distance_CN 4.5;
+}
+
+object line_configuration:300{
+    conductor_A overhead_line_conductor:100;
+    conductor_B overhead_line_conductor:100;
+    conductor_C overhead_line_conductor:100;
+    conductor_N overhead_line_conductor:101;
+    spacing line_spacing:200;
+}
+
+object transformer_configuration:400{
+    connect_type WYE_WYE;
+    powerA_rating 6000;
+    powerB_rating 6000;
+    powerC_rating 6000;
+    primary_voltage 7200;
+    secondary_voltage 2400;
+    resistance 0.01;
+    reactance 0.06;
+}
+
+object node{
+    name node1;
+    phases "ABCN";
+    voltage_A 7200;
+    voltage_B 7200.0-120.0d;
+    voltage_C 7200.0+120.0d;
+    nominal_voltage 7200;
+}
+
+
+object overhead_line:12{
+    phases "ABCN";
+    from node1;
+    to node2;
+    length 2000;
+    configuration line_configuration:300;
+
+}
+object node{
+    name node2;
+    phases "ABCN";
+   voltage_A 7200+0d;
+    voltage_B 7200.0-120.0d;
+    voltage_C 7200.0+120.0d;
+    nominal_voltage 7200;
+}
+
+object transformer:23{
+    phases "ABCN";
+    from node2;
+    to node3;
+    configuration transformer_configuration:400;
+}
+
+object node{
+    name node3;
+    phases "ABCN";
+    voltage_A 2400;
+    voltage_B 2400.0-120.0d;
+    voltage_C 2400.0+120.0d;
+    nominal_voltage 2400;
+}
+
+
+object overhead_line:34{
+    phases "ABCN";
+    from node3;
+    to load4;
+    length 2000;
+    configuration line_configuration:300;
+
+}
+
+
+object load{
+    name load4;
+    phases "ABCN";
+    nominal_voltage 2400;
+    //voltage_A 2400+0d;
+    //voltage_B 2400.0-120.0d;
+    //voltage_C 2400.0+120.0d;
+    //constant_power_A 1800000.0+871779.789j;
+    //constant_power_B 1800000.0+871779.789j;
+    //constant_power_C 1800000.0+871779.789j;
+     constant_power_A 6000;
+    constant_power_B 6000;
+    constant_power_C 6000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
